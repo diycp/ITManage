@@ -25,8 +25,9 @@ CREATE TABLE wsqITManage.`tbProject` (
     `fdTimeStart` date NOT NULL COMMENT '项目开始时间',
     `fdTimeEnd` date NOT NULL COMMENT '项目上线时间',
     `fdUsers` varchar(64) NOT NULL DEFAULT '' COMMENT '项目所属人员',
-    `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-    PRIMARY KEY (`id`)
+    `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    PRIMARY KEY (`id`),
+    INDEX 'it_project_create' ('fdCreate')
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='项目详情表';
 
 CREATE TABLE wsqITManage.`tbAnnouncement` (
