@@ -11,23 +11,23 @@ CREATE TABLE wsqITManage.`tbUser` (
 
 CREATE TABLE wsqITManage.`tbUserType` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    'fdName' varchar(32) DEFAULT '' COMMENT '工作类型',
+    `fdName` varchar(32) DEFAULT '' COMMENT '工作类型',
     `fdAuthority` tinyint(4) NOT NULL DEFAULT 0 COMMENT'用户权限表 0-无权限 1-管理员'
     PRIMARY KEY (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='工作类型表';
-INSERT INTO tbWorker (fdName) VALUES ('管理员')('产品经理'),('开发人员'),('测试员');
+INSERT INTO wsqITManage.tbUserType (fdName) VALUES ('管理员'),('产品经理'),('开发人员'),('测试员');
 
 CREATE TABLE wsqITManage.`tbProject` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdName` varchar(64) NOT NULL DEFAULT '' COMMENT '项目名称',
     `fdDesc` blob COMMENT '项目描述',
-    `fdLeader` int(11) NOT NULL DEFAULT '' COMMENT '项目组长 对应tbUser.id',
+    `fdLeader` int(11) NOT NULL DEFAULT 0 COMMENT '项目组长 对应tbUser.id',
     `fdTimeStart` date NOT NULL COMMENT '项目开始时间',
     `fdTimeEnd` date NOT NULL COMMENT '项目上线时间',
     `fdUsers` varchar(64) NOT NULL DEFAULT '' COMMENT '项目所属人员',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     PRIMARY KEY (`id`),
-    INDEX 'it_project_create' ('fdCreate')
+    INDEX `it_project_create` (`fdCreate`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='项目详情表';
 
 CREATE TABLE wsqITManage.`tbAnnouncement` (
@@ -36,7 +36,7 @@ CREATE TABLE wsqITManage.`tbAnnouncement` (
     `fdDesc` blob COMMENT '公告描述',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     PRIMARY KEY (`id`),
-    INDEX 'it_announcement_create' ('fdCreate')
+    INDEX `it_announcement_create` (`fdCreate`)
 )  ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='工作公告表';
 
 CREATE TABLE wsqITManage.`tbDuty` (
@@ -55,12 +55,12 @@ CREATE TABLE wsqITManage.`tbDuty` (
     `fdCompleteTime` date NOT NULL COMMENT '任务开发完成时间',
     `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`),
-    INDEX 'it_duty_plantime' ('fdPlanTime'),
-    INDEX 'it_duty_status' ('fdStatus'),
-    INDEX 'it_duty_manager' ('fdManager'),
-    INDEX 'it_duty_developer' ('fdDeveloper'),
-    INDEX 'it_duty_tester' ('fdTester'),
-    INDEX 'it_duty_project' ('fdProjectID')
+    INDEX `it_duty_plantime` (`fdPlanTime`),
+    INDEX `it_duty_status` (`fdStatusID`),
+    INDEX `it_duty_manager` (`fdManager`),
+    INDEX `it_duty_developer` (`fdDeveloper`),
+    INDEX `it_duty_tester` (`fdTester`),
+    INDEX `it_duty_project` (`fdProjectID`)
 )  ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='任务内容表';
 
 CREATE TABLE wsqITManage.`tbDutyType` (
@@ -68,6 +68,7 @@ CREATE TABLE wsqITManage.`tbDutyType` (
     `fdName` varchar(64) NOT NULL DEFAULT '' COMMENT '任务类型',
     PRIMARY KEY (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='任务类型表';
+INSERT INTO wsqITManage.tbDutyType (fdName) VALUES ('需求'),('开发'),('测试');
 
 CREATE TABLE wsqITManage.`tbDutyStatus` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -83,7 +84,7 @@ CREATE TABLE wsqITManage.`tbBugFix` (
     `fdDesc` varchar(64) NOT NULL DEFAULT '' COMMENT '问题描述',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     PRIMARY KEY (`id`),
-    INDEX 'it_bugfix_duty' ('fdDutyID')
+    INDEX `it_bugfix_duty` (`fdDutyID`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='问题描述表';
 
 CREATE TABLE wsqITManage.`tbMenu` (
@@ -92,9 +93,9 @@ CREATE TABLE wsqITManage.`tbMenu` (
     `fdModule` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单模块',
     `fdController` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单控制器',
     `fdAction` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单动作',
-    `fdParentID` int(11) NOT NULL DEFAULT '' COMMENT '菜单上级，对应 tbMenu.id',
+    `fdParentID` int(11) NOT NULL DEFAULT 0 COMMENT '菜单上级，对应 tbMenu.id',
     `fdStatus` tinyint(4) NOT NULL DEFAULT 0 COMMENT '菜单开启状态 0-不开启 1-开启',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     PRIMARY KEY (`id`),
-    INDEX 'it_menu_id_parentid' ('id','fdParentID')
+    INDEX `it_menu_id_parentid` (`id`,`fdParentID`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='系统菜单表';
