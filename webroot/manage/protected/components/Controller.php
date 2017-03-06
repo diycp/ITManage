@@ -28,7 +28,7 @@ class Controller extends CController
 	 * @return mixed
 	 */
 	public function createAction($actionID){
-		if ($moduleID = $this->module->id) {
+		/*if ($moduleID = $this->module->id) {
 			Yii::import("application.modules.{$moduleID}.controllers.actions.{$this->id}.*");
 			Yii::import("application.modules.{$moduleID}.models.{$this->id}.*");
 		} else {
@@ -39,7 +39,7 @@ class Controller extends CController
 			$actionID = $this->defaultAction;
 		}
 		
-		$this->actions[$actionID] = ucfirst($actionID) . "Action";
+		$this->actions[$actionID] = ucfirst($actionID) . "Action";*/
 		return parent::createAction($actionID);
 	}
 	

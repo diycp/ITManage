@@ -1,0 +1,5 @@
+return [
+    'dbMap' => [
+        'tbDuty' => 'tbDuty'
+    ]
+];

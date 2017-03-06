@@ -1,0 +1,149 @@
+2017/03/05 09:20:59 [error] [php] Use of undefined constant BASE_URL - assumed 'BASE_URL' (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:20)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#1 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (20)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 09:25:04 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 09:28:26 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 09:40:26 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=index/demo
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 09:46:29 [error] [exception.CException] CException: Property "SiteController._module" is not defined. in D:\php\project\itmanage\webroot\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\php\project\itmanage\webroot\manage\protected\components\Controller.php(31): CComponent->__get('_module')
+#1 D:\php\project\itmanage\webroot\framework\web\CController.php(259): Controller->createAction('')
+#2 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(282): CController->run('')
+#3 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#4 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/?r=index/demo
+---
+2017/03/05 09:46:42 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=index/demo
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 09:51:36 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=index/demo
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 09:57:32 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=index/demo
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:01:02 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:03:25 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:03:28 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:03:58 [error] [php] include(IndexAction.php): failed to open stream: No such file or directory (D:\php\project\itmanage\webroot\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 D:\php\project\itmanage\webroot\framework\YiiBase.php(303): class_exists()
+#2 D:\php\project\itmanage\webroot\framework\YiiBase.php(196): import()
+#3 D:\php\project\itmanage\webroot\framework\web\CController.php(440): createComponent()
+#4 D:\php\project\itmanage\webroot\framework\web\CController.php(417): IndexController->createActionFromMap()
+#5 D:\php\project\itmanage\webroot\manage\protected\components\Controller.php(40): IndexController->createAction()
+#6 D:\php\project\itmanage\webroot\framework\web\CController.php(259): IndexController->createAction()
+#7 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(282): IndexController->run()
+#8 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (40)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:04:28 [error] [php] include(IndexAction.php): failed to open stream: No such file or directory (D:\php\project\itmanage\webroot\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 D:\php\project\itmanage\webroot\framework\YiiBase.php(303): class_exists()
+#2 D:\php\project\itmanage\webroot\framework\YiiBase.php(196): import()
+#3 D:\php\project\itmanage\webroot\framework\web\CController.php(440): createComponent()
+#4 D:\php\project\itmanage\webroot\framework\web\CController.php(417): IndexController->createActionFromMap()
+#5 D:\php\project\itmanage\webroot\manage\protected\components\Controller.php(40): IndexController->createAction()
+#6 D:\php\project\itmanage\webroot\framework\web\CController.php(259): IndexController->createAction()
+#7 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(282): IndexController->run()
+#8 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=index/demo
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (40)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:13:06 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:20:17 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=index/index/index
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/05 10:21:51 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Filter.php:45)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CController.php(291): CFilterChain->run()
+#1 D:\php\project\itmanage\webroot\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (45)
+in D:\php\project\itmanage\webroot\manage\index.php (13)

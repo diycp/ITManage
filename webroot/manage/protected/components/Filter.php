@@ -42,7 +42,7 @@ class Filter extends CFilter {
 	];
 
 	protected function preFilter ($filterChain) {
-		$action = $filterChain->controller->module->id . '/' . $filterChain->controller->id . '/' . $filterChain->action->id;
+		/*$action = $filterChain->controller->module->id . '/' . $filterChain->controller->id . '/' . $filterChain->action->id;
 		if (in_array($action, $this->_actions)) {
 			if (Yii::app()->user->isGuest) {
 				Yii::app()->user->loginRequired();
@@ -68,7 +68,7 @@ class Filter extends CFilter {
 				Yii::app()->getController()->redirect($bindingURL);
 				Yii::app()->end();
 			}
-		}
+		}*/
 		
 		$filterChain->run();
 	}

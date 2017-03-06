@@ -39,17 +39,19 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		/*
-		'urlManager'=>array(
+		
+		/*'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
-		*/
-
+			)
+		),*/
+		
+		'smarty' => [
+			'class' => 'SmartyViewRenderer',
+		],
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
 
@@ -78,8 +80,5 @@ return array(
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-	),
+	'params'=> require(__DIR__.'/params.php'),
 );
