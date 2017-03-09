@@ -28,17 +28,17 @@ class Action extends CAction
 
     public function beforeRun(){
         try {
-            WapLogger::info('请求地址: ' . Yii::app()->request->url);
-            WapLogger::info('请求参数: ' . CVarDumper::dumpAsString($_REQUEST));
+            // WapLogger::info('请求地址: ' . Yii::app()->request->url);
+            // WapLogger::info('请求参数: ' . CVarDumper::dumpAsString($_REQUEST));
             $this->controller = $this->getController();
             $this->_setRequestType();
             $this->_setGET();
             $this->_setPOST();
             $this->_setREQUEST();
             $this->setAssets();
-            $this->_setStoreID();
-            $this->_setSellerCode();
-            $this->_sellerCodeRedirect();
+            // $this->_setStoreID();
+            // $this->_setSellerCode();
+            // $this->_sellerCodeRedirect();
         }catch(Exception $e){
             if (OPER_ENV !== 'prod') {
                 echo $e->getMessage().'<br>';
@@ -51,7 +51,7 @@ class Action extends CAction
 
     public function afterRun(){
         $response = array('code' => $this->code, 'message' => $this->message, 'data' => $this->data);
-        WapLogger::info('返回结果: ' . CVarDumper::dumpAsString($response));
+        // WapLogger::info('返回结果: ' . CVarDumper::dumpAsString($response));
     }
 
     /**

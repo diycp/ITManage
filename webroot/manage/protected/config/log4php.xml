@@ -1,0 +1,165 @@
+<configuration xmlns="http://logging.apache.org/log4php/">]
+    <!--
+        关于度假云的日志说明
+        1. 日志目录统一放到/data/logs/dujiayun/web/
+        2. 日志按日期分目录,便于归档
+        3. 当天日志按controller id 分不同文件,
+        如HotelController的id是hotel,当天是2016-04-08,那么日志的目录就是/data/logs/dujiayun/web/2016-04-08/hotel.log
+    -->
+    <appender name="errorHannel" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/errorHannel.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="errorHannel">
+        <appender_ref ref="errorHannel" />
+    </logger>
+
+    <appender name="hotel" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/hotel.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="hotel">
+        <appender_ref ref="hotel" />
+    </logger>
+
+    <appender name="ticket" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/ticket.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="ticket">
+        <appender_ref ref="ticket" />
+    </logger>
+
+     <appender name="hotelOrder" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/hotelOrder.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="hotelOrder">
+        <appender_ref ref="hotelOrder" />
+    </logger>
+
+    <appender name="ticketOrder" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/ticketOrder.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="ticketOrder">
+        <appender_ref ref="ticketOrder" />
+    </logger>
+
+    <appender name="seller" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/seller.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="seller">
+        <appender_ref ref="seller" />
+    </logger>
+
+    <appender name="distribute" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/distribute.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="distribute">
+        <appender_ref ref="distribute" />
+    </logger>
+
+    <!-- 支付 -->
+    <appender name="pay" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/pay.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="pay">
+        <appender_ref ref="pay" />
+    </logger>
+
+     <appender name="account" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/account.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="account">
+        <appender_ref ref="account" />
+    </logger>
+
+    <appender name="sms" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/sms.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="sms">
+        <appender_ref ref="sms" />
+    </logger>
+
+    <appender name="location" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/location.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="location">
+        <appender_ref ref="location" />
+    </logger>
+
+    <!-- 度假云oai接口 请求日志 -->
+    <appender name="djyOaiRequest" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/djyOaiRequest.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="djyOaiRequest">
+        <appender_ref ref="djyOaiRequest" />
+    </logger>
+    
+    <appender name="hotelList" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/hotelList.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="hotelList">
+        <appender_ref ref="hotelList" />
+    </logger>
+
+    <appender name="wechat" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/dujiayun/mayi/%s/wechat.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="wechat">
+        <appender_ref ref="wechat" />
+    </logger>
+
+</configuration>

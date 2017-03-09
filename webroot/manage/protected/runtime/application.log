@@ -229,3 +229,94 @@ Stack trace:
 REQUEST_URI=/?r=index/run
 in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
 in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 15:48:03 [error] [exception.CException] CException: Alias "demo.DemoModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in D:\php\project\itmanage\webroot\framework\YiiBase.php:323
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\YiiBase.php(196): YiiBase::import('demo.DemoModule', true)
+#1 D:\php\project\itmanage\webroot\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'demo', NULL, Array)
+#2 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(337): CModule->getModule('demo')
+#3 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(276): CWebApplication->createController('index/index/')
+#4 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/index/inde...')
+#5 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/?r=demo/index/index
+---
+2017/03/09 15:51:24 [error] [exception.CException] CException: Alias "demo.DemoModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in D:\php\project\itmanage\webroot\framework\YiiBase.php:323
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\YiiBase.php(196): YiiBase::import('demo.DemoModule', true)
+#1 D:\php\project\itmanage\webroot\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'demo', NULL, Array)
+#2 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(337): CModule->getModule('demo')
+#3 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(276): CWebApplication->createController('demo/ruj/')
+#4 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/demo/ruj')
+#5 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/?r=demo/demo/ruj
+---
+2017/03/09 15:51:29 [error] [exception.CException] CException: Alias "demo.DemoModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in D:\php\project\itmanage\webroot\framework\YiiBase.php:323
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\YiiBase.php(196): YiiBase::import('demo.DemoModule', true)
+#1 D:\php\project\itmanage\webroot\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'demo', NULL, Array)
+#2 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(337): CModule->getModule('demo')
+#3 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(276): CWebApplication->createController('demo/run/')
+#4 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/demo/run')
+#5 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/?r=demo/demo/run
+---
+2017/03/09 15:54:10 [error] [exception.CException] CException: Alias "demo.DemoModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in D:\php\project\itmanage\webroot\framework\YiiBase.php:323
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\YiiBase.php(196): YiiBase::import('demo.DemoModule', true)
+#1 D:\php\project\itmanage\webroot\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'demo', NULL, Array)
+#2 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(337): CModule->getModule('demo')
+#3 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(276): CWebApplication->createController('run/')
+#4 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/run')
+#5 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/?r=demo/run
+---
+2017/03/09 16:02:47 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in D:\php\project\itmanage\webroot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=gii
+---
+2017/03/09 16:12:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "demo". in D:\php\project\itmanage\webroot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController('demo')
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=demo
+---
+2017/03/09 16:12:18 [error] [php] Trying to get property of non-object (D:\php\project\itmanage\webroot\manage\protected\components\Controller.php:31)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#1 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=index/run
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (31)
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:20:46 [error] [php] include(WapLogger.php): failed to open stream: No such file or directory (D:\php\project\itmanage\webroot\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\php\project\itmanage\webroot\manage\protected\components\Action.php(31): spl_autoload_call()
+#1 D:\php\project\itmanage\webroot\manage\protected\components\Controller.php(63): HomeAction->beforeRun()
+#2 D:\php\project\itmanage\webroot\framework\web\CController.php(306): HomeController->beforeAction()
+#3 D:\php\project\itmanage\webroot\framework\web\filters\CFilterChain.php(133): HomeController->runAction()
+#4 D:\php\project\itmanage\webroot\manage\protected\components\Filter.php(73): CFilterChain->run()
+#5 D:\php\project\itmanage\webroot\framework\web\filters\CFilter.php(38): Filter->preFilter()
+#6 D:\php\project\itmanage\webroot\framework\web\filters\CFilterChain.php(130): Filter->filter()
+#7 D:\php\project\itmanage\webroot\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\php\project\itmanage\webroot\framework\web\CController.php(265): HomeController->runActionWithFilters()
+#9 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(282): HomeController->run()
+#10 D:\php\project\itmanage\webroot\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\php\project\itmanage\webroot\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 D:\php\project\itmanage\webroot\manage\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=home/home
+in D:\php\project\itmanage\webroot\manage\protected\components\Action.php (31)
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (63)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)

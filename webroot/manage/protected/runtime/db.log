@@ -1,0 +1,56 @@
+2017/03/09 16:25:18 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:25:18 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:25:18 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:25:18 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:25:18 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\WapLogger.php (28)
+in D:\php\project\itmanage\webroot\manage\protected\components\WapLogger.php (39)
+in D:\php\project\itmanage\webroot\manage\protected\components\WapLogger.php (48)
+2017/03/09 16:30:39 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:30:39 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:30:39 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:30:39 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:30:39 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\WapLogger.php (28)
+in D:\php\project\itmanage\webroot\manage\protected\components\WapLogger.php (39)
+in D:\php\project\itmanage\webroot\manage\protected\components\WapLogger.php (48)
+2017/03/09 16:33:23 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:33:23 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:33:23 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:33:23 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:33:23 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\php\project\itmanage\webroot\manage\protected\extensions\log4php\LoggerHierarchy.php (81)
+in D:\php\project\itmanage\webroot\manage\protected\extensions\log4php\Logger.php (451)
+in D:\php\project\itmanage\webroot\manage\protected\extensions\log4php\Logger.php (492)
+2017/03/09 16:42:51 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:42:51 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:42:51 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:42:51 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:42:52 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Action.php (108)
+in D:\php\project\itmanage\webroot\manage\protected\components\Action.php (39)
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (63)
+2017/03/09 16:43:23 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:43:23 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:43:23 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/09 16:43:23 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
