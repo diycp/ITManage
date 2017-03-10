@@ -86,3 +86,11 @@ in D:\php\project\itmanage\webroot\manage\index.php (18)
 in D:\php\project\itmanage\webroot\manage\index.php (18)
 2017/03/10 16:46:51 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
 in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:53:59 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:53:59 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:53:59 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:53:59 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
