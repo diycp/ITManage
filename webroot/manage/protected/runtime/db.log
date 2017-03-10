@@ -54,3 +54,35 @@ in D:\php\project\itmanage\webroot\manage\index.php (13)
 in D:\php\project\itmanage\webroot\manage\index.php (13)
 2017/03/09 16:43:23 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
 in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:29:55 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:29:56 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:29:56 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:29:56 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:30:15 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:30:15 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:30:15 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:30:15 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (13)
+2017/03/10 16:43:35 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:43:35 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:43:35 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:43:36 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:46:51 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:46:51 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:46:51 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/10 16:46:51 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)

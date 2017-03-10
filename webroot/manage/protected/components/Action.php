@@ -28,8 +28,9 @@ class Action extends CAction
 
     public function beforeRun(){
         try {
-            // WapLogger::info('请求地址: ' . Yii::app()->request->url);
-            // WapLogger::info('请求参数: ' . CVarDumper::dumpAsString($_REQUEST));
+            WapLogger::getLogger('errorDemo')->info('logger');
+            WapLogger::info('请求地址: ' . Yii::app()->request->url);
+            WapLogger::info('请求参数: ' . CVarDumper::dumpAsString($_REQUEST));
             $this->controller = $this->getController();
             $this->_setRequestType();
             $this->_setGET();

@@ -6,6 +6,17 @@
         3. 当天日志按controller id 分不同文件,
         如HotelController的id是hotel,当天是2016-04-08,那么日志的目录就是/data/logs/dujiayun/web/2016-04-08/hotel.log
     -->
+    <appender name="errorDemo" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="d://errorHannel.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="errorDemo">
+        <appender_ref ref="errorDemo" />
+    </logger>
+
     <appender name="errorHannel" class="LoggerAppenderDailyFile">
         <layout class="LoggerLayoutPattern">
             <param name="conversionPattern" value="%date [%level] %message%newline" />
