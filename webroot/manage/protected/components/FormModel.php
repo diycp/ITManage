@@ -11,11 +11,7 @@ class FormModel extends CFormModel{
 
     public function __construct($scenario=''){
         try{
-            $this->storeID = Yii::app()->store->id;
-            $this->partnerID = Yii::app()->store->partnerID;
         }catch(Exception $e){
-            $this->storeID = 0;
-            $this->partnerID = 0;
         }
     }
 

@@ -385,3 +385,146 @@ in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
 in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
 in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
 in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 13:55:50 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:55:51 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:55:51 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:55:52 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:55:54 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 13:56:52 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:56:52 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:56:52 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:56:52 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 13:56:52 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:06:11 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:06:11 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:06:11 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:06:11 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:06:12 [trace] [system.CModule] Loading "errorHandler" application component
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:09:28 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:09:28 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:09:28 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:09:28 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:12:50 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:12:50 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:12:50 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:12:50 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:12:50 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:12:50 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 14:13:11 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:11 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:11 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:11 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:11 [trace] [system.CModule] Loading "db" application component
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:11 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:11 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 14:13:38 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:38 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:38 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:38 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:13:38 [trace] [system.CModule] Loading "db" application component
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:38 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM wsqitmanage
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:38 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wsqitmanage.wsqitmanage' doesn't exist. The SQL statement executed was: SELECT * FROM wsqitmanage.
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:13:38 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 14:14:07 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:07 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:07 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:07 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:07 [trace] [system.CModule] Loading "db" application component
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:14:07 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:14:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM wsqitmanage.tbUserType
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:14:38 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:38 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:38 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:38 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 14:14:38 [trace] [system.CModule] Loading "db" application component
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:14:38 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 14:14:38 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM wsqITManage.tbUserType
+in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)

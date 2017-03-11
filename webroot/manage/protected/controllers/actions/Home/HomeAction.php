@@ -3,6 +3,8 @@ class HomeAction extends Action
 {
     public function run()
     {
-        $this->controller->smartyRender('demo', []);
+        $demo = new HomeForm();
+        $demo->demo();
+        // $this->controller->smartyRender('demo', []);
     }
 }
