@@ -31,6 +31,9 @@ class Controller extends CController
 		if (empty($this->module)) {
 			Yii::import("application.controllers.actions.{$this->id}.*");
 		}
+		if(empty($actionID)) {
+			$actionID = $this->defaultAction;
+		}
 		$this->actions[$actionID] = ucfirst($actionID). 'Action';
 		/*if ($moduleID = $this->module->id) {
 			Yii::import("application.modules.{$moduleID}.controllers.actions.{$this->id}.*");
