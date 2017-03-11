@@ -528,3 +528,125 @@ in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
 in D:\php\project\itmanage\webroot\manage\protected\models\HomeForm.php (8)
 in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (7)
 in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:03:59 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:03:59 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:03:59 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:03:59 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:03:59 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:06:17 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:17 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:17 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:17 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:17 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:06:17 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 15:06:48 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:48 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:48 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:48 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:06:48 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:06:48 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 15:10:24 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:24 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:24 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:24 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:24 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:10:30 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:30 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:30 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:30 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:30 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:10:31 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:31 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:31 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:31 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:10:31 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:11:20 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:20 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:20 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:20 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:20 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:11:23 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:23 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:23 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:23 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:23 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:11:29 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:29 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:29 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:29 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:11:29 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 15:13:00 [trace] [system.CModule] Loading "log" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:13:00 [trace] [system.CModule] Loading "request" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:13:00 [trace] [system.CModule] Loading "urlManager" application component
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:13:00 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 15:13:00 [trace] [system.CModule] Loading "smarty" application component
+in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (98)
+in D:\php\project\itmanage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (8)
+in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
