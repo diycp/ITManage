@@ -75,9 +75,9 @@ class Controller extends CController
 	{
 		$assignData = array();
 		$assignData['baseURL'] = BASE_URL;
-		$assignData['cssURL'] = BASE_URL;
-		$assignData['jsURL'] = BASE_URL;
-		$assignData['imgURL'] = BASE_URL;
+		$assignData['cssURL'] = BASE_CSS_URL;
+		$assignData['jsURL'] = BASE_JS_URL;
+		/*$assignData['imgURL'] = BASE_URL;
 		$assignData['storeID'] = Yii::app()->store->id;
 		$assignData['storeName'] = Yii::app()->store->name;
 		$assignData['storeLogo'] = Yii::app()->store->logo;
@@ -87,7 +87,7 @@ class Controller extends CController
 		$assignData['__accountURL'] = BASE_URL.'account/?storeID='.$assignData['storeID'];
 		$assignData['__packageURL'] = BASE_URL.'hotel/packageList?storeID='.$assignData['storeID'];
 		$assignData['__hotelURL'] = BASE_URL.'hotel/index?storeID='.$assignData['storeID'];
-		$assignData['__ticketURL'] = BASE_URL.'ticket/list?storeID='.$assignData['storeID'];
+		$assignData['__ticketURL'] = BASE_URL.'ticket/list?storeID='.$assignData['storeID'];*/
 		$assignData = array_merge($assignData, $data);
 
 		if (Yii::app()->request->getParam('_debug') == 'mayi') {

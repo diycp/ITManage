@@ -94,3 +94,294 @@ in D:\php\project\itmanage\webroot\manage\index.php (18)
 in D:\php\project\itmanage\webroot\manage\index.php (18)
 2017/03/10 16:53:59 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
 in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/11 16:22:25 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:22:25 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:22:25 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:22:25 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:22:26 [trace] [system.CModule] Loading "errorHandler" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (107)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (131)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (181)
+2017/03/11 16:28:20 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:28:20 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:28:20 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:28:20 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:28:20 [trace] [system.CModule] Loading "errorHandler" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (107)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (131)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (181)
+2017/03/11 16:37:33 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:37:33 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:37:33 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:37:33 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:37:33 [trace] [system.CModule] Loading "errorHandler" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (107)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (131)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (181)
+2017/03/11 16:38:38 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:38:38 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:38:38 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:38:38 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:38:38 [trace] [system.CModule] Loading "errorHandler" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (107)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (131)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\extensions\log4php\appenders\LoggerAppenderFile.php (181)
+2017/03/11 16:39:01 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:39:01 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:39:01 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 16:39:01 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:46:42 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:46:42 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:46:42 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:46:43 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:46:43 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 18:46:43 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:47:11 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:47:11 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:47:11 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:47:11 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:47:11 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (81)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 18:47:11 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:50:47 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:50:47 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:50:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:50:47 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:50:48 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 18:50:48 [trace] [system.CModule] Loading "errorHandler" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\SmartyViewRenderer.php (66)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\SmartyViewRenderer.php (23)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+2017/03/11 18:52:18 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:52:18 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:52:18 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:52:18 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:52:18 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 18:55:29 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:29 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:29 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:29 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:29 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:55:46 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:46 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:46 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:46 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:55:46 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:56:38 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:38 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:38 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:38 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:38 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:56:47 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:47 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:47 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:47 [trace] [system.base.CModule] Loading "Backstage" module
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:47 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:56:47 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\modules\Backstage\views\default\index.php (4)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\modules\Backstage\controllers\DefaultController.php (7)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 18:56:47 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:57:50 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:57:50 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:57:50 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:57:50 [trace] [system.base.CModule] Loading "Backstage" module
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:57:50 [trace] [system.CModule] Loading "coreMessages" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (31)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:57:50 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 18:58:04 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:04 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:04 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:04 [trace] [system.base.CModule] Loading "Backstage" module
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:30 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:30 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:30 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:30 [trace] [system.CModule] Loading "errorHandler" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (31)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:39 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:39 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:39 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:39 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 18:58:40 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:02:19 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:02:19 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:02:19 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:02:19 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:02:19 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:08:15 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:08:15 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:08:15 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:08:15 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:08:15 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:08:15 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 19:09:18 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:09:18 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:09:18 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:09:18 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:09:18 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:10:51 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:10:51 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:10:51 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:10:51 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:10:51 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:10:51 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/11 19:11:12 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:11:12 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:11:12 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:11:12 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:11:12 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:13:10 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:10 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:10 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:10 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:10 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:13:50 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:50 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:50 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:50 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:13:50 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
+2017/03/11 19:14:01 [trace] [system.CModule] Loading "log" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:14:01 [trace] [system.CModule] Loading "request" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:14:01 [trace] [system.CModule] Loading "urlManager" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:14:01 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\index.php (18)
+2017/03/11 19:14:01 [trace] [system.CModule] Loading "smarty" application component
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Controller.php (98)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\controllers\actions\Home\HomeAction.php (6)
+in E:\xampp_ty_win8\htdocs\ITManage\webroot\manage\protected\components\Filter.php (73)
