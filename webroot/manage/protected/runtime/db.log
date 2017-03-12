@@ -3774,3 +3774,56 @@ in /home/itmanage/ITManage/webroot/manage/index.php (18)
 in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (102)
 in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Login/IndexAction.php (11)
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (76)
+2017/03/12 14:10:49 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:49 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:50 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:50 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (50)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:50 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:50 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:50 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:50 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (50)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "user" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (45)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "session" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (45)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:10:59 [trace] [system.CModule] Loading "smarty" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (102)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Login/IndexAction.php (11)
+in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (76)
+2017/03/12 14:11:00 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:11:00 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:11:00 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 14:11:00 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (50)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
