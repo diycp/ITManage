@@ -1,5 +1,5 @@
 <?php
-class HomeAction extends Action
+class IndexAction extends Action
 {
     public function run()
     {
