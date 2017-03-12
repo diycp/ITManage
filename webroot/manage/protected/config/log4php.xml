@@ -10,11 +10,22 @@
         <layout class="LoggerLayoutPattern">
             <param name="conversionPattern" value="%date [%level] %message%newline" />
         </layout>
-        <param name="file" value="/data/errorHannel.log" />
+        <param name="file" value="e://data/errorHannel.log" />
         <param name="datePattern" value="Y-m-d" />
     </appender>
     <logger name="errorDemo">
         <appender_ref ref="errorDemo" />
+    </logger>
+
+    <appender name="itmanage" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date [%level] %message%newline" />
+        </layout>
+        <param name="file" value="/data/logs/itmanage/%s/itmanage.log" />
+        <param name="datePattern" value="Y-m-d" />
+    </appender>
+    <logger name="itmanage">
+        <appender_ref ref="itmanage" />
     </logger>
 
     <appender name="errorHannel" class="LoggerAppenderDailyFile">
