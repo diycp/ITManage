@@ -10,7 +10,7 @@
         <layout class="LoggerLayoutPattern">
             <param name="conversionPattern" value="%date [%level] %message%newline" />
         </layout>
-        <param name="file" value="e://data/errorHannel.log" />
+        <param name="file" value="/data/errorHannel.log" />
         <param name="datePattern" value="Y-m-d" />
     </appender>
     <logger name="errorDemo">

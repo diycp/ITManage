@@ -29,7 +29,7 @@ class Controller extends CController
 	 */
 	public function createAction($actionID){
 		if (empty($this->module)) {
-			Yii::import("application.controllers.actions.{$this->id}.*");
+			Yii::import("application.controllers.actions.".ucfirst($this->id).".*");
 		}
 		if(empty($actionID)) {
 			$actionID = $this->defaultAction;

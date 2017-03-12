@@ -3392,3 +3392,92 @@ in D:\php\project\itmanage\webroot\manage\index.php (18)
 in D:\php\project\itmanage\webroot\manage\index.php (18)
 2017/03/11 16:21:36 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
 in D:\php\project\itmanage\webroot\manage\index.php (18)
+2017/03/12 08:24:11 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:11 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:11 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:11 [trace] [system.CModule] Loading "coreMessages" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:11 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/12 08:24:12 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:12 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:12 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:12 [trace] [system.CModule] Loading "coreMessages" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:12 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/12 08:24:28 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:28 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:28 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:24:28 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (50)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:08 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:08 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:08 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:31 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:31 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:31 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:26:31 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (50)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:29:05 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:29:05 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:29:05 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:29:05 [trace] [system.CModule] Loading "errorHandler" application component
+2017/03/12 08:29:34 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:29:34 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:29:34 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "user" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (45)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "session" application component
+in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (45)
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:30:30 [trace] [system.CModule] Loading "errorHandler" application component
+in /home/itmanage/ITManage/webroot/manage/protected/extensions/log4php/appenders/LoggerAppenderFile.php (89)
+in /home/itmanage/ITManage/webroot/manage/protected/extensions/log4php/appenders/LoggerAppenderFile.php (131)
+in /home/itmanage/ITManage/webroot/manage/protected/extensions/log4php/appenders/LoggerAppenderFile.php (181)
+2017/03/12 08:37:13 [trace] [system.CModule] Loading "log" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:37:13 [trace] [system.CModule] Loading "request" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:37:13 [trace] [system.CModule] Loading "urlManager" application component
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
+2017/03/12 08:37:13 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+in /home/itmanage/ITManage/webroot/manage/index.php (18)
