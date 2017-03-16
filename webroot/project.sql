@@ -1,4 +1,3 @@
-CREATE DATABASE wsqITManage CHARSET=utf8;
 CREATE TABLE wsqITManage.`tbUser` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdNickName` varchar(64) DEFAULT '' COMMENT '用户昵称',
@@ -12,7 +11,7 @@ CREATE TABLE wsqITManage.`tbUser` (
 CREATE TABLE wsqITManage.`tbUserType` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdName` varchar(32) DEFAULT '' COMMENT '工作类型',
-    `fdAuthority` tinyint(4) NOT NULL DEFAULT 0 COMMENT'用户权限表 0-无权限 1-管理员'
+    `fdAuthority` tinyint(4) NOT NULL DEFAULT 0 COMMENT'用户权限表 0-无权限 1-管理员',
     PRIMARY KEY (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='工作类型表';
 INSERT INTO wsqITManage.tbUserType (fdName) VALUES ('管理员'),('产品经理'),('开发人员'),('测试员');
@@ -34,6 +33,7 @@ CREATE TABLE wsqITManage.`tbAnnouncement` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdName` varchar(64) NOT NULL DEFAULT '' COMMENT '公告名称',
     `fdDesc` blob COMMENT '公告描述',
+    `fdSent` tinyint(4) NOT NULL DEFAULT 0 COMMENT '公告发送：0,1',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     PRIMARY KEY (`id`),
     INDEX `it_announcement_create` (`fdCreate`)
@@ -60,7 +60,8 @@ CREATE TABLE wsqITManage.`tbDuty` (
     INDEX `it_duty_manager` (`fdManager`),
     INDEX `it_duty_developer` (`fdDeveloper`),
     INDEX `it_duty_tester` (`fdTester`),
-    INDEX `it_duty_project` (`fdProjectID`)
+    INDEX `it_duty_project` (`fdProjectID`),
+    FULLTEXT INDEX `it_duty_name` (`fdName`)
 )  ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='任务内容表';
 
 CREATE TABLE wsqITManage.`tbDutyType` (

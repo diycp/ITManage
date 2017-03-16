@@ -7,7 +7,7 @@
  */
 class LoginForm extends CFormModel
 {
-	public $username;
+	public $account;
 	public $password;
 	public $rememberMe;
 
@@ -22,7 +22,7 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			// username and password are required
-			array('username, password', 'required'),
+			array('account, password', 'required'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
@@ -48,9 +48,9 @@ class LoginForm extends CFormModel
 	{
 		if(!$this->hasErrors())
 		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
-			if(!$this->_identity->authenticate())
-				$this->addError('password','Incorrect username or password.');
+			$this->_identity=new UserIdentity($this->account,$this->password);
+			// if($this->_identity->authenticate())
+				$this->addError('password','帐号或密码错误');
 		}
 	}
 
@@ -60,6 +60,7 @@ class LoginForm extends CFormModel
 	 */
 	public function login()
 	{
+		$response = ['code' => -1, 'message' => 'failed'];
 		if($this->_identity===null)
 		{
 			$this->_identity=new UserIdentity($this->username,$this->password);
@@ -69,9 +70,14 @@ class LoginForm extends CFormModel
 		{
 			$duration=$this->rememberMe ? 3600*24*30 : 0; // 30 days
 			Yii::app()->user->login($this->_identity,$duration);
-			return true;
+			$response['code'] = $this->_identity->errorCode;
+			$response['message'] = 'ok';
 		}
 		else
-			return false;
+		{
+			$response['code'] = $this->_identity->errorCode;
+			$response['message'] = $this->_identity->getErrorMsg();
+		}
+		return $response;
 	}
 }

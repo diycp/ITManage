@@ -7,20 +7,17 @@
  */
 class UserIdentity extends CUserIdentity
 {
-    public $phone;
-    public $verifyCode;
-    public $userID;
 
-    public $loginWay;//登录方式
     public $userInfo;
+    public $account;
+    public $password;
 
 	private $_id;
 	private $_name;
 
-    const ERROR_PHONE_INVALID = -1;
-    const ERROR_CODE_INVALID = -2;
-    const ERROR_TIME_OUT = -3;
-    const ERROR_LOGIN_FAIL = -4;
+    const ERROR_PWD_VALID = 0;
+    const ERROR_ACCOUNT_INVALID = -1;
+    const ERROR_PWD_INVALID = -2;
 
     public function __construct()
     {
@@ -37,31 +34,15 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
-        $this->errorCode = self::ERROR_NONE;
-        
-        switch ($this->loginWay) {
-            case 'sms':
-                $this->_validateSMS();
-                break;
-            case 'wechat':
-                $this->_validateWechat();
-                break;
-            default:
-                $this->errorCode = self::ERROR_LOGIN_FAIL;
-                break;
-        }
-
-        if (empty($this->userInfo)) {
-            $this->errorCode = self::ERROR_LOGIN_FAIL;
-        }
+        $this->_validate();
 
         if ($this->errorCode === self::ERROR_NONE) {
             $this->_id = $this->userInfo['id'];
-            $this->_name = $this->userInfo['fdPhone'];
+            $this->_name = $this->userInfo['fdNickname'];
             $this->setState('__id', $this->userInfo['id']);
             $this->setState('__nickname', $this->userInfo['fdNickName']);
-            $this->setState('__phone', $this->userInfo['fdPhone']);
-            $this->setState('__avatar', $this->userInfo['fdImage']);
+            $this->setState('__authority', $this->userInfo['fdAuthority']);
+            $this->setState('__worker', $this->userInfo['fdName']);
         }
 		return $this->errorCode;
 	}
@@ -69,10 +50,8 @@ class UserIdentity extends CUserIdentity
     public function getErrorMsg()
     {
         $messages = [
-            self::ERROR_PHONE_INVALID => '手机号码格式错误',
-            self::ERROR_CODE_INVALID => '验证码错误',
-            self::ERROR_TIME_OUT => '验证超时，请重新获取验证码',
-            self::ERROR_LOGIN_FAIL => '登录失败',
+            self::ERROR_PWD_INVALID => '手机号码格式错误',
+            self::ERROR_ACCOUNT_INVALID => '验证码错误',
         ];
         return isset($messages[$this->errorCode]) ? $messages[$this->errorCode] : '验证错误';
     }
@@ -85,37 +64,22 @@ class UserIdentity extends CUserIdentity
 		return $this->_name;
 	}
 
-    /**
-     * 验证短信登录
-     */
-    private function _validateSMS()
+    private function _validate()
     {
-        $djyStore = Yii::app()->params['dbMap']['djyStore'];
-        $sql = "SELECT * FROM {$djyStore}.tbPhone WHERE tbPhone.fdPhone = :phone";
-        $phone = Yii::app()->db->createCommand($sql)->queryRow(true, [':phone' => $this->phone]);
-        if (empty($phone)) {
-            $this->errorCode = self::ERROR_PHONE_INVALID;
-            return $this->errorCode;
+        $im = Yii::app()->params['dbMap']['im'];
+        $sql = "SELECT tbUser.id, tbUser.fdNickName, tbUser.fdPassword, tbUserType.fdName, tbUserType.fdAuthority 
+        FROM {$im}.tbUser 
+        INNER JOIN {$im}.tbUserType ON tbUserType.id = tbUser.fdUserTypeID
+        WHERE tbUser.fdAccount = :account";
+        $this->userInfo = Yii::app()->db->createCommand($sql)->queryRow(true, [':account' => $this->account]);
+        if (empty($this->userInfo)) {
+            $this->errorCode = self::ERROR_ACCOUNT_INVALID;
         }
-
-        if ($phone['fdCode'] != $this->verifyCode || $phone['fdVerified'] > 0) {
-            $this->errorCode = self::ERROR_CODE_INVALID;
-            return $this->errorCode;
+        if ( password_verify($this->password, $this->userInfo['fdPassword'])) {
+            $this->errorCode = self::ERROR_PWD_VALID;
+        } else {
+            $this->errorCode = self::ERROR_PWD_INVALID;
         }
-
-        if (strtotime($phone['fdSent'])+SMS_VERIFY_TIMEOUT <= time()) {
-            $this->errorCode = self::ERROR_TIME_OUT;
-            return $this->errorCode;
-        }
-
-        $this->userInfo = ServiceFactory::getService('account')->loginBySmsValidate($this->phone);
     }
 
-    /**
-     * 验证微信登录
-     */
-    private function _validateWechat()
-    {
-        $this->userInfo = ServiceFactory::getService('account')->getUserInfo($this->userID);
-    }
 }

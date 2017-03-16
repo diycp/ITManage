@@ -23,7 +23,7 @@
                    <td><font size=5em>IT项目管理系统登录</font></td>
                </tr>
                <tr>
-                   <td><label for="acc">账号</label><input type="email" id="acc" placeholder="邮箱" name="username"></td>
+                   <td><label for="acc">账号</label><input type="email" id="acc" placeholder="邮箱" name="account"></td>
                </tr>
                <tr>
                    <td><label for="pas">密码</label><input type="password" id="pas" name="password"></td>
@@ -49,7 +49,7 @@
                         if(msg.code != 0) {
                             alert(msg.message);
                         } else if(msg.code == 0) {
-                            window.location.href = window.location.href;
+                            window.location.href = '{#$url#}';
                         }
                     } 
                 }

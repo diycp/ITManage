@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-12 16:34:11
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-16 03:52:32
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/login/login.html" */ ?>
-<?php /*%%SmartyHeaderCode:53184334258c578838e6554-67192173%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:106754924958ca0c007c21b3-38866288%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5d178d7b7179e94aec50db837196ee162b8dcfff' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/login/login.html',
-      1 => 1489336380,
+      1 => 1489636327,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '53184334258c578838e6554-67192173',
+  'nocache_hash' => '106754924958ca0c007c21b3-38866288',
   'function' => 
   array (
   ),
@@ -21,12 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'jsURL' => 0,
     'imgURL' => 0,
     'baseURL' => 0,
+    'url' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58c57883910651_46073592',
+  'unifunc' => 'content_58ca0c007f6b57_35323919',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58c57883910651_46073592')) {function content_58c57883910651_46073592($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58ca0c007f6b57_35323919')) {function content_58ca0c007f6b57_35323919($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -54,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                    <td><font size=5em>IT项目管理系统登录</font></td>
                </tr>
                <tr>
-                   <td><label for="acc">账号</label><input type="email" id="acc" placeholder="邮箱" name="username"></td>
+                   <td><label for="acc">账号</label><input type="email" id="acc" placeholder="邮箱" name="account"></td>
                </tr>
                <tr>
                    <td><label for="pas">密码</label><input type="password" id="pas" name="password"></td>
@@ -81,7 +82,8 @@ index.php?r=login/validate",
                         if(msg.code != 0) {
                             alert(msg.message);
                         } else if(msg.code == 0) {
-                            window.location.href = window.location.href;
+                            window.location.href = '<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+';
                         }
                     } 
                 }

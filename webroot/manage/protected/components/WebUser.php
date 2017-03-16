@@ -7,14 +7,9 @@ class WebUser extends CWebUser
         return $this->getState('__nickname');
     }
 
-    public function setNickname($nickname)
+    public function getWorker()
     {
-        return $this->setState('__nickname', $nickname);
-    }
-
-    public function getPhone()
-    {
-        return $this->getState('__phone');
+        return $this->getState('__worker');
     }
 
     public function getAvatar()
@@ -22,9 +17,10 @@ class WebUser extends CWebUser
         return $this->getState('__avatar');
     }
 
-    public function setAvatar($avatar)
+    public function getAuthority()
     {
-        return $this->setState('__avatar', $avatar);
+        return $this->getAuthority('__authority');
     }
+
 
 }

@@ -1,6 +1,6 @@
 <?php
 return [
     'dbMap' => [
-        'tbDuty' => 'tbDuty'
+        'im' => 'wsqITManage'
     ]
 ];
