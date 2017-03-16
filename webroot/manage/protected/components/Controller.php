@@ -30,6 +30,8 @@ class Controller extends CController
 	public function createAction($actionID){
 		if (empty($this->module)) {
 			Yii::import("application.controllers.actions.".ucfirst($this->id).".*");
+		} else {
+			Yii::import("application.modules.Backstage.controllers.actions.".ucfirst($this->id).".*");
 		}
 		if(empty($actionID)) {
 			$actionID = $this->defaultAction;

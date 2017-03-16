@@ -320,3 +320,20 @@ REQUEST_URI=/index.php?r=home/home
 in D:\php\project\itmanage\webroot\manage\protected\components\Action.php (31)
 in D:\php\project\itmanage\webroot\manage\protected\components\Controller.php (63)
 in D:\php\project\itmanage\webroot\manage\protected\components\Filter.php (73)
+2017/03/16 07:36:53 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /home/itmanage/ITManage/webroot/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/itmanage/ITManage/webroot/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/itmanage/ITManage/webroot/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/itmanage/ITManage/webroot/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/itmanage/ITManage/webroot/manage/protected/commands/GenerateDataCommand.php(20): CModule->__get('db')
+#5 /home/itmanage/ITManage/webroot/manage/protected/commands/GenerateDataCommand.php(8): GenerateDataCommand->generateAccount()
+#6 [internal function]: GenerateDataCommand->actionIndex()
+#7 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(GenerateDataCommand), Array)
+#8 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#9 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#12 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#13 {main}
+---

@@ -1,12 +1,14 @@
+CREATE DATABASE wsqITManage CHARSET=utf8;
 CREATE TABLE wsqITManage.`tbUser` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdNickName` varchar(64) DEFAULT '' COMMENT '用户昵称',
     `fdAccount` varchar(64) NOT NULL COMMENT '账号邮箱',
-    `fdPassword` varchar(128) NOT NULL COMMENT '账号密码',
+    `fdPassword` varchar(255) NOT NULL COMMENT '账号密码',
     `fdUserTypeID` tinyint(4) NOT NULL DEFAULT 0 COMMENT '用户工种，对应tbUserType.id',
     `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='用户表';
+# alter table tbUser modify `fdPassword` varchar(255) NOT NULl COMMENT '帐号密码';
 
 CREATE TABLE wsqITManage.`tbUserType` (
     `id` int(11) NOT NULL AUTO_INCREMENT,

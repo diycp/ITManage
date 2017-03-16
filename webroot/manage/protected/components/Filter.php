@@ -42,6 +42,7 @@ class Filter extends CFilter {
 	];
 
 	protected function preFilter ($filterChain) {
+		// phpinfo();die;
 		if (Yii::app()->getController()->id != 'login' && Yii::app()->user->isGuest) {
 			Yii::app()->user->loginRequired();
 		}

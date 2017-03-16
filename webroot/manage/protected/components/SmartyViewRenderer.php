@@ -60,7 +60,7 @@ class SmartyViewRenderer extends CApplicationComponent implements IViewRenderer
     public function getTemplateDir($themeID = '', $moduleID = '', $controllerID = '')
     {
         $themePath = $themeID ? 'themes/' . $themeID . '/' : '';
-        if (empty($moduleID)) {
+        if (empty($this->controller->module)) {
             $moduleID = '';
         } else {
             $moduleID = $moduleID ? : $this->controller->getModule()->id;
