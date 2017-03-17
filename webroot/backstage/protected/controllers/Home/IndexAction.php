@@ -3,6 +3,11 @@ class IndexAction extends Action
 {
     public function run ()
     {
-        echo 'enter home';
+        $this->beforeRun();
+        Yii::import('application.models.MenuForm');
+        $menuForm = new MenuForm;
+        $menus = $menuForm->getMenus();
+        $data['data'] = $menus;
+        $this->controller->render('homepage', ['data'=>$menus]);
     }
 }

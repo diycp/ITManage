@@ -6,7 +6,8 @@ CREATE TABLE wsqITManage.`tbUser` (
     `fdPassword` varchar(255) NOT NULL COMMENT '账号密码',
     `fdUserTypeID` tinyint(4) NOT NULL DEFAULT 0 COMMENT '用户工种，对应tbUserType.id',
     `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-    PRIMARY KEY (`id`)
+    PRIMARY KEY (`id`),
+    UNIQUE INDEX `it_user_account` (`fdAction`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='用户表';
 # alter table tbUser modify `fdPassword` varchar(255) NOT NULl COMMENT '帐号密码';
 
@@ -97,6 +98,7 @@ CREATE TABLE wsqITManage.`tbMenu` (
     `fdController` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单控制器',
     `fdAction` varchar(32) NOT NULL DEFAULT '' COMMENT '菜单动作',
     `fdParentID` int(11) NOT NULL DEFAULT 0 COMMENT '菜单上级，对应 tbMenu.id',
+    `fdPlatform` tinyint(3) NOT NULL DEFAULT 0 COMMENT '菜单显示平台位置，0-后台 1-前台',
     `fdStatus` tinyint(4) NOT NULL DEFAULT 0 COMMENT '菜单开启状态 0-不开启 1-开启',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     PRIMARY KEY (`id`),

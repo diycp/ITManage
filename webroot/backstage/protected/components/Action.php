@@ -28,7 +28,7 @@ class Action extends CAction
             $this->_setPOST();
             $this->_setREQUEST();
             $this->setAssets();
-            $this->_setParam();
+            // $this->_setParam();
         }catch(Exception $e){
             // if (OPER_ENV !== 'prod') {
             //     echo $e->getMessage().'<br>';
