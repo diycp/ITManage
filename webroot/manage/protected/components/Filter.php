@@ -1,48 +1,7 @@
 <?php 
 class Filter extends CFilter {
 
-	private $_actions = [
-		'account/index/index',
-		'account/order/list',
-		'account/order/detail',
-		'account/seller/index',
-		'account/seller/getProductList',
-		'account/seller/applySeller',
-		'account/seller/customList',
-		'account/seller/idcard',
-		'account/seller/poster',
-		'account/withdraw/index',
-		'account/withdraw/apply',
-		'account/withdraw/auth',
-		'account/withdraw/applyResult',
-		'account/withdraw/withdrawList',
-		'account/withdraw/incomeList',
-		'/hotel/order',
-		'/hotel/submitOrder',
-		'/ticket/order',
-		'/ticket/submitOrder',
-		'/pay/index',
-		'/pay/result',
-		'/pay/wechatPay',
-	];
-
-	private $_distributeActions = [
-		'/index/index',
-		'/hotel/detail',
-		'/ticket/detail',
-		'/hotel/product',
-        '/ticket/product'
-	];
-
-	//绑定手机
-	private $_bindingPhoneActions = [
-		'/hotel/order',
-		'/ticket/order',
-		'account/seller/index',
-	];
-
 	protected function preFilter ($filterChain) {
-		// phpinfo();die;
 		if (Yii::app()->getController()->id != 'login' && Yii::app()->user->isGuest) {
 			Yii::app()->user->loginRequired();
 		}

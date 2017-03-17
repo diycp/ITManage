@@ -4,13 +4,13 @@ class GenerateDataCommand extends CConsoleCommand
 {
     public function actionIndex()
     {
-        echo 'enter command';
+        echo 'enter command'.PHP_EOL;
         $this->generateAccount();
     }
 
     protected function generateAccount()
     {
-        $sql = "INSET INTO wsqITManage.tbUser (fdNickName,fdAccount,fdPassword,fdUserTypeID) VALUES (:name,:account,:password,:type)";
+        $sql = "INSERT INTO wsqITManage.tbUser (fdNickName,fdAccount,fdPassword,fdUserTypeID) VALUES (:name,:account,:password,:type)";
         $params = [
             ':name' => 'admin',
             ':account' => '969610165@qq.com',

@@ -337,3 +337,17 @@ Stack trace:
 #12 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
 #13 {main}
 ---
+2017/03/17 02:00:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSET INTO wsqITManage.tbUser (fdNickName,fdAccount,fdPassword,fdUserTypeID) VAL' at line 1. The SQL statement executed was: INSET INTO wsqITManage.tbUser (fdNickName,fdAccount,fdPassword,fdUserTypeID) VALUES (:name,:account,:password,:type).
+2017/03/17 02:00:04 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INSET INTO wsqITManage.tbUser (fdNickName,fdAccount,fdPassword,fdUserTypeID) VAL' at line 1. The SQL statement executed was: INSET INTO wsqITManage.tbUser (fdNickName,fdAccount,fdPassword,fdUserTypeID) VALUES (:name,:account,:password,:type) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/manage/protected/commands/GenerateDataCommand.php(20): CDbCommand->execute(Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/GenerateDataCommand.php(8): GenerateDataCommand->generateAccount()
+#2 [internal function]: GenerateDataCommand->actionIndex()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(GenerateDataCommand), Array)
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#7 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#8 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#9 {main}
+---
