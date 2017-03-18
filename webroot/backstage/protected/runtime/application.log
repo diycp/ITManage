@@ -1238,3 +1238,1551 @@ REQUEST_URI=/favicon.ico
 in /home/itmanage/ITManage/webroot/backstage/protected/views/menu.php (6)
 in /home/itmanage/ITManage/webroot/backstage/protected/views/home/homepage.php (1)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/IndexAction.php (11)
+2017/03/18 02:58:26 [error] [php] Undefined variable: url (/home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php:60)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): UserController->renderPartial()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php(12): UserController->render()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): IndexAction->runWithParams()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/index
+in /home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php (60)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php (12)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:19:19 [error] [php] Undefined variable: url (/home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php:60)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): UserController->renderPartial()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php(12): UserController->render()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): IndexAction->runWithParams()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/index
+in /home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php (60)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php (12)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:22:13 [error] [php] Undefined variable: url (/home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php:60)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): UserController->renderPartial()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php(12): UserController->render()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): IndexAction->runWithParams()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/index
+in /home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php (60)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php (12)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:23:45 [error] [php] Undefined index: url (/home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php:60)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): UserController->renderPartial()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php(12): UserController->render()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): IndexAction->runWithParams()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/index
+in /home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php (60)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php (12)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:27:20 [error] [php] Undefined variable: userForm (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:17)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#6 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 03:32:59 [error] [exception.CException] CException: Property "CWebApplication.commandBuilder" is not defined. in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/base/CModule.php(105): CComponent->__get('commandBuilder')
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(17): CModule->__get('commandBuilder')
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(17): UserForm->list()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=user/operate
+HTTP_REFERER=http://backstage.com:8000/index.php?r=user/index
+---
+2017/03/18 03:35:14 [error] [php] Undefined index: id (/home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php:22)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#1 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:43:46 [info] [system.log] {"code":0,"message":"ok","data":{"list":[{"id":"1","account":"969610165@qq.com","nickname":"admin","career":"\u7ba1\u7406\u5458"},{"id":"2","account":"guangcaida13@163.com","nickname":"\u4ea7\u54c1\u7ecf\u7406","career":"\u4ea7\u54c1\u7ecf\u7406"},{"id":"3","account":"guangcaida1302@163.com","nickname":"\u6d4b\u8bd5","career":"\u5f00\u53d1\u4eba\u5458"},{"id":"4","account":"2075001987@qq.com","nickname":"\u5f00\u53d1","career":"\u6d4b\u8bd5\u5458"}]},"pagination":{"pageVar":"page","route":"","params":null,"validateCurrentPage":true}}
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:45:35 [error] [exception.Error] Error: Call to undefined method CVarDumper::dumpAdString() in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php:34
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(17): UserForm->list()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=user/operate
+HTTP_REFERER=http://backstage.com:8000/index.php?r=user/index
+---
+2017/03/18 03:46:02 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 03:53:38 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:03:53 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:09:30 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:11:29 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:11:51 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:12:54 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:13:31 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:13:53 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:14:45 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 04:16:16 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:27:50 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:30:06 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:31:42 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:31:43 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:32:07 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:33:52 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:34:53 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'account' => '969610165@qq.com'
+                'nickname' => 'admin'
+                'career' => '管理员'
+            )
+            1 => array
+            (
+                'id' => '2'
+                'account' => 'guangcaida13@163.com'
+                'nickname' => '产品经理'
+                'career' => '产品经理'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'account' => 'guangcaida1302@163.com'
+                'nickname' => '测试'
+                'career' => '开发人员'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'account' => '2075001987@qq.com'
+                'nickname' => '开发'
+                'career' => '测试员'
+            )
+        )
+    )
+    'pagination' => CPagination#1
+    (
+        [pageVar] => 'page'
+        [route] => ''
+        [params] => null
+        [validateCurrentPage] => true
+        [CPagination:_pageSize] => 4
+        [CPagination:_itemCount] => '4'
+        [CPagination:_currentPage] => null
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:34:53 [error] [php] Undefined variable: pagination (/home/itmanage/ITManage/webroot/backstage/protected/views/user/__table.php:23)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): UserController->renderPartial()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/views/user/__table.php (23)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:37:11 [error] [php] Object of class CPagination could not be converted to string (/home/itmanage/ITManage/webroot/backstage/protected/views/user/__table.php:22)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): UserController->renderFile()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): UserController->renderPartial()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/views/user/__table.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:40:13 [error] [php] Undefined index: operate (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:9)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#6 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate&page=2
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (9)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 06:42:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbUserTypeID' in 'order clause'. The SQL statement executed was: SELECT tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id FROM `wsqITManage`.`tbUser` `tbUser` INNER JOIN wsqITManage.tbUserType ON tbUserType.id = tbUser.fdUserTypeID ORDER BY tbUserTypeID LIMIT 2.
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:42:57 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbUserTypeID' in 'order clause'. The SQL statement executed was: SELECT tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id FROM `wsqITManage`.`tbUser` `tbUser` INNER JOIN wsqITManage.tbUserType ON tbUserType.id = tbUser.fdUserTypeID ORDER BY tbUserTypeID LIMIT 2 in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(22): CDbCommand->queryAll()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(17): UserForm->list()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=user/operate
+HTTP_REFERER=http://backstage.com:8000/index.php?r=user/index
+---
+2017/03/18 06:43:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbUserTypeID.id' in 'order clause'. The SQL statement executed was: SELECT tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id FROM `wsqITManage`.`tbUser` `tbUser` INNER JOIN wsqITManage.tbUserType ON tbUserType.id = tbUser.fdUserTypeID ORDER BY tbUserTypeID.id LIMIT 2.
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (17)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 06:43:23 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbUserTypeID.id' in 'order clause'. The SQL statement executed was: SELECT tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id FROM `wsqITManage`.`tbUser` `tbUser` INNER JOIN wsqITManage.tbUserType ON tbUserType.id = tbUser.fdUserTypeID ORDER BY tbUserTypeID.id LIMIT 2 in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(22): CDbCommand->queryAll()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(17): UserForm->list()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=user/operate
+HTTP_REFERER=http://backstage.com:8000/index.php?r=user/index
+---
+2017/03/18 08:13:34 [info] [system.log] [访问用户菜单报错]:Exception: 参数错误{"nickname":"aa","account":"a","password":"a","career":"1"} in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:48
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (37)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:14:25 [info] [system.log] [访问用户菜单报错]:Exception: 参数错误{"nickname":"aa","account":"a","password":"a","career":"1"} in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:48
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (37)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:16:59 [info] [system.log] [访问用户菜单报错]:Exception: 参数错误{"nickname":"aa","account":"a","password":"a","career":"1"} in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:48
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (37)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:17:41 [info] [system.log] [访问用户菜单报错]:CException: UserForm and its behaviors do not have a method or closure named "add". in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(50): CComponent->__call('add', Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (37)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:18:03 [info] [system.log] [访问用户菜单报错]:CException: UserForm and its behaviors do not have a method or closure named "add". in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(50): CComponent->__call('add', Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (37)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:18:50 [error] [php] Undefined offset: 0 (/home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php:43)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (43)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (50)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+2017/03/18 08:19:54 [error] [php] Undefined index: operate (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:11)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#6 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (11)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:20:03 [error] [php] Undefined variable: result (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:31)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#6 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (31)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:23:11 [info] [application] [添加用户数据：]Exception: 参数错误{"nickname":"aa","account":"a","password":"a","career":"1"} in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:49
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (54)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 08:23:11 [error] [php] Undefined variable: result (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:31)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#1 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#6 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (31)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 08:57:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbUser.fdCreate' in 'field list'. The SQL statement executed was: SELECT tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id, tbUser.fdCreate FROM `wsqITManage`.`tbUser` `tbUser` INNER JOIN wsqITManage.tbUserType ON tbUserType.id = tbUser.fdUserTypeID ORDER BY tbUserType.id LIMIT 12.
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (63)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (19)
+2017/03/18 08:57:25 [error] [system.log] [访问用户菜单报错]:CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tbUser.fdCreate' in 'field list'. The SQL statement executed was: SELECT tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id, tbUser.fdCreate FROM `wsqITManage`.`tbUser` `tbUser` INNER JOIN wsqITManage.tbUserType ON tbUserType.id = tbUser.fdUserTypeID ORDER BY tbUserType.id LIMIT 12 in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(22): CDbCommand->queryAll()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(63): UserForm->list()
+#3 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(19): OperateAction->listUser()
+#4 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#7 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#13 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#14 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#16 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 09:15:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'demo@qq.com' for key 'it_user_account'. The SQL statement executed was: INSERT INTO wsqITManage.tbUser (fdNickname, fdAccount, fdPassword, fdUserTypeID) VALUES (:nickname, :account, :password, :career).
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (51)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (55)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+2017/03/18 09:15:32 [info] [application] [添加用户数据：]CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'demo@qq.com' for key 'it_user_account'. The SQL statement executed was: INSERT INTO wsqITManage.tbUser (fdNickname, fdAccount, fdPassword, fdUserTypeID) VALUES (:nickname, :account, :password, :career) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(51): CDbCommand->execute(Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(55): UserForm->add(Array)
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (59)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 09:16:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'demo@qq.com' for key 'it_user_account'. The SQL statement executed was: INSERT INTO wsqITManage.tbUser (fdNickname, fdAccount, fdPassword, fdUserTypeID) VALUES (:nickname, :account, :password, :career).
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (51)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (55)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+2017/03/18 09:16:41 [info] [application] [添加用户数据：]CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'demo@qq.com' for key 'it_user_account'. The SQL statement executed was: INSERT INTO wsqITManage.tbUser (fdNickname, fdAccount, fdPassword, fdUserTypeID) VALUES (:nickname, :account, :password, :career) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(51): CDbCommand->execute(Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(55): UserForm->add(Array)
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (59)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 09:18:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'demo@qq.com' for key 'it_user_account'. The SQL statement executed was: INSERT INTO wsqITManage.tbUser (fdNickname, fdAccount, fdPassword, fdUserTypeID) VALUES (:nickname, :account, :password, :career).
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (51)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (55)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+2017/03/18 09:18:13 [info] [application] [添加用户数据：]CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'demo@qq.com' for key 'it_user_account'. The SQL statement executed was: INSERT INTO wsqITManage.tbUser (fdNickname, fdAccount, fdPassword, fdUserTypeID) VALUES (:nickname, :account, :password, :career) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(51): CDbCommand->execute(Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(55): UserForm->add(Array)
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (59)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 09:21:04 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM wsqITManage.tbUser WHERE fdAccount = :account.
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (47)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (55)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+2017/03/18 09:21:04 [info] [application] [添加用户数据：]CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM wsqITManage.tbUser WHERE fdAccount = :account in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php(47): CDbCommand->queryScalar()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(55): UserForm->add(Array)
+#3 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(28): OperateAction->addUser()
+#4 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#7 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#13 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#14 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#16 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (59)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (28)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)

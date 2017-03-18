@@ -5,49 +5,102 @@
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#p1" data-toggle="tab">用户信息</a></li>
                 <li><a href="#p2" data-toggle="tab">添加用户</a></li>
-                <li><a href="#p3" data-toggle="tab">添加用户</a></li>
-                <li><a href="#p4" data-toggle="tab">编辑用户</a></li>
             </ul>
             
             <div class="tab-content">
                 <div class="tab-pane active" id="p1">
-                     <table class="table table-striped">
-                        <caption> </caption>
-                            <thead>
-                                <td>昵称</td>
-                                <td>帐号</td>
-                                <td>职位</td>
-                                <td>编辑</td>
-                                <td>删除</td>
-                            </thead>
-                            <tr>
-                                <td>td1</td>
-                                <td>td2</td>
-                                <td>td3</td>
-                                <td>td3</td>
-                                <td>td3</td>
-                            </tr>
-                            <tr>
-                                <td>td1</td>
-                                <td>td2</td>
-                                <td>td3</td>
-                                <td>td3</td>
-                                <td>td3</td>
-                            </tr>
-                            <tr>
-                                <td>td1</td>
-                                <td>td2</td>
-                                <td>td3</td>
-                                <td>td3</td>
-                                <td>td3</td>
-                            </tr>
-                    </table>    
+                       
                 </div>
-                <div class="tab-pane" id="p2">tab-pane-2</div>
-                <div class="tab-pane" id="p3">tab-pane-3</div>
-                <div class="tab-pane" id="p4">tab-pane-4</div>
-           
+                <div class="tab-pane" id="p2">
+                    <div class="row" style="margin-top:20px">
+                        <div class="col-md-8">
+                            <form action="" class="form-horizontal" id="formAdd">
+                                <div class="form-group">
+                                    <label for="ho-nickname" class="col-md-2 control-label">昵称</label>
+                                    <div class="col-md-10">
+                                        <input type="text" name="nickname" id="ho-nickname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ho-login" class="col-md-2 control-label">帐号</label>
+                                    <div class="col-md-10">
+                                        <input type="email" name="account" id="ho-login" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ho-pass" class="col-md-2 control-label">密码</label>
+                                    <div class="col-md-10">
+                                        <input type="text" name="password" id="ho-pass" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ho-career" class="col-md-2 control-label">职位</label>
+                                    <div class="col-md-10">
+                                        <select name="career" id="ho-career" class="form-control">
+                                            <option value="1">管理员</option>
+                                            <option value="2">产品经理</option>
+                                            <option value="3">开发人员</option>
+                                            <option value="4">测试员</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-2">
+                                        <button type="button" class="btn btn-default" id="addUser">submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(function(){
+        $.ajax({
+            "dataType": "json",
+            "type": "post",
+            "data": {"operate": "list"},
+            "url": "<?php echo $url;?>",
+            "beforeSend": function()
+            {
+                console.log('call');
+            },
+            "success": function(data)
+            {
+                if (data.code == -1) {
+                    alert('暂无数据');
+                }
+                if (data.code == 0) {
+                    $('#p1').append(data['data']);
+                }
+            },
+            "complete": function()
+            {
+                console.log('complete');
+            }
+        });
+        $("#addUser").on('click', function() {
+            var params = $("#formAdd").serialize();
+            $.ajax({
+                "type": "post",
+                "dataType": "json",
+                "data": params+'&operate=add',
+                "url": "<?php echo $url;?>",
+                "beforeSend": function() {},
+                "success": function(data) {
+                    if (data.code != 0) {
+                        alert(data.message);
+                    }
+                    if (data.code == 0) {
+                        if( confirm('用户添加成功，是否刷新页面？'))
+                            location.reload(true);
+                    }
+                },
+                "complete": function() {}
+            })
+        })
+    })
+</script>

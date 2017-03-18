@@ -6,8 +6,8 @@ class Action extends CAction
     protected $controller;
     protected $param;
 
-    protected $code;
-    protected $message;
+    protected $code = -1;
+    protected $message = 'error:操作失败';
     protected $data;
 
     protected $_REQUEST;
@@ -28,7 +28,6 @@ class Action extends CAction
             $this->_setPOST();
             $this->_setREQUEST();
             $this->setAssets();
-            // $this->_setParam();
         }catch(Exception $e){
             // if (OPER_ENV !== 'prod') {
             //     echo $e->getMessage().'<br>';

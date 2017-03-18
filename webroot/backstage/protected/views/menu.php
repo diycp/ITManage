@@ -10,7 +10,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="">个人中心</a></li>
-                        <li><a href="">logout</a></li>
+                        <li><a href="index.php?r=login/logout">logout</a></li>
                     </ul>
                 </div>
             </div>
