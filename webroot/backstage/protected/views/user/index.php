@@ -57,6 +57,50 @@
         </div>
     </div>
 </div>
+<div class="modal fade">
+    <div class="modal-dialog">
+       <div class="modal-content">
+           
+        <div class="modal-header">修改用户信息</div>
+        <div class="modal-body">
+            <form action="" class="form-horizontal">
+                <div class="form-group">
+                    <label for="modal-ho-nickname" class="col-md-2 control-label">昵称</label>
+                    <div class="col-md-10">
+                        <input type="text" id="modal-ho-nickname" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="modal-ho-account" class="col-md-2 control-label">帐号</label>
+                    <div class="col-md-10">
+                        <input type="text" id="modal-ho-account" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="modal-ho-career" class="col-md-2 control-label">职位</label>
+                    <div class="col-md-10">
+                        <select name="career" id="modal-ho-career" class="form-control">
+                            <option value="1">管理员</option>
+                            <option value="2">产品经理</option>
+                            <option value="3">开发人员</option>
+                            <option value="4">测试员</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="hidden" name="sign" value="" id="modal-ho-sign">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">
+                close
+            </button>
+            <button class="btn btn-primary">
+                submit
+            </button>
+        </div>
+       </div>
+    </div>
+</div>
 <script>
     $(function(){
         $.ajax({
@@ -101,6 +145,15 @@
                 },
                 "complete": function() {}
             })
-        })
+        });
     })
+    function edit(id) {
+        console.log(users[id]);
+        var user = users[id];
+        $("#modal-ho-nickname").val(user['nickname']);
+        $("#modal-ho-account").val(user['account']);
+        $("#modal-ho-sign").val(user['id']);
+        $("#modal-ho-career").val(user['type']);
+        $('.modal').modal();
+    }
 </script>

@@ -9,7 +9,7 @@ class UserForm extends FormModel
     {
         $response = ['code' => -1, 'message' => 'error:empty', 'data' => ['list' => []]];
         $criteria = new CDbCriteria();
-        $criteria->select = "tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUserType.id, tbUser.fdUpdate";
+        $criteria->select = "tbUser.id, tbUser.fdAccount, tbUser.fdNickname, tbUserType.fdName, tbUser.fdUpdate, tbUserType.id AS type";
         $tablename = "{$this->im}.tbUser";
         $criteria->join = "INNER JOIN {$this->im}.tbUserType ON tbUserType.id = tbUser.fdUserTypeID";
         $criteriaCount = clone $criteria;
@@ -27,6 +27,7 @@ class UserForm extends FormModel
             $user['nickname'] = $row['fdNickname'];
             $user['career'] = $row['fdName'];
             $user['update'] = $row['fdUpdate'];
+            $user['type'] = $row['type'];
             $userList[] = $user;
         }
         $pagination = new CPagination($total);

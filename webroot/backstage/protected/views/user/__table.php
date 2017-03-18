@@ -16,8 +16,11 @@
                 <td><?php echo $row['account']; ?></td>
                 <td><?php echo $row['career']; ?></td>
                 <td><?php echo $row['update']; ?></td>
-                <td><button type="button" class="btn btn-warning">edit</button></td>
-                <td><button type="button" class="btn btn-danger">del</button></td>
+                <td><button type="button" class="btn btn-warning" onclick="edit(<?php echo $row['id']; ?>)">edit</button></td>
+                <td><button type="button" class="btn btn-danger del">del</button></td>
             </tr>
         <?php endforeach; ?>
 </table>
+<script>
+        var users = <?php echo json_encode(array_column($list, null, 'id'));?>;
+</script>
