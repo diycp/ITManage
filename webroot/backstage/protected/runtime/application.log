@@ -2849,3 +2849,98 @@ REQUEST_URI=/index.php?r=user/index
 in /home/itmanage/ITManage/webroot/backstage/protected/views/user/index.php (105)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/IndexAction.php (11)
 in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 17:58:22 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function UserForm::modify(), 0 passed in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php on line 22 and exactly 1 expected in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php:74
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(22): UserForm->modify()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=user/operate
+HTTP_REFERER=http://backstage.com:8000/index.php?r=user/index
+---
+2017/03/18 17:58:59 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function UserForm::modify(), 0 passed in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php on line 22 and exactly 1 expected in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php:74
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(22): UserForm->modify()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=user/operate
+HTTP_REFERER=http://backstage.com:8000/index.php?r=user/index
+---
+2017/03/18 18:02:52 [error] [system.log] [访问用户菜单报错]:CException: UserForm and its behaviors do not have a method or closure named "modifyUser". in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php(22): CComponent->__call('modifyUser', Array)
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('user/operate')
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#13 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (34)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/18 18:04:17 [error] [php] Undefined index: nickname (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:73)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#1 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (73)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 18:07:40 [error] [php] Undefined index: nickname (/home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php:74)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#1 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#5 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): UserController->runActionWithFilters()
+#7 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): UserController->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=user/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (74)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (22)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/18 18:08:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT fdNickname, fdAccount FROM wsqITManage.tbUser WHERE id != :id AND (fdNickName = :nickname OR fdAccount = :account).
+in /home/itmanage/ITManage/webroot/backstage/protected/models/UserForm.php (82)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (88)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/User/OperateAction.php (22)

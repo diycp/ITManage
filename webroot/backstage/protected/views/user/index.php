@@ -63,17 +63,17 @@
            
         <div class="modal-header">修改用户信息</div>
         <div class="modal-body">
-            <form action="" class="form-horizontal">
+            <form action="" class="form-horizontal" id="modal-form">
                 <div class="form-group">
                     <label for="modal-ho-nickname" class="col-md-2 control-label">昵称</label>
                     <div class="col-md-10">
-                        <input type="text" id="modal-ho-nickname" class="form-control">
+                        <input type="text" name="nickname" id="modal-ho-nickname" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="modal-ho-account" class="col-md-2 control-label">帐号</label>
                     <div class="col-md-10">
-                        <input type="text" id="modal-ho-account" class="form-control">
+                        <input type="text" name="account" id="modal-ho-account" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -94,7 +94,7 @@
             <button class="btn btn-primary" data-dismiss="modal">
                 close
             </button>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" id="modifyUser">
                 submit
             </button>
         </div>
@@ -146,9 +146,28 @@
                 "complete": function() {}
             })
         });
+        $("#modifyUser").on('click', function() {
+            var params = $("#modal-form").serialize();
+            $.ajax({
+                "type": "post",
+                "dataType": "json",
+                "data": params+'&operate=modify',
+                "url": "<?php echo $url;?>",
+                "beforeSend": function() {},
+                "success": function(data) {
+                    if (data.code != 0) {
+                        alert(data.message);
+                    }
+                    if (data.code == 0) {
+                        if( confirm('用户编辑成功，是否刷新页面？'))
+                            location.reload(true);
+                    }
+                },
+                "complete": function() {}
+            })
+        })
     })
     function edit(id) {
-        console.log(users[id]);
         var user = users[id];
         $("#modal-ho-nickname").val(user['nickname']);
         $("#modal-ho-account").val(user['account']);

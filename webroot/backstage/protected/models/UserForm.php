@@ -70,4 +70,36 @@ class UserForm extends FormModel
         }
         return $response;
     }
+
+    public function modify($params)
+    {
+        $response = ['code' => -1, 'message' => ''];
+        list($nickname, $account, $id, $career) = array($params['nickname'], $params['account'], $params['id'], $params['career']);
+        $sql = "SELECT fdNickname, fdAccount FROM {$this->im}.tbUser WHERE id != :id AND (fdNickName = :nickname OR fdAccount = :account)";
+        $exist = Yii::app()->db->createCommand($sql)->queryAll(true, [
+            ':id' => $id,
+            ':nickname' => $nickname,
+            ':account' => $account
+        ]);
+        if ($exist) {
+            $nicknameCheck = array_column($exist, 'fdNickname');
+            if (in_array($nickname, $nicknameCheck)) {
+                $response['message'] = '昵称已被使用';
+            } else {
+                $response['message'] = '帐号已被使用';
+            }
+            return $response;
+        }
+        $result = Yii::app()->db->createCommand()->update("{$this->im}.tbUser",[
+            'fdNickname' => $nickname,
+            'fdAccount' => $account,
+            'fdUserTypeID' => $career
+        ],'id = :id', [':id' => $id]);
+        if (!empty($result)) {
+            $response['code'] = 0;
+        } else {
+            $response['message'] = '数据更新失败';
+        }
+        return $response;
+    }
 }

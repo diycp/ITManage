@@ -19,7 +19,7 @@ class OperateAction extends Action
                     $this->listUser();
                     break;
                 case 'modify':
-                    $result = $this->userForm->modify();
+                    $this->modifyUser();
                     break;
                 case 'del':
                     $result = $this->userForm->del();
@@ -66,5 +66,31 @@ class OperateAction extends Action
         $this->code = $result['code'];
         $this->message = $result['message'];
         $this->data = $this->code ? '' : $this->controller->renderPartial('__table', $result['data'], true);
+    }
+
+    public function modifyUser()
+    {
+        try {
+            $params['nickname'] = $this->_POST['nickname'];
+            $params['account'] = $this->_POST['account'];
+            $params['id'] = $this->_POST['sign'];
+            $params['career'] = $this->_POST['career'];
+            if (sizeof( array_filter($params)) != 4 ) {
+                $this->code = 1;
+                $this->message = '请填写完整信息';
+                return false;
+            }
+            if (!Tool::regex($params['account'], 'email')) {
+                $this->code = 2;
+                $this->message = '帐号格式错误:邮箱';
+                return false;
+            }
+            $result = $this->userForm->modify($params);
+            $this->code = $result['code'];
+            $this->message = $result['message'];
+        } catch (Exception $e) {
+            $this->code = 1;
+            $this->message = '操作失败';
+        }
     }
 }
