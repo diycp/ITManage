@@ -174,5 +174,27 @@
         $("#modal-ho-sign").val(user['id']);
         $("#modal-ho-career").val(user['type']);
         $('.modal').modal();
+    };
+    function del(id) {
+        var sign = id;
+        if (confirm("该操作无法撤销，是否确认删除？")) {
+            $.ajax({
+                "type": "post",
+                "dataType": 'json',
+                "data": "operate=del&sign="+sign,
+                "url": "<?php echo $url;?>",
+                "beforeSend": function() {},
+                "success": function(data) {
+                    if (data.code != 0) {
+                        alert(data.message);
+                    }
+                    if (data.code == 0) {
+                        if( confirm('用户删除成功，是否刷新页面？'))
+                            location.reload(true);
+                    }
+                },
+                "complete": function() {}
+            })
+        }
     }
 </script>

@@ -30,12 +30,9 @@ class UserForm extends FormModel
             $user['type'] = $row['type'];
             $userList[] = $user;
         }
-        $pagination = new CPagination($total);
-        $pagination->pageSize = $this->length;
         $response['code'] = 0;
         $response['message'] = 'ok';
         $response['data']['list'] = $userList;
-        $response['data']['pagination'] = $pagination;
         // Yii::log(CVarDumper::dumpAsString($response), 'info', 'system.log');
         return $response;
     }
@@ -99,6 +96,19 @@ class UserForm extends FormModel
             $response['code'] = 0;
         } else {
             $response['message'] = '数据更新失败';
+        }
+        return $response;
+    }
+
+    public function del($params)
+    {
+        $response = ['code' => -1, 'message' => ''];
+        $id = $params['id'];
+        $result = Yii::app()->db->createCommand()->delete('tbUser','id =:id',[':id' => $id]);
+        if (!empty($result)) {
+            $response['code'] = 0;
+        } else {
+            $response['message'] = '数据删除失败';
         }
         return $response;
     }

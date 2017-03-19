@@ -2,7 +2,7 @@
 class OperateAction extends Action
 {
     public $methods = ['list', 'modify', 'del', 'add'];
-    public $userForm;
+    public $announcementForm;
     public function run ()
     {
         try{
@@ -13,79 +13,72 @@ class OperateAction extends Action
                 $this->message = 'error: param';
                 $this->put();
             }
-            $this->userForm = new UserForm();
+            $this->announcementForm = new AnnouncementForm();
             switch ($this->_POST['operate']) {
                 case 'list':
-                    $this->listUser();
+                    $this->listAnnouncement();
                     break;
                 case 'modify':
-                    $this->modifyUser();
+                    $this->modifyAnnouncement();
                     break;
                 case 'del':
-                    $this->delUser();
+                    $this->delAnnouncement();
                     break;
                 case 'add':
-                    $this->addUser();
+                    $this->addAnnouncement();
                     break;
             }
             $this->put();
         } catch (Exception $e) {
             $message = $e->__toString();
-            Yii::log('[访问用户菜单报错]:'. $message, 'error', 'system.log');
+            Yii::log('[访问菜单报错]:'. $message, 'error', 'system.log');
         }
     }
 
-    public function addUser()
+    public function addAnnouncement()
     {
         try {
-            $params['nickname'] = $this->_POST['nickname'];
-            $params['account'] = $this->_POST['account'];
-            $params['password'] = $this->_POST['password'];
-            $params['career'] = $this->_POST['career'];
-            if (sizeof( array_filter($params)) != 4 ) {
+            $params['name'] = $this->_POST['name'];
+            $params['content'] = $this->_POST['content'];
+            $params['method'] = $this->_POST['method']; //0-save 1-send
+            $params['batch'] = $this->_POST['batch'];
+            $params['status'] = $this->_POST['status'];
+            if (sizeof( $params ) != 5 ) {
                 $this->code = 1;
                 $this->message = '请填写完整信息';
                 return false;
             }
-            if (!Tool::regex($params['account'], 'email')) {
-                $this->code = 2;
-                $this->message = '帐号格式错误:邮箱';
-                return false;
-            }
-            $result = $this->userForm->add($params);
+            $result = $this->announcementForm->add($params);
             $this->code = $result['code'];
             $this->message = $result['message'];
         } catch(Exception $e) {
-            Yii::log('[添加用户数据：]'. $e->__toString());
+            Yii::log('[添加菜单数据：]'. $e->__toString());
         }
     }
 
-    public function listUser()
+    public function listAnnouncement()
     {
-        $result = $this->userForm->list();
+        $result = $this->announcementForm->list();
         $this->code = $result['code'];
         $this->message = $result['message'];
         $this->data = $this->code ? '' : $this->controller->renderPartial('__table', $result['data'], true);
     }
 
-    public function modifyUser()
+    public function modifyAnnouncement()
     {
         try {
-            $params['nickname'] = $this->_POST['nickname'];
-            $params['account'] = $this->_POST['account'];
+            $params['name'] = $this->_POST['name'];
+            $params['controller'] = $this->_POST['controller'];
+            $params['action'] = $this->_POST['action'];
+            $params['platform'] = $this->_POST['platform'];
+            $params['status'] = $this->_POST['status'];
             $params['id'] = $this->_POST['sign'];
-            $params['career'] = $this->_POST['career'];
-            if (sizeof( array_filter($params)) != 4 ) {
+            if (sizeof($params) != 6 ) {
                 $this->code = 1;
                 $this->message = '请填写完整信息';
                 return false;
             }
-            if (!Tool::regex($params['account'], 'email')) {
-                $this->code = 2;
-                $this->message = '帐号格式错误:邮箱';
-                return false;
-            }
-            $result = $this->userForm->modify($params);
+            $result = $this->announcementForm->modify($params);
             $this->code = $result['code'];
             $this->message = $result['message'];
         } catch (Exception $e) {
@@ -95,7 +88,7 @@ class OperateAction extends Action
         }
     }
 
-    public function delUser()
+    public function delAnnouncement()
     {
         try {
             $params['id'] = $this->_POST['sign'];
@@ -104,7 +97,7 @@ class OperateAction extends Action
                 $this->message = '请求错误';
                 return false;
             }
-            $result = $this->userForm->del($params);
+            $result = $this->announcementForm->del($params);
             $this->code = $result['code'];
             $this->message = $result['message'];
         } catch (Exception $e) {

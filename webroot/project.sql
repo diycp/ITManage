@@ -36,12 +36,15 @@ CREATE TABLE wsqITManage.`tbAnnouncement` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdName` varchar(64) NOT NULL DEFAULT '' COMMENT '公告名称',
     `fdDesc` blob COMMENT '公告描述',
+    `fdUserID` tinyint(4) NOT NULL DEFAULT -1 COMMENT '公告操作人 对应tbUser.id',
     `fdSent` tinyint(4) NOT NULL DEFAULT 0 COMMENT '公告发送：0,1',
+    `fdBatch` tinyint(4) NOT NULL DEFAULT 0 COMMENT '群发邮件:0,1',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`),
     INDEX `it_announcement_create` (`fdCreate`)
 )  ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='工作公告表';
-
+#alter table wsqITManage.tbAnnouncement change `fdEmail` `fdBatch` tinyint(4)
 CREATE TABLE wsqITManage.`tbDuty` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `fdName` varchar(64) NOT NULL DEFAULT '' COMMENT '任务名称',
@@ -101,6 +104,7 @@ CREATE TABLE wsqITManage.`tbMenu` (
     `fdPlatform` tinyint(3) NOT NULL DEFAULT 0 COMMENT '菜单显示平台位置，0-后台 1-前台',
     `fdStatus` tinyint(4) NOT NULL DEFAULT 0 COMMENT '菜单开启状态 0-不开启 1-开启',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`),
     INDEX `it_menu_id_parentid` (`id`,`fdParentID`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='系统菜单表';
