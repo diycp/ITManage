@@ -40,7 +40,7 @@ class UserIdentity extends CUserIdentity
             $this->_id = $this->userInfo['id'];
             $this->_name = $this->userInfo['fdNickname'];
             $this->setState('__id', $this->userInfo['id']);
-            $this->setState('__nickname', $this->userInfo['fdNickName']);
+            $this->setState('__nickname', $this->userInfo['fdNickname']);
             $this->setState('__authority', $this->userInfo['fdAuthority']);
             $this->setState('__worker', $this->userInfo['fdName']);
         }
@@ -50,8 +50,8 @@ class UserIdentity extends CUserIdentity
     public function getErrorMsg()
     {
         $messages = [
-            self::ERROR_PWD_INVALID => '手机号码格式错误',
-            self::ERROR_ACCOUNT_INVALID => '验证码错误',
+            self::ERROR_PWD_INVALID => '密码错误',
+            self::ERROR_ACCOUNT_INVALID => '帐号错误',
         ];
         return isset($messages[$this->errorCode]) ? $messages[$this->errorCode] : '验证错误';
     }
@@ -67,7 +67,7 @@ class UserIdentity extends CUserIdentity
     private function _validate()
     {
         $im = Yii::app()->params['dbMap']['im'];
-        $sql = "SELECT tbUser.id, tbUser.fdNickName, tbUser.fdPassword, tbUserType.fdName, tbUserType.fdAuthority 
+        $sql = "SELECT tbUser.id, tbUser.fdNickname, tbUser.fdPassword, tbUserType.fdName, tbUserType.fdAuthority 
         FROM {$im}.tbUser 
         INNER JOIN {$im}.tbUserType ON tbUserType.id = tbUser.fdUserTypeID
         WHERE tbUser.fdAccount = :account";
@@ -75,6 +75,7 @@ class UserIdentity extends CUserIdentity
         if (empty($this->userInfo)) {
             $this->errorCode = self::ERROR_ACCOUNT_INVALID;
         }
+        
         if ( password_verify($this->password, $this->userInfo['fdPassword'])) {
             $this->errorCode = self::ERROR_PWD_VALID;
         } else {

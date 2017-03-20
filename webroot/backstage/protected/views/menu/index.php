@@ -67,7 +67,7 @@
     <div class="modal-dialog">
        <div class="modal-content">
            
-        <div class="modal-header">修改用户信息</div>
+        <div class="modal-header">修改菜单信息</div>
         <div class="modal-body">
             <form action="" class="form-horizontal" id="modal-form">
                 <div class="form-group">

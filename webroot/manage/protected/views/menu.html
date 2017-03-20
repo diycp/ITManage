@@ -1,0 +1,19 @@
+<div id="top" style="height:92px" role="navigation">
+        <nav class="navbar navbar-custom">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li {#if ($controller == 'home')#}class="nav-current"{#/if#}><a href="index.php">Home</a></li>
+                        {#foreach $data as $row#}
+                            <li {#if ($controller == $row['tag'])#}class="nav-current"{#/if#}><a href="{#$row['url']#}">{#$row['name']#}</a></li>
+                        {#/foreach#}
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">个人中心</a></li>
+                        <li><a href="index.php?r=login/logout">logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<div>

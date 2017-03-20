@@ -48,8 +48,10 @@ class LoginForm extends CFormModel
 	{
 		if(!$this->hasErrors())
 		{
-			$this->_identity=new UserIdentity($this->account,$this->password);
-			// if($this->_identity->authenticate())
+			$this->_identity=new UserIdentity();
+			$this->_identity->account = $this->account;
+			$this->_identity->password = $this->password;
+			if($this->_identity->authenticate())
 				$this->addError('password','帐号或密码错误');
 		}
 	}

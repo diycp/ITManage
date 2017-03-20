@@ -115,6 +115,7 @@ class MenuForm extends FormModel
         $id = $params['id'];
         if ($id == 2) {
             $response['message'] = '菜单不允许删除';
+            return $response;
         }
         $result = Yii::app()->db->createCommand()->delete('tbMenu','id =:id',[':id' => $id]);
         if (!empty($result)) {

@@ -6,15 +6,15 @@ class OperateAction extends Action
     public function run ()
     {
         try{
-            $this->beforeRun();
-            if ( empty($this->_POST['operate'])) $this->put();
-            if (!in_array($this->_POST['operate'], $this->methods)) {
+            // $this->beforeRun();
+            if ( empty($_POST['operate'])) $this->put();
+            if (!in_array($_POST['operate'], $this->methods)) {
                 $this->code = 1;
                 $this->message = 'error: param';
                 $this->put();
             }
             $this->announcementForm = new AnnouncementForm();
-            switch ($this->_POST['operate']) {
+            switch ($_POST['operate']) {
                 case 'list':
                     $this->listAnnouncement();
                     break;
@@ -31,19 +31,20 @@ class OperateAction extends Action
             $this->put();
         } catch (Exception $e) {
             $message = $e->__toString();
-            Yii::log('[访问菜单报错]:'. $message, 'error', 'system.log');
+            Yii::log('[访问公告报错]:'. $message, 'error', 'system.log');
         }
     }
 
     public function addAnnouncement()
     {
         try {
-            $params['name'] = $this->_POST['name'];
-            $params['content'] = $this->_POST['content'];
-            $params['method'] = $this->_POST['method']; //0-save 1-send
-            $params['batch'] = $this->_POST['batch'];
-            $params['status'] = $this->_POST['status'];
-            if (sizeof( $params ) != 5 ) {
+            $params['name'] = $_POST['name'];
+            $params['content'] = $_POST['content'];
+            $params['batch'] = $_POST['batch'];
+            $params['status'] = $_POST['status'];
+            $params['md'] = $_POST['md'];
+            $params['userID'] = Yii::app()->user->id;
+            if (sizeof( $params ) != 6 ) {
                 $this->code = 1;
                 $this->message = '请填写完整信息';
                 return false;
@@ -52,7 +53,7 @@ class OperateAction extends Action
             $this->code = $result['code'];
             $this->message = $result['message'];
         } catch(Exception $e) {
-            Yii::log('[添加菜单数据：]'. $e->__toString());
+            Yii::log('[添加公告数据：]'. $e->__toString());
         }
     }
 
@@ -61,19 +62,18 @@ class OperateAction extends Action
         $result = $this->announcementForm->list();
         $this->code = $result['code'];
         $this->message = $result['message'];
-        $this->data = $this->code ? '' : $this->controller->renderPartial('__table', $result['data'], true);
+        $this->data = $this->code ? '' : $this->getController()->renderPartial('__table', $result['data'], true);
     }
 
     public function modifyAnnouncement()
     {
         try {
-            $params['name'] = $this->_POST['name'];
-            $params['controller'] = $this->_POST['controller'];
-            $params['action'] = $this->_POST['action'];
-            $params['platform'] = $this->_POST['platform'];
-            $params['status'] = $this->_POST['status'];
-            $params['id'] = $this->_POST['sign'];
-            if (sizeof($params) != 6 ) {
+            $params['name'] = $_POST['name'];
+            $params['batch'] = $_POST['batch'];
+            $params['md'] = $_POST['md'];
+            $params['content'] = $_POST['content'];
+            $params['id'] = $_POST['sign'];
+            if (sizeof($params) != 5 ) {
                 $this->code = 1;
                 $this->message = '请填写完整信息';
                 return false;
@@ -91,7 +91,7 @@ class OperateAction extends Action
     public function delAnnouncement()
     {
         try {
-            $params['id'] = $this->_POST['sign'];
+            $params['id'] = $_POST['sign'];
             if (empty($params['id']) || !is_numeric($params['id'])) {
                 $this->code = 1;
                 $this->message = '请求错误';
