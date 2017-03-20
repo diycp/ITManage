@@ -83,6 +83,7 @@ class Controller extends CController
 		$assignData['cssURL'] = BASE_CSS_URL;
 		$assignData['jsURL'] = BASE_JS_URL;
 		$assignData['imgURL'] = BASE_IMG_URL;
+		$assignData['pluginURL'] = BASE_PLUGIN_URL;
 		/*$assignData['imgURL'] = BASE_URL;
 		$assignData['storeID'] = Yii::app()->store->id;
 		$assignData['storeName'] = Yii::app()->store->name;

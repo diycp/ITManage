@@ -1,23 +1,23 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 13:46:54
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 16:35:18
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/build/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:84726040558cfdd4e805d56-02500423%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:106025191958d004c62563c3-45497939%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '272c32090da987afc4cd5491025670509649f0e4' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/build/index.html',
-      1 => 1490017607,
+      1 => 1490027681,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/layouts/itlayout.html',
-      1 => 1490002276,
+      1 => 1490027715,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '84726040558cfdd4e805d56-02500423',
+  'nocache_hash' => '106025191958d004c62563c3-45497939',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58cfdd4e831998_36946304',
+  'unifunc' => 'content_58d004c628b541_06137171',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58cfdd4e831998_36946304')) {function content_58cfdd4e831998_36946304($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d004c628b541_06137171')) {function content_58d004c628b541_06137171($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,6 +43,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 /jquery.min.js"></script>
     <script src="<?php echo $_smarty_tpl->tpl_vars['jsURL']->value;?>
 /bootstrap.min.js"></script>
+    
+    <link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/jquery-ui-1.10.1.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/siena.datepicker.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/santiago.datepicker.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/latoja.datepicker.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/lugo.datepicker.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/cangas.datepicker.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/vigo.datepicker.css" rel="stylesheet">
+	<link href="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/css/nigran.datepicker.css" rel="stylesheet">
+    <style>
+        
+	</style>
+
 </head>
 <body>
     <?php echo $_smarty_tpl->getSubTemplate ('../menu.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
@@ -126,7 +147,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 <div class="form-group">
                                     <label for="ho-duty-time" class="col-md-2 control-label">上线时间</label>
                                     <div class="col-md-10">
-                                        <input type="text" name="duty-time" id="ho-duty-time" class="form-control">
+                                        <input type="text" name="duty-time" id="ho-duty-time" class="form-control date-picker-input-1">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -192,6 +213,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
     </div>
 </div>
+
+    
+	<script src="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/js/jquery-1.9.1.js"></script>
+	<script src="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
+/calendar/js/jquery-ui-1.10.1.min.js"></script>
+	<script>
+		$(function() {
+			$( ".date-picker-input-1" ).datepicker({
+				inline: true,
+				showOtherMonths: true
+			})
+			.datepicker('widget').wrap('<div class="ll-skin-nigran"/>');
+		});
+	</script>
 
 </body>
 </html><?php }} ?>
