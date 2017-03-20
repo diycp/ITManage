@@ -7,14 +7,9 @@ class WebUser extends CWebUser
         return $this->getState('__nickname');
     }
 
-    public function getWorker()
+    public function getCareer()
     {
-        return $this->getState('__worker');
-    }
-
-    public function getAvatar()
-    {
-        return $this->getState('__avatar');
+        return $this->getState('__career');
     }
 
     public function getAuthority()

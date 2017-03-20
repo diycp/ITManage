@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 09:31:18
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 13:46:55
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/menu.html" */ ?>
-<?php /*%%SmartyHeaderCode:94508672858cfa166a77751-35152391%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:158824278258cfdd4f29b1d9-95509213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '65451e141690a141b53dfa479fa2768fdacd9cfa' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/menu.html',
-      1 => 1490002164,
+      1 => 1490009942,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '94508672858cfa166a77751-35152391',
+  'nocache_hash' => '158824278258cfdd4f29b1d9-95509213',
   'function' => 
   array (
   ),
@@ -20,12 +20,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'controller' => 0,
     'data' => 0,
     'row' => 0,
+    'career' => 0,
+    'nickname' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58cfa166a83060_23376621',
+  'unifunc' => 'content_58cfdd4f2a8419_19976864',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58cfa166a83060_23376621')) {function content_58cfa166a83060_23376621($_smarty_tpl) {?><div id="top" style="height:92px" role="navigation">
+<?php if ($_valid && !is_callable('content_58cfdd4f2a8419_19976864')) {function content_58cfdd4f2a8419_19976864($_smarty_tpl) {?><div id="top" style="height:92px" role="navigation">
         <nav class="navbar navbar-custom">
             <div class="container">
                 <div class="collapse navbar-collapse">
@@ -42,7 +44,9 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
                         <?php } ?>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="">个人中心</a></li>
+                        <li><a href=""><?php echo $_smarty_tpl->tpl_vars['career']->value;?>
+&nbsp;:&nbsp;<?php echo $_smarty_tpl->tpl_vars['nickname']->value;?>
+</a></li>
                         <li><a href="index.php?r=login/logout">logout</a></li>
                     </ul>
                 </div>

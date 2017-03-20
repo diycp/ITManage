@@ -81,14 +81,14 @@ class MenuForm extends FormModel
     {
         $response = ['code' => -1, 'message' => ''];
         list($name, $controller, $action, $platform, $status) = array($params['name'], $params['controller'], $params['action'], $params['platform'], $params['status']);
-        $sql = "SELECT COUNT(*) FROM {$this->im}.tbMenu WHERE fdController = :controller AND fdAction = :action";
-        $exist = Yii::app()->db->createCommand($sql)->queryScalar([':controller' => $controller, ':action' => $action]);
+        $sql = "SELECT COUNT(*) FROM {$this->im}.tbMenu WHERE fdController = :controller AND fdAction = :action AND fdPlatform = :platform";
+        $exist = Yii::app()->db->createCommand($sql)->queryScalar([':controller' => $controller, ':action' => $action, ':platform' => $platform]);
         if ($exist) {
             $response['message'] = '该控制器-动作已被使用';
             return $response;
         }
-        $sql = "SELECT COUNT(*) FROM {$this->im}.tbMenu WHERE fdName = :name";
-        $exist = Yii::app()->db->createCommand($sql)->queryScalar([':name' => $name]);
+        $sql = "SELECT COUNT(*) FROM {$this->im}.tbMenu WHERE fdName = :name AND fdPlatform = :platform";
+        $exist = Yii::app()->db->createCommand($sql)->queryScalar([':name' => $name, ':platform' => $platform]);
         if ($exist) {
             $response['message'] = '该菜单已被使用';
             return $response;

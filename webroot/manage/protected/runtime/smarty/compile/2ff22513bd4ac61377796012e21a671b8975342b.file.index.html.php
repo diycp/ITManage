@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 11:47:22
-         compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/home/layout.html" */ ?>
-<?php /*%%SmartyHeaderCode:129686840758cfc14a7c9ac7-48337634%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 11:49:44
+         compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/project/index.html" */ ?>
+<?php /*%%SmartyHeaderCode:165178950258cfc1d8679305-84900056%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'e2dce1124d7de9bac91b8a4b7c2578d7dee8b1ff' => 
+    '2ff22513bd4ac61377796012e21a671b8975342b' => 
     array (
-      0 => '/home/itmanage/ITManage/webroot/manage/protected/views/home/layout.html',
-      1 => 1490000760,
+      0 => '/home/itmanage/ITManage/webroot/manage/protected/views/project/index.html',
+      1 => 1490010420,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '129686840758cfc14a7c9ac7-48337634',
+  'nocache_hash' => '165178950258cfc1d8679305-84900056',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58cfc14a7f1955_65658344',
+  'unifunc' => 'content_58cfc1d86a3940_18107242',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58cfc14a7f1955_65658344')) {function content_58cfc14a7f1955_65658344($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58cfc1d86a3940_18107242')) {function content_58cfc1d86a3940_18107242($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,7 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php echo $_smarty_tpl->getSubTemplate ('../menu.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
     
-enter demo
+enter home
 
 </body>
 </html><?php }} ?>

@@ -3,7 +3,7 @@ class MenuForm extends FormModel
 {
     public function getMenus()
     {
-        $sql = "SELECT * FROM {$this->im}.tbMenu WHERE fdPlatform = 0 AND fdStatus = 1";
+        $sql = "SELECT * FROM {$this->im}.tbMenu WHERE fdPlatform = 1 AND fdStatus = 1";
         $menus = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($menus)) return [];
         foreach($menus as $row) {

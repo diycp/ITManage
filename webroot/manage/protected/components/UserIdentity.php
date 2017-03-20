@@ -42,7 +42,7 @@ class UserIdentity extends CUserIdentity
             $this->setState('__id', $this->userInfo['id']);
             $this->setState('__nickname', $this->userInfo['fdNickname']);
             $this->setState('__authority', $this->userInfo['fdAuthority']);
-            $this->setState('__worker', $this->userInfo['fdName']);
+            $this->setState('__career', $this->userInfo['fdName']);
         }
 		return $this->errorCode;
 	}
