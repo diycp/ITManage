@@ -6,8 +6,8 @@ class Action extends CAction
     protected $controller;
     protected $param;
 
-    protected $code;
-    protected $message;
+    protected $code = -1;
+    protected $message = '操作失败';
     protected $data;
 
     protected $_REQUEST;
