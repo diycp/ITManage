@@ -25,7 +25,7 @@
                                     <label for="ho-login" class="col-md-2 control-label">平台</label>
                                     <div class="col-md-8">
                                         <label for="" class="radio-inline"><input type="radio" name="platform" value="1" id="">前台</label>
-                                        <label for="" class="radio-inline"><input type="radio" name="platform" value="0" id="">后台</label>
+                                        <label for="" class="radio-inline"><input type="radio" name="platform" value="0" id="" checked>后台</label>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -44,7 +44,7 @@
                                     <label for="ho-status" class="col-md-2 control-label">开启状态</label>
                                     <div class="col-md-8">
                                         <label for="" class="radio-inline"><input type="radio" name="status" value="1" id="">开启</label>
-                                        <label for="" class="radio-inline"><input type="radio" name="status" value="0" id="">关闭</label>
+                                        <label for="" class="radio-inline"><input type="radio" name="status" value="0" id="" checked>关闭</label>
                                     </div>
                                 </div>
                                 <div class="form-group">

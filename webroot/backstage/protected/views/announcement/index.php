@@ -24,7 +24,7 @@
                                     <label for="ho-batch" class="col-md-2 control-label">群发邮件</label>
                                     <div class="col-md-8">
                                         <label for="" class="radio-inline"><input type="radio" name="batch" value="1" id="">是</label>
-                                        <label for="" class="radio-inline"><input type="radio" name="batch" value="0" id="">否</label>
+                                        <label for="" class="radio-inline"><input type="radio" name="batch" value="0" id="" checked>否</label>
                                     </div>
                                 </div>
                                 <div class="form-group">

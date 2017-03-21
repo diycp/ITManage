@@ -65,7 +65,7 @@ CREATE TABLE wsqITManage.`tbDuty` (
     `fdRollbackID` tinyint(4) NOT NULl DEFAULT 0 COMMENT '任务回滚状态,对应tbDutyRollback.id',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     `fdPlanTime` date NOT NULL COMMENT '任务计划开发完成时间',
-    `fdCompleteTime` date NOT NULL COMMENT '任务开发完成时间',
+    `fdCompleteTime` date NOT NULL DEFAULT 0 COMMENT '任务开发完成时间',
     `fdUpdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`),
     INDEX `it_duty_plantime` (`fdPlanTime`),

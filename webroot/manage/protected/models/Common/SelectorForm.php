@@ -3,32 +3,38 @@ class SelectorForm extends FormModel
 {
     public function search($params)
     {
-        if (empty($params) || !is_array($params)) return [];
+        $response = ['code' => -1, 'message' => 'empty'];
+        if (empty($params) || !is_array($params)) return $response;
         $list = [];
         foreach ($params as $value) {
-            $list[$value] = $this->cache($value);
+            $list[$value] = $this->getCache($value);
         }
-        return $list;
+        $response['code'] = 0;
+        $response['message'] = 'ok';
+        $response['data'] = $list;
+        return $response;
     }
 
     public function getCache($id)
     {
-        $cache = Yii::app()->cache->get($id);
+        $cache = Yii::app()->cacheDb->get($id);
         if($cache === false) {
-            $file = YiiBase::getPathOfAlias('webroot.assets.file'). '/'. $id. 'cache.txt';
-            $cache = $this->$id();
-            Yii::app()->cache->set($id, $cache, 24*60*60, new CFileCacheDependency($file));
+            $data = $this->$id();
+            if (empty($data)) {
+                $cache = [];
+            } else {
+                $cache = $data['cache'];
+                $sql = $data['sql'];
+                Yii::app()->cacheDb->set($id, $cache, 24*60*60, new CDbCacheDependency($sql));
+            }
         }
         return $cache;
     }
 
-    public function __get($id)
+    public function __call($id, $value)
     {
         $fn = 'get'. ucfirst($id);
-        if (!method_exists(self, $fn)) {
-            return parent::__get($id);
-        }
-        return $this->$fn($id);
+        return $this->$fn();
     }
 
     public function getProject()
@@ -36,7 +42,7 @@ class SelectorForm extends FormModel
         $sql = "SELECT id, fdName FROM {$this->im}.tbProject";
         $table = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($table)) return [];
-        return $table;
+        return ['cache' => $table, 'sql' => $sql];
     }
 
     public function getType()
@@ -44,7 +50,7 @@ class SelectorForm extends FormModel
         $sql = "SELECT id, fdName FROM {$this->im}.tbDutyType";
         $table = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($table)) return [];
-        return $table;
+        return ['cache' => $table, 'sql' => $sql];
     }
 
     public function getPrority()
@@ -52,7 +58,7 @@ class SelectorForm extends FormModel
         $sql = "SELECT id, fdName FROM {$this->im}.tbDutyPrority";
         $table = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($table)) return [];
-        return $table;
+        return ['cache' => $table, 'sql' => $sql];
     }
 
     public function getManager()
@@ -60,7 +66,7 @@ class SelectorForm extends FormModel
         $sql = "SELECT id, fdNickname FROM {$this->im}.tbUser WHERE fdUserTypeID = 2";
         $table = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($table)) return [];
-        return $table;
+        return ['cache' => $table, 'sql' => $sql];
     }
 
     public function getDeveloper()
@@ -68,7 +74,7 @@ class SelectorForm extends FormModel
         $sql = "SELECT id, fdNickname FROM {$this->im}.tbUser WHERE fdUserTypeID = 3";
         $table = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($table)) return [];
-        return $table;
+        return ['cache' => $table, 'sql' => $sql];
     }
 
     public function getTester()
@@ -76,6 +82,6 @@ class SelectorForm extends FormModel
         $sql = "SELECT id, fdNickname FROM {$this->im}.tbUser WHERE fdUserTypeID = 4";
         $table = Yii::app()->db->createCommand($sql)->queryAll();
         if(empty($table)) return [];
-        return $table;
+        return ['cache' => $table, 'sql' => $sql];
     }
 }

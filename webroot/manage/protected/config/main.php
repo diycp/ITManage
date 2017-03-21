@@ -63,6 +63,17 @@ return array(
 			// use 'site/error' action to display errors
 			'errorAction'=>YII_DEBUG ? null : 'site/error',
 		),
+		'cache' => [
+			'class' => 'system.caching.CFileCache',
+			'hashKey' => false,
+			'keyPrefix' => 'cache_',
+		],
+
+		'cacheDb' => [
+			'class' => 'system.caching.CDbCache',
+			'hashKey' => false,
+			'keyPrefix' => 'cache_',
+		],
 
 		'log' => [
 			'class' => 'CLogRouter',

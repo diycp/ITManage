@@ -1,23 +1,23 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-20 16:31:27
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-21 13:43:52
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/board/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:52170033058d003dfa16db8-52410210%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:82482596158d12e1830caa7-10448304%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '92ebcad4cafd0132002616b7dc0c52f0c395ff39' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/board/index.html',
-      1 => 1490010513,
+      1 => 1490103234,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/layouts/itlayout.html',
-      1 => 1490027163,
+      1 => 1490027715,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '52170033058d003dfa16db8-52410210',
+  'nocache_hash' => '82482596158d12e1830caa7-10448304',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d003dfa41d27_84876709',
+  'unifunc' => 'content_58d12e18348de4_37739661',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d003dfa41d27_84876709')) {function content_58d003dfa41d27_84876709($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d12e18348de4_37739661')) {function content_58d12e18348de4_37739661($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,41 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php echo $_smarty_tpl->getSubTemplate ('../menu.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
     
-enter home
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-tabs">
+                <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['project']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_smarty_tpl->tpl_vars['row']->index=-1;
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+ $_smarty_tpl->tpl_vars['row']->index++;
+ $_smarty_tpl->tpl_vars['row']->first = $_smarty_tpl->tpl_vars['row']->index === 0;
+?>
+                    <li <?php if ($_smarty_tpl->tpl_vars['row']->first){?>class="active"<?php }?>><a href="#p<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" data-toggle="tab"><?php echo $_smarty_tpl->tpl_vars['row']->value['fdName'];?>
+</a></li>
+                <?php } ?>
+            </ul>
+            
+            <div class="tab-content">
+                <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['project']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_smarty_tpl->tpl_vars['row']->index=-1;
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+ $_smarty_tpl->tpl_vars['row']->index++;
+ $_smarty_tpl->tpl_vars['row']->first = $_smarty_tpl->tpl_vars['row']->index === 0;
+?>
+                    <div class="tab-pane <?php if ($_smarty_tpl->tpl_vars['row']->first){?>active<?php }?>" id="p<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+">tab-pane-1</div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</div>
 
+    
 </body>
 </html><?php }} ?>

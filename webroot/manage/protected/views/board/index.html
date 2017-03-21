@@ -1,4 +1,20 @@
 {#extends file='../layouts/itlayout.html'#}
 {#block name='demo'#}
-enter home
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-tabs">
+                {#foreach $project as $row#}
+                    <li {#if $row@first#}class="active"{#/if#}><a href="#p{#$row['id']#}" data-toggle="tab">{#$row['fdName']#}</a></li>
+                {#/foreach#}
+            </ul>
+            
+            <div class="tab-content">
+                {#foreach $project as $row#}
+                    <div class="tab-pane {#if $row@first#}active{#/if#}" id="p{#$row['id']#}">tab-pane-1</div>
+                {#/foreach#}
+            </div>
+        </div>
+    </div>
+</div>
 {#/block#}

@@ -1,60 +1,76 @@
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "log" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "log" application component
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "request" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "request" application component
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "urlManager" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "urlManager" application component
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:05 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+2017/03/21 15:35:56 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "user" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "user" application component
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (5)
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "session" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "session" application component
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (5)
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "db" application component
-in /home/itmanage/ITManage/webroot/manage/protected/models/Common/MenuForm.php (7)
-in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/IndexAction.php (8)
-in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:05 [trace] [system.db.CDbConnection] Opening DB connection
-in /home/itmanage/ITManage/webroot/manage/protected/models/Common/MenuForm.php (7)
-in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/IndexAction.php (8)
-in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:05 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM wsqITManage.tbMenu WHERE fdPlatform = 1 AND fdStatus = 1
-in /home/itmanage/ITManage/webroot/manage/protected/models/Common/MenuForm.php (7)
-in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/IndexAction.php (8)
-in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:05 [trace] [system.CModule] Loading "smarty" application component
-in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (105)
-in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/IndexAction.php (14)
-in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "log" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "cacheDb" application component
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.db.CDbCommand] Executing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1490110556
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT value FROM YiiCache WHERE id='cache_developer' AND (expire=0 OR expire>1490110556)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "db" application component
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT id, fdNickname FROM wsqITManage.tbUser WHERE fdUserTypeID = 3
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.caching.CDbCache] Serving "developer" from cache
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (20)
+in /home/itmanage/ITManage/webroot/manage/protected/models/Common/SelectorForm.php (10)
+in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Build/OperateAction.php (59)
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "log" application component
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "request" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "request" application component
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "urlManager" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "urlManager" application component
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:06 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
+2017/03/21 15:35:56 [trace] [system.web.filters.CFilterChain] Running filter Filter.filter()
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "user" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "user" application component
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (5)
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "session" application component
+2017/03/21 15:35:56 [trace] [system.CModule] Loading "session" application component
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (5)
 in /home/itmanage/ITManage/webroot/manage/index.php (18)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "db" application component
+2017/03/21 15:35:57 [trace] [system.CModule] Loading "db" application component
 in /home/itmanage/ITManage/webroot/manage/protected/models/Common/MenuForm.php (7)
 in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Home/IndexAction.php (8)
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:06 [trace] [system.db.CDbConnection] Opening DB connection
+2017/03/21 15:35:57 [trace] [system.db.CDbConnection] Opening DB connection
 in /home/itmanage/ITManage/webroot/manage/protected/models/Common/MenuForm.php (7)
 in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Home/IndexAction.php (8)
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM wsqITManage.tbMenu WHERE fdPlatform = 1 AND fdStatus = 1
+2017/03/21 15:35:57 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM wsqITManage.tbMenu WHERE fdPlatform = 1 AND fdStatus = 1
 in /home/itmanage/ITManage/webroot/manage/protected/models/Common/MenuForm.php (7)
 in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Home/IndexAction.php (8)
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)
-2017/03/21 02:22:06 [trace] [system.CModule] Loading "smarty" application component
+2017/03/21 15:35:57 [trace] [system.CModule] Loading "smarty" application component
 in /home/itmanage/ITManage/webroot/manage/protected/components/Controller.php (105)
 in /home/itmanage/ITManage/webroot/manage/protected/controllers/actions/Home/IndexAction.php (14)
 in /home/itmanage/ITManage/webroot/manage/protected/components/Filter.php (36)

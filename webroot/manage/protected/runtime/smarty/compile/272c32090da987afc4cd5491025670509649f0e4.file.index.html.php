@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-21 02:22:05
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-21 15:35:55
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/build/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:10542330458d08e4dbda492-55503905%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:195117155958d1485b5e4a86-45146302%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '272c32090da987afc4cd5491025670509649f0e4' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/build/index.html',
-      1 => 1490027681,
+      1 => 1490100382,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10542330458d08e4dbda492-55503905',
+  'nocache_hash' => '195117155958d1485b5e4a86-45146302',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d08e4dc2d4d6_50651330',
+  'unifunc' => 'content_58d1485b6aa1d5_69253667',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d08e4dc2d4d6_50651330')) {function content_58d08e4dc2d4d6_50651330($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d1485b6aa1d5_69253667')) {function content_58d1485b6aa1d5_69253667($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,90 +79,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             
             <div class="tab-content">
                 <div class="tab-pane active" id="p1">
-                    <div class="row" style="margin-top:20px">
-                        <div class="col-md-8">
-                            <form action="" class="form-horizontal" id="formAdd">
-                                <div class="form-group">
-                                    <label for="ho-duty-name" class="col-md-2 control-label">名称</label>
-                                    <div class="col-md-10">
-                                        <input type="text" name="name" id="ho-duty-name" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-project" class="col-md-2 control-label">项目</label>
-                                    <div class="col-md-10">
-                                        <select name="project" id="ho-project" class="form-control">
-                                            <option value="1">项目管理系统</option>
-                                            <option value="2">电子商城</option>
-                                            <option value="3">博客</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-type" class="col-md-2 control-label">类型</label>
-                                    <div class="col-md-10">
-                                        <select name="type" id="ho-type" class="form-control">
-                                            <option value="1">需求</option>
-                                            <option value="2">开发</option>
-                                            <option value="3">测试</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-prority" class="col-md-2 control-label">优先级</label>
-                                    <div class="col-md-10">
-                                        <select name="prority" id="ho-prority" class="form-control">
-                                            <option value="1">轻微</option>
-                                            <option value="2">稳定</option>
-                                            <option value="3">警告</option>
-                                            <option value="4">严重</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-manager" class="col-md-2 control-label">产品经理</label>
-                                    <div class="col-md-10">
-                                        <input type="text" name="manager" id="ho-manager" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-developer" class="col-md-2 control-label">开发者</label>
-                                    <div class="col-md-10">
-                                        <input type="text" name="developer" id="ho-developer" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-tester" class="col-md-2 control-label">测试者</label>
-                                    <div class="col-md-10">
-                                        <input type="text" name="tester" id="ho-tester" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-duty-text" class="col-md-2 control-label">内容</label>
-                                    <div class="col-md-10">
-                                        <textarea name="duty-content" rows="10" class="form-control">                    
-                                        </textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ho-duty-time" class="col-md-2 control-label">上线时间</label>
-                                    <div class="col-md-10">
-                                        <input type="text" name="duty-time" id="ho-duty-time" class="form-control date-picker-input-1">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-10 col-md-offset-2">
-                                        <button type="button" class="btn btn-default" id="addUser">submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="tab-pane" id="p2">
                     <div class="row" style="margin-top:20px">
                         <div class="col-md-8">
-                            <form action="" class="form-horizontal" id="formAdd">
+                            <form action="" class="form-horizontal" id="formAddProject">
                                 <div class="form-group">
                                     <label for="ho-project-name" class="col-md-2 control-label">名称</label>
                                     <div class="col-md-10">
@@ -172,37 +94,39 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 <div class="form-group">
                                     <label for="ho-leader" class="col-md-2 control-label">组长</label>
                                     <div class="col-md-10">
-                                        <input type="email" name="account" id="ho-leader" class="form-control">
+                                        <select name="leader" id="ho-leader" class="form-control">
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="ho-project-text" class="col-md-2 control-label">内容</label>
                                     <div class="col-md-10">
-                                        <textarea name="project-content" rows="10" class="form-control">                    
+                                        <textarea name="content" rows="10" class="form-control">                    
                                         </textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="ho-pass" class="col-md-2 control-label">提醒</label>
-                                    <div class="col-md-10">
-                                        <input type="text" name="password" id="ho-pass" class="form-control">
+                                    <label for="ho-remind" class="col-md-2 control-label">提醒</label>
+                                    <div class="col-md-8">
+                                        <label for="" class="radio-inline"><input type="radio" name="remind" value="1" id="">是</label>
+                                        <label for="" class="radio-inline"><input type="radio" name="remind" value="0" id="" checked>否</label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="ho-start-time" class="col-md-2 control-label">上线时间</label>
+                                    <label for="ho-start-time" class="col-md-2 control-label">开始时间</label>
                                     <div class="col-md-10">
-                                        <input type="text" name="start-time" id="ho-start-time" class="form-control">
+                                        <input type="text" name="start-time" id="ho-start-time" class="form-control date-picker-input-1">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="ho-end-time" class="col-md-2 control-label">上线时间</label>
+                                    <label for="ho-end-time" class="col-md-2 control-label">结束时间</label>
                                     <div class="col-md-10">
-                                        <input type="text" name="end-time" id="ho-end-time" class="form-control">
+                                        <input type="text" name="end-time" id="ho-end-time" class="form-control date-picker-input-1">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-10 col-md-offset-2">
-                                        <button type="button" class="btn btn-default" id="addUser">submit</button>
+                                        <button type="button" class="btn btn-default" id="addProject">submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -213,21 +137,119 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
     </div>
 </div>
+<script>
+    $(function() {
+        $.ajax({
+            "dataType": "json",
+            "type": "post",
+            "data": {"operate": "listDuty"},
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+            "beforeSend": function()
+            {
+                console.log('call');
+            },
+            "success": function(data)
+            {
+                if (data.code == -1) {
+                    alert('暂无数据');
+                }
+                if (data.code == 0) {
+                    $('#p1').append(data['data']);
+                }
+            },
+            "complete": function()
+            {
+                $( ".date-picker-input-1" ).datepicker({
+                    inline: true,
+                    showOtherMonths: true
+                })
+                .datepicker('widget').wrap('<div class="ll-skin-nigran"/>');
+
+                $("#addDuty").on('click', function() {
+                    var params = $('#formAddDuty').serialize();
+                    params+= '&operate=addDuty';
+                    $.ajax({
+                        'type': 'post',
+                        'dataType': 'json',
+                        'data': params,
+                        'url': '<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+',
+                        'beforeSend': function (){},
+                        'success': function(data) {
+                            if (data.code != 0) {
+                                alert(data.message);
+                            }
+                            if (data.code == 0) {
+                                if( confirm('任务添加成功，是否刷新页面？'))
+                                    location.reload(true);
+                            }
+                        },
+                        'complete': function(){}
+                    })
+                })
+            }
+        });
+
+        $.ajax({
+            "dataType": "json",
+            "type": "post",
+            "data": {"operate": "listProject"},
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+            "beforeSend": function()
+            {
+                console.log('call');
+            },
+            "success": function(data)
+            {
+                if (data.code == -1) {
+                    console.log('暂无数据');
+                }
+                if (data.code == 0) {
+                    var arr = data.data.developer;
+                    for(var i=0,length=arr.length; i<length; i++ ) {
+                        $("#ho-leader").append("<option value="+arr[i]['id']+">"+arr[i]['fdNickname']+"</option>");
+                    }
+                }
+            },
+            "complete": function()
+            {
+            }
+        });
+
+        $("#addProject").on('click', function() {
+            var params = $('#formAddProject').serialize();
+            params+= '&operate=addProject';
+            $.ajax({
+                'type': 'post',
+                'dataType': 'json',
+                'data': params,
+                'url': '<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+',
+                'beforeSend': function (){},
+                'success': function(data) {
+                    if (data.code != 0) {
+                        alert(data.message);
+                    }
+                    if (data.code == 0) {
+                        if( confirm('项目添加成功，是否刷新页面？'))
+                            location.reload(true);
+                    }
+                },
+                'complete': function(){}
+            })
+        });
+
+        
+    })
+</script>
 
     
 	<script src="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
 /calendar/js/jquery-1.9.1.js"></script>
 	<script src="<?php echo $_smarty_tpl->tpl_vars['pluginURL']->value;?>
 /calendar/js/jquery-ui-1.10.1.min.js"></script>
-	<script>
-		$(function() {
-			$( ".date-picker-input-1" ).datepicker({
-				inline: true,
-				showOtherMonths: true
-			})
-			.datepicker('widget').wrap('<div class="ll-skin-nigran"/>');
-		});
-	</script>
 
 </body>
 </html><?php }} ?>

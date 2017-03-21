@@ -1,4 +1,22 @@
 {#extends file='../layouts/itlayout.html'#}
 {#block name='demo'#}
-enter home
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#p1" data-toggle="tab">tab-1</a></li>
+                <li><a href="#p2" data-toggle="tab">tabs-2</a></li>
+                <li><a href="#p3" data-toggle="tab">tabs-3</a></li>
+                <li><a href="#p4" data-toggle="tab">tabs-4</a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="p1">tab-pane-1</div>
+                <div class="tab-pane" id="p2">tab-pane-2</div>
+                <div class="tab-pane" id="p3">tab-pane-3</div>
+                <div class="tab-pane" id="p4">tab-pane-4</div>
+            </div>
+        </div>
+    </div>
+</div>
 {#/block#}
