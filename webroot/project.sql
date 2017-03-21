@@ -94,7 +94,8 @@ INSERT INTO wsqITManage.`tbDutyStatus` (fdName) VALUES ('需求'),('待开发'),
 CREATE TABLE wsqITManage.`tbDutyLog` (
     `fdDutyID` int(11) NOT NULL DEFAULT 0 COMMENT '对于tbDuty.id',
     `fdLog` blob COMMENT '任务日志内容',
-    UNIQUE INDEX `it_duty_log` (`fdLog`)
+    UNIQUE INDEX `it_duty_log` (`fdDutyID`),
+    CONSTRAINT fk_duty_id FOREIGN KEY (`fdDutyID`) REFERENCES `tbDuty` (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT '任务日志表';
 
 CREATE TABLE wsqITManage.`tbDutyRollback` (
@@ -135,3 +136,5 @@ CREATE TABLE wsqITManage.`tbMenu` (
     PRIMARY KEY (`id`),
     INDEX `it_menu_id_parentid` (`id`,`fdParentID`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='系统菜单表';
+
+GRANT ALL PRIVILEGES ON wsqITManage.* TO it@localhost IDENTIFIED BY "it";
