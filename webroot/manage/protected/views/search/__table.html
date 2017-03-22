@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <caption> </caption>
+        <thead>
+            <td class="info">ID</td>
+            <td class="info">任务名</td>
+            <td class="info">产品经理</td>
+            <td class="info">开发者</td>
+            <td class="info">测试者</td>
+            <td class="info">任务类型</td>
+            <td class="info">任务状态</td>
+            <td class="info">预计完成时间</td>
+            <td class="info">实际完成时间</td>
+        </thead>
+         {#foreach $list as $row#}
+            <tr>
+                <td><a href="{#$row['url']#}"> {#$row['id']#} </a> </td>
+                <td><a href="{#$row['url']#}"> {#$row['name']#} </a></td>
+                <td>{#$row['manager']#}</td>
+                <td>{#$row['developer']#}</td>
+                <td>{#$row['tester']#}</td>
+                <td>{#$row['type']#}</td>
+                <td>{#$row['status']#}</td>
+                <td>{#$row['plantime']#}</td>
+                <td>{#$row['completetime']#}</td>
+            </tr>
+        {#/foreach#}
+</table>

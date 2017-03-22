@@ -28,6 +28,16 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="ho-status" class="col-md-2 control-label">状态</label>
+                <div class="col-md-10">
+                    <select name="status" id="ho-status" class="form-control">
+                        {#foreach $status as $row#}
+                            <option value="{#$row['id']#}">{#$row['fdName']#}</option>
+                        {#/foreach#}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="ho-prority" class="col-md-2 control-label">优先级</label>
                 <div class="col-md-10">
                     <select name="prority" id="ho-prority" class="form-control">

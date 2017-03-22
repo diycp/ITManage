@@ -1,0 +1,84 @@
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <blockquote>
+                <div class="btn-group-sm" style="float:right">
+                    {#if $authority#}
+                        {#if ($statusID==1 || $statusID==2)#}
+                        <button class="btn btn-success">提交开发</button>
+                        {#elseif ($statusID==3 || $statusID==5 || $statusID==4)#}
+                        <button class="btn btn-success">提交测试</button>
+                        <button class="btn btn-danger">打回需求</button>
+                        {#elseif ($statusID==7 || $statusID==6)#}
+                        <button class="btn btn-success">开发通过</button>
+                        <button class="btn btn-danger">打回开发</button>
+                        {#elseif ($statusID==9 || $statusID==8)#}
+                        {#/if#}
+                    {#/if#}
+                </div>
+                <h6>项目：{#$project#}</h6>
+                <h3>{#$name#}</h3>
+            </blockquote>
+        </div>
+    </div>
+    <div class="row">
+        <dvi class="col-md-2 col-md-offset-1">产品经理：{#$manager#}</dvi>
+        <div class="col-md-2">开发者：{#$developer#}</div>
+        <div class="col-md-2">测试者：{#$tester#}</div>
+        <div class="col-md-2">预上线：{#$plantime#}</div>
+    </div>
+    <div class="row">
+        <dvi class="col-md-2 col-md-offset-1">优先级：{#$prority#}</dvi>
+        <div class="col-md-2">状态：{#$status#}</div>
+        <div class="col-md-2">类型：{#$type#}</div>
+        <div class="col-md-2">完成：{#$completetime#}</div>
+    </div>
+    <hr class="col-md-10 col-md-offset-1">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <blockquote>
+                <h5>{#$content#}</h5>
+            </blockquote>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default" style="margin-left:0%">
+                <div class="panel-heading">
+                    问题
+                    {#if $authority#}
+                    <button class="btn btn-success btn-xs" style="margin-right: 2%; float: right">添加</button>
+                    {#/if#}
+                </div>
+                <table class="table default">
+                    <tbody>
+                    <tr>
+                        <td>没有跳转没有跳转 转</td>
+                        <td>修复：
+                            <input type="radio" name="remind" value="1" id="">是
+                            <input type="radio" name="remind" value="0" id="" checked>否
+                        </td>
+                        <td>
+                            {#if $authority#}
+                            <button class="btn btn-danger btn-xs">删除</button>
+                            {#/if#}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>td-1</td>
+                        <td>td-2</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <blockquote>
+                <h5>操作日志</h5>
+                <h5>{#$log#}</h5>
+            </blockquote>
+        </div>
+    </div>

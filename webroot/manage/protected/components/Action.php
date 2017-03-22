@@ -71,6 +71,7 @@ class Action extends CAction
             $this->data = mb_convert_encoding($this->data, 'UTF-8','ascii,GB2312,gbk,UTF-8');
         $response = array('code' => $this->code, 'message' => $this->message, 'data' => $this->data);
         echo json_encode($response);
+        die;
     }
 
     /**

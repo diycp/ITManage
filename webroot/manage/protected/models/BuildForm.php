@@ -28,7 +28,7 @@ class BuildForm extends FormModel
     public function addDuty ($params)
     {
         $response = ['code' => -1, 'message' => ''];
-        list($name, $content, $prority, $time, $developer, $tester, $manager, $userID, $type, $project) = array($params['name'], $params['content'], $params['prority'], $params['time'], $params['developer'], $params['tester'], $params['manager'], $params['userID'], $params['type'], $params['project']);
+        list($name, $content, $prority, $time, $developer, $tester, $manager, $userID, $type, $project, $status) = array($params['name'], $params['content'], $params['prority'], $params['time'], $params['developer'], $params['tester'], $params['manager'], $params['userID'], $params['type'], $params['project'], $params['status']);
         $result = Yii::app()->db->createCommand()->insert("{$this->im}.tbDuty",[
             'fdName' => $name,
             'fdDesc' => $content,
@@ -40,9 +40,13 @@ class BuildForm extends FormModel
             'fdDeveloper' => $developer,
             'fdTester' => $tester,
             'fdTypeID' => $type,
+            'fdStatusID' => $status
         ]);
         if (!empty($result)) {
             $response['code'] = 0;
+            $dutyID = Yii::app()->db->getLastInsertID();
+            $dutyForm = new DutyForm();
+            $dutyForm->record($dutyID, 'create');
         } else {
             $response['message'] = '数据插入失败';
         }

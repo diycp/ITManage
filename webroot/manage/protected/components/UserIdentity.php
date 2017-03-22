@@ -43,6 +43,7 @@ class UserIdentity extends CUserIdentity
             $this->setState('__nickname', $this->userInfo['fdNickname']);
             $this->setState('__authority', $this->userInfo['fdAuthority']);
             $this->setState('__career', $this->userInfo['fdName']);
+            $this->setState('__type', $this->userInfo['fdUserTypeID']);
         }
 		return $this->errorCode;
 	}
@@ -67,7 +68,7 @@ class UserIdentity extends CUserIdentity
     private function _validate()
     {
         $im = Yii::app()->params['dbMap']['im'];
-        $sql = "SELECT tbUser.id, tbUser.fdNickname, tbUser.fdPassword, tbUserType.fdName, tbUserType.fdAuthority 
+        $sql = "SELECT tbUser.id, tbUser.fdNickname, tbUser.fdPassword, tbUser.fdUserTypeID, tbUserType.fdName, tbUserType.fdAuthority 
         FROM {$im}.tbUser 
         INNER JOIN {$im}.tbUserType ON tbUserType.id = tbUser.fdUserTypeID
         WHERE tbUser.fdAccount = :account";

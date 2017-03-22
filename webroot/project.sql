@@ -62,7 +62,6 @@ CREATE TABLE wsqITManage.`tbDuty` (
     `fdBuilder` int(11) NOT NULl DEFAULT 0 COMMENT '任务创建者 对应tbUser.id',
     `fdStatusID` int(11) NOT NULL DEFAULT 0 COMMENT '任务当前状态,对应tbDutyStatus.id',
     `fdTypeID` int(11) NOT NULL DEFAULT 0 COMMENT '任务类型，对应tbDutyType.id',
-    `fdRollbackID` tinyint(4) NOT NULl DEFAULT 0 COMMENT '任务回滚状态,对应tbDutyRollback.id',
     `fdCreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     `fdPlanTime` date NOT NULL COMMENT '任务计划开发完成时间',
     `fdCompleteTime` date NOT NULL DEFAULT 0 COMMENT '任务开发完成时间',
@@ -89,7 +88,7 @@ CREATE TABLE wsqITManage.`tbDutyStatus` (
     `fdName` varchar(64) NOT NULL DEFAULT '' COMMENT '任务状态',
     PRIMARY KEY (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='任务状态表';
-INSERT INTO wsqITManage.`tbDutyStatus` (fdName) VALUES ('需求'),('待开发'),('开发'),('待测试'),('测试'),('待修复'),('完成'),('取消');
+INSERT INTO wsqITManage.`tbDutyStatus` (fdName) VALUES ('待确认'),('需求'),('待开发'),('开发'),('待修复'),('待测试'),('测试'),('完成'),('取消');
 
 CREATE TABLE wsqITManage.`tbDutyLog` (
     `fdDutyID` int(11) NOT NULL DEFAULT 0 COMMENT '对于tbDuty.id',
@@ -97,13 +96,6 @@ CREATE TABLE wsqITManage.`tbDutyLog` (
     UNIQUE INDEX `it_duty_log` (`fdDutyID`),
     CONSTRAINT fk_duty_id FOREIGN KEY (`fdDutyID`) REFERENCES `tbDuty` (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT '任务日志表';
-
-CREATE TABLE wsqITManage.`tbDutyRollback` (
-    `id` int(11) NOT NULL AUTO_INCREMENT,
-    `fdName` varchar(32) NOT NULL DEFAULT '' COMMENT '任务回滚原因',
-    PRIMARY KEY (`id`)
-) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT '任务回滚表';
-INSERT INTO wsqITManage.`tbDutyRollback` (fdName) VALUES ('正常'), ('需求有误'), ('开发有误');
 
 CREATE TABLE wsqITManage.`tbDutyPrority` (
     `id` int(11) NOT NULL AUTO_INCREMENT,

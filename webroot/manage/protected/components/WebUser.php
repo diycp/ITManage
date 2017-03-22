@@ -12,10 +12,9 @@ class WebUser extends CWebUser
         return $this->getState('__career');
     }
 
-    public function getAuthority()
+    public function getType()
     {
-        return $this->getAuthority('__authority');
+        return $this->getState('__type');
     }
-
 
 }

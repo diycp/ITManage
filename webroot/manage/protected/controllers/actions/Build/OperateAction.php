@@ -37,16 +37,20 @@ class OperateAction extends Action
 
     public function listDuty()
     {
-        Yii::import('application.models.Common.SelectorForm');
-        $selectorForm = new SelectorForm();
-        $params = [
-            'type', 'prority', 'manager', 'tester', 'developer', 'project'
-        ];
-        $result = $selectorForm -> search($params);
-        $this->code = $result['code'];
-        $this->message = $result['message'];
-        // $this->data = $result['data'];
-        $this->data = $this->code ? '' : $this->controller->smartyRender('__table', $result['data'], '', '', '', true);
+        try {
+            Yii::import('application.models.Common.SelectorForm');
+            $selectorForm = new SelectorForm();
+            $params = [
+                'type', 'prority', 'manager', 'tester', 'developer', 'project', 'status'
+            ];
+            $result = $selectorForm -> search($params);
+            $this->code = $result['code'];
+            $this->message = $result['message'];
+            // $this->data = $result['data'];
+            $this->data = $this->code ? '' : $this->controller->smartyRender('__table', $result['data'], '', '', '', true);
+        } catch (Exception $e) {
+            WapLogger::getLogger('itmanage')->info('[访问listDuty报错：]'. $e->__toString());
+        }
     }
 
     public function listProject()
@@ -97,13 +101,14 @@ class OperateAction extends Action
             $params['project'] = $this->_POST['project'];
             $params['content'] = $this->_POST['content'];
             $params['type'] = $this->_POST['type'];
+            $params['status'] = $this->_POST['status'];
             $params['developer'] = $this->_POST['developer'];
             $params['tester'] = $this->_POST['tester'];
             $params['manager'] = $this->_POST['manager'];
             $params['prority'] = $this->_POST['prority'];
             $params['time'] = strtotime($this->_POST['time']);
             $params['userID'] = Yii::app()->user->id;
-            if (sizeof(array_filter($params)) != 10 ) {
+            if (sizeof(array_filter($params)) != 11 ) {
                 $this->code = 1;
                 $this->message = '请填写完整信息';
                 return false;

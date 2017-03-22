@@ -3,22 +3,46 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <form action="" class="form-horizontal" id="formAddProject">
+            <form action="" class="form-horizontal" id="formSearch">
                 <div class="form-group">
                     <div class="col-md-8 col-md-offset-1">
-                        <input type="text" name="name" id="ho-search" class="form-control" placeholder="通过任务名称全文检索">
+                        <input type="text" name="keyword" id="ho-search" class="form-control" placeholder="输入任务名称">
                     </div>
                     <label for="ho-search" class="col-md-1 control-label" style="padding-top: 0">
                         <button class="btn btn-default" id="search">search</button>
                     </label>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
+
+    <div class="row col-md-10 col-md-offset-1" id="duty">
+    </div>
+
 </div>
 <script>
     $(function(){
         $('#search').on('click', function(){
+            var params = $('#formSearch').serialize();
+            $.ajax({
+                'type': 'post',
+                'dataType': 'json',
+                'data': params,
+                'url': '{#$url#}',
+                'beforeSend': function (){
+                    console.log(params);
+                },
+                'success': function(data) {
+                    $('#duty').empty();
+                    if (data.code != 0) {
+                        alert('没有相关任务');
+                    }
+                    if (data.code == 0) {
+                        $('#duty').append(data['data']);
+                    }
+                },
+                'complete': function(){}
+            })
             return false;
         })
     })

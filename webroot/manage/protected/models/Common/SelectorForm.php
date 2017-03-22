@@ -53,6 +53,14 @@ class SelectorForm extends FormModel
         return ['cache' => $table, 'sql' => $sql];
     }
 
+    public function getStatus()
+    {
+        $sql = "SELECT id, fdName FROM {$this->im}.tbDutyStatus";
+        $table = Yii::app()->db->createCommand($sql)->queryAll();
+        if(empty($table)) return [];
+        return ['cache' => $table, 'sql' => $sql];
+    }
+
     public function getPrority()
     {
         $sql = "SELECT id, fdName FROM {$this->im}.tbDutyPrority";

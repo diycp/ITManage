@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-21 15:35:56
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-22 08:15:06
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/build/__table.html" */ ?>
-<?php /*%%SmartyHeaderCode:34426385358d1485cbb0f22-90265018%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2432348758d2328a2c4b79-42300046%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '05737a9b7e1af3045942aecaaa7960cf1053e56d' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/build/__table.html',
-      1 => 1490099830,
+      1 => 1490111659,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '34426385358d1485cbb0f22-90265018',
+  'nocache_hash' => '2432348758d2328a2c4b79-42300046',
   'function' => 
   array (
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'project' => 0,
     'row' => 0,
     'type' => 0,
+    'status' => 0,
     'prority' => 0,
     'manager' => 0,
     'developer' => 0,
@@ -27,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d1485cc197c1_29515519',
+  'unifunc' => 'content_58d2328a326436_94085765',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d1485cc197c1_29515519')) {function content_58d1485cc197c1_29515519($_smarty_tpl) {?><div class="row" style="margin-top:20px">
+<?php if ($_valid && !is_callable('content_58d2328a326436_94085765')) {function content_58d2328a326436_94085765($_smarty_tpl) {?><div class="row" style="margin-top:20px">
     <div class="col-md-8">
         <form action="" class="form-horizontal" id="formAddDuty">
             <div class="form-group">
@@ -60,6 +61,22 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
                     <select name="type" id="ho-type" class="form-control">
                         <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['type']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+?>
+                            <option value="<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['row']->value['fdName'];?>
+</option>
+                        <?php } ?>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ho-status" class="col-md-2 control-label">状态</label>
+                <div class="col-md-10">
+                    <select name="status" id="ho-status" class="form-control">
+                        <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['status']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
 $_smarty_tpl->tpl_vars['row']->_loop = true;
 ?>

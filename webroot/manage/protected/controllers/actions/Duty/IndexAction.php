@@ -10,7 +10,8 @@ class IndexAction extends Action
         $data['controller'] = $this->controller->id;
         $data['career'] = Yii::app()->user->career;
         $data['nickname'] = Yii::app()->user->nickname;
-        $data['url'] = $this->controller->createUrl('home/operate');
+        $data['url'] = $this->controller->createUrl('duty/operate');
+        $data['id'] = $this->_REQUEST['id'];
         $this->controller->smartyRender('index', $data);
     }
 }

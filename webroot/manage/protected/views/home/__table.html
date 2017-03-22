@@ -1,0 +1,9 @@
+{#foreach $list as $key => $val#}
+<div class="col-md-3 {#if $val@first#}col-md-offset-1{#/if#}">
+    <a href="javascript:;" class="list-group-item active">{#$key#}</a>
+    {#foreach $val as $row#}
+        <a href="{#$row['url']#}" class="list-group-item">{#$row['fdName']#} <span style="float:right">[{#$row['pname']#}]</span></a>
+        <div style="clear: both"></div>
+    {#/foreach#}
+</div>
+{#/foreach#}
