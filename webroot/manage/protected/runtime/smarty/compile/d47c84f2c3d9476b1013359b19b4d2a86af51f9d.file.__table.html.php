@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:51:46
-         compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/home/__table.html" */ ?>
-<?php /*%%SmartyHeaderCode:43591618858d3d2f2968322-48712894%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:51:55
+         compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/board/__table.html" */ ?>
+<?php /*%%SmartyHeaderCode:188690102458d3d2fbc5f976-29321599%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '494f44d0b1cce7b80b41cedbbdc8e8c919c57a8b' => 
+    'd47c84f2c3d9476b1013359b19b4d2a86af51f9d' => 
     array (
-      0 => '/home/itmanage/ITManage/webroot/manage/protected/views/home/__table.html',
-      1 => 1490171309,
+      0 => '/home/itmanage/ITManage/webroot/manage/protected/views/board/__table.html',
+      1 => 1490276895,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '43591618858d3d2f2968322-48712894',
+  'nocache_hash' => '188690102458d3d2fbc5f976-29321599',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d3d2f29a5de0_39310299',
+  'unifunc' => 'content_58d3d2fbc9a903_77896673',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d3d2f29a5de0_39310299')) {function content_58d3d2f29a5de0_39310299($_smarty_tpl) {?><?php  $_smarty_tpl->tpl_vars['val'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['val']->_loop = false;
+<?php if ($_valid && !is_callable('content_58d3d2fbc9a903_77896673')) {function content_58d3d2fbc9a903_77896673($_smarty_tpl) {?><?php  $_smarty_tpl->tpl_vars['val'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['val']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
  $_smarty_tpl->tpl_vars['val']->index=-1;
@@ -36,7 +36,7 @@ $_smarty_tpl->tpl_vars['val']->_loop = true;
  $_smarty_tpl->tpl_vars['val']->index++;
  $_smarty_tpl->tpl_vars['val']->first = $_smarty_tpl->tpl_vars['val']->index === 0;
 ?>
-<div class="col-md-3 <?php if ($_smarty_tpl->tpl_vars['val']->first){?>col-md-offset-1<?php }?>">
+<div class="col-md-3 <?php if ($_smarty_tpl->tpl_vars['val']->first){?>col-md-offset-1<?php }?>" style="margin:20px">
     <a href="javascript:;" class="list-group-item active"><?php echo $_smarty_tpl->tpl_vars['key']->value;?>
 </a>
     <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;

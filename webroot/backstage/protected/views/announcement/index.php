@@ -105,7 +105,7 @@
             "success": function(data)
             {
                 if (data.code == -1) {
-                    alert('暂无数据');
+                    $('#p1').append('<p class="text-center">暂无数据</p>');
                 }
                 if (data.code == 0) {
                     $('#p1').append(data['data']);
@@ -160,7 +160,7 @@
                         alert(data.message);
                     }
                     if (data.code == 0) {
-                        if( confirm('菜单编辑成功，是否刷新页面？'))
+                        if( confirm('公告编辑成功，是否刷新页面？'))
                             location.reload(true);
                     }
                 },
@@ -194,7 +194,7 @@
                         alert(data.message);
                     }
                     if (data.code == 0) {
-                        if( confirm('菜单删除成功，是否刷新页面？'))
+                        if( confirm('公告删除成功，是否刷新页面？'))
                             location.reload(true);
                     }
                 },
@@ -213,5 +213,28 @@
         $("#modal-preview").text(row['md']);
         $('.modal').modal();
     };
+
+    function send(id) {
+        var sign = id;
+        if (confirm("该操作无法撤销，是否确认删除？")) {
+            $.ajax({
+                "type": "post",
+                "dataType": 'json',
+                "data": "operate=send&sign="+sign,
+                "url": "<?php echo $url;?>",
+                "beforeSend": function() {},
+                "success": function(data) {
+                    if (data.code != 0) {
+                        alert(data.message);
+                    }
+                    if (data.code == 0) {
+                        if( confirm('公告推送成功，是否刷新页面？'))
+                            location.reload(true);
+                    }
+                },
+                "complete": function() {}
+            })
+        }
+    }
 </script>
 <script src="<?php echo BASE_PLUGIN_URL;?>/markdown/markdown.js"></script>

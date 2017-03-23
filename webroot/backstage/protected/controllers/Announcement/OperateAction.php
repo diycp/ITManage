@@ -1,7 +1,7 @@
 <?php
 class OperateAction extends Action
 {
-    public $methods = ['list', 'modify', 'del', 'add'];
+    public $methods = ['list', 'modify', 'del', 'add', 'send'];
     public $announcementForm;
     public function run ()
     {
@@ -26,6 +26,9 @@ class OperateAction extends Action
                     break;
                 case 'add':
                     $this->addAnnouncement();
+                    break;
+                case 'send':
+                    $this->sendAnnouncement();
                     break;
             }
             $this->put();
@@ -73,7 +76,8 @@ class OperateAction extends Action
             $params['md'] = $_POST['md'];
             $params['content'] = $_POST['content'];
             $params['id'] = $_POST['sign'];
-            if (sizeof($params) != 5 ) {
+            $params['userID'] = Yii::app()->user->id;
+            if (sizeof($params) != 6 ) {
                 $this->code = 1;
                 $this->message = '请填写完整信息';
                 return false;
@@ -98,6 +102,26 @@ class OperateAction extends Action
                 return false;
             }
             $result = $this->announcementForm->del($params);
+            $this->code = $result['code'];
+            $this->message = $result['message'];
+        } catch (Exception $e) {
+            $this->code = 1;
+            $this->message = '操作失败';
+            Yii::log($e->__toString(), 'error', 'system.log');
+        }
+    }
+
+    public function sendAnnouncement()
+    {
+        try {
+            $params['id'] = $_POST['sign'];
+            $params['userID'] = Yii::app()->user->id;
+            if (empty($params['id']) || !is_numeric($params['id'])) {
+                $this->code = 1;
+                $this->message = '请求错误';
+                return false;
+            }
+            $result = $this->announcementForm->send($params);
             $this->code = $result['code'];
             $this->message = $result['message'];
         } catch (Exception $e) {

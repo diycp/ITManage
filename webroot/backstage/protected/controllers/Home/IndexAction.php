@@ -8,6 +8,7 @@ class IndexAction extends Action
         $menuForm = new MenuForm;
         $menus = $menuForm->getMenus();
         $data['data'] = $menus;
-        $this->controller->render('homepage', ['data'=>$menus]);
+        $url = $this->controller->createUrl('home/operate');
+        $this->controller->render('index', ['data'=>$menus, 'url' => $url]);
     }
 }

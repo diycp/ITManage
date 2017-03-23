@@ -17,6 +17,7 @@ class SelectorForm extends FormModel
 
     public function getCache($id)
     {
+        // Yii::app()->cacheDb->flush();
         $cache = Yii::app()->cacheDb->get($id);
         if($cache === false) {
             $data = $this->$id();

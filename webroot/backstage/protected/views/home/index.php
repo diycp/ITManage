@@ -1,13 +1,14 @@
-{#extends file='../layouts/itlayout.html'#}
-{#block name='demo'#}
-<div class="row" id="p1">
+<?php include_once(__DIR__.'/../menu.php');?>
+<div class="container" id="p1">
+
 </div>
 <script>
     $(function() {
         $.ajax({
-            "dataType": "json",
+           "dataType": "json",
             "type": "post",
-            "url": "{#$url#}",
+            "data": {"operate": "list"},
+            "url": "<?php echo $url;?>",
             "beforeSend": function()
             {
                 console.log('call');
@@ -23,8 +24,8 @@
             },
             "complete": function()
             {
-            }
-        });
+                console.log('complete');
+            }   
+        })
     })
 </script>
-{#/block#}

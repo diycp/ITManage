@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-22 13:42:17
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:52:01
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/duty/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:118609824358d27f39b7ce37-82950024%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:86258149358d3d301d0cb70-00022562%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a19bbdad2406a34758715f2d99bfea02455925be' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/duty/index.html',
-      1 => 1490187848,
+      1 => 1490271374,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '118609824358d27f39b7ce37-82950024',
+  'nocache_hash' => '86258149358d3d301d0cb70-00022562',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d27f39bae4b9_43971187',
+  'unifunc' => 'content_58d3d301d6b4c3_38663911',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d27f39bae4b9_43971187')) {function content_58d27f39bae4b9_43971187($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d3d301d6b4c3_38663911')) {function content_58d3d301d6b4c3_38663911($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             "success": function(data)
             {
                 if (data.code != 0) {
-                    console.log('暂无数据');
+                    $('#dutyContainer').append('<p class="text-center">暂无数据</p>');
                 }
                 if (data.code == 0) {
                     $('#dutyContainer').append(data['data']);
@@ -78,6 +78,37 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             }
         });
     })
+    function updateStatus(status)
+    {
+        var id = '<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+';
+        var status = status;
+        $.ajax({
+                "dataType": "json",
+                "type": "post",
+                "data": {"operate": "updateStatus","id":"<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+", "status":status},
+                "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+                "beforeSend": function()
+                {
+                    console.log('call');
+                },
+                "success": function(data)
+                {
+                    if (data.code != 0) {
+                        alert('操作失败');
+                    }
+                    if (data.code == 0) {
+                        alert('操作成功');
+                        location.reload(true);
+                    }
+                },
+                "complete": function()
+                {
+                }
+            }); 
+    }
 </script>
 
     

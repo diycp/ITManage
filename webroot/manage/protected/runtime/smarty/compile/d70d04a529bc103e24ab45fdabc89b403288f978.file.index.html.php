@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-22 04:04:23
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:27:37
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/announcement/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:144747788058d1f7c742e3f4-27332750%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:42239262158d3cd49a217d9-43264701%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'd70d04a529bc103e24ab45fdabc89b403288f978' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/announcement/index.html',
-      1 => 1490010428,
+      1 => 1490275480,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '144747788058d1f7c742e3f4-27332750',
+  'nocache_hash' => '42239262158d3cd49a217d9-43264701',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d1f7c748c6c2_64911354',
+  'unifunc' => 'content_58d3cd49a569c2_14383592',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d1f7c748c6c2_64911354')) {function content_58d1f7c748c6c2_64911354($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d3cd49a569c2_14383592')) {function content_58d3cd49a569c2_14383592($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,37 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <?php echo $_smarty_tpl->getSubTemplate ('../menu.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
     
-enter home
+<div class="container" id="p1">
+
+</div>
+<script>
+    $(function() {
+        $.ajax({
+           "dataType": "json",
+            "type": "post",
+            "data": {"operate": "list"},
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+            "beforeSend": function()
+            {
+                console.log('call');
+            },
+            "success": function(data)
+            {
+                if (data.code != 0) {
+                    $('#p1').append('<p class="text-center">暂无数据</p>');
+                }
+                if (data.code == 0) {
+                    $('#p1').append(data['data']);
+                }
+            },
+            "complete": function()
+            {
+                console.log('complete');
+            }   
+        })
+    })
+</script>
 
     
 </body>

@@ -5,16 +5,69 @@
         <div class="col-md-10 col-md-offset-1">
             <ul class="nav nav-tabs">
                 {#foreach $project as $row#}
-                    <li {#if $row@first#}class="active"{#/if#}><a href="#p{#$row['id']#}" data-toggle="tab">{#$row['fdName']#}</a></li>
+                    <li {#if $row@first#}class="active"{#/if#}><a href="#p{#$row['id']#}" class=" protab" data-pid="{#$row['id']#}" data-toggle="tab">{#$row['fdName']#}</a></li>
                 {#/foreach#}
             </ul>
             
             <div class="tab-content">
                 {#foreach $project as $row#}
-                    <div class="tab-pane {#if $row@first#}active{#/if#}" id="p{#$row['id']#}">tab-pane-1</div>
+                    <div class="tab-pane {#if $row@first#}active{#/if#}" id="p{#$row['id']#}"></div>
                 {#/foreach#}
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(function(){
+        var cache = [];
+
+        $.ajax({
+            'type': 'post',
+            'dataType': 'json',
+            'data': {"id":'{#$project[0]["id"]#}'},
+            'url': '{#$url#}',
+            'beforeSend': function (){
+            },
+            'success': function(data) {
+                var element = '#p'+'{#$project[0]["id"]#}';
+                $(element).empty();
+                if (data.code != 0) {
+                    $(element).append('<p class="text-center">暂无数据</p>');
+                }
+                if (data.code == 0) {
+                    $(element).append(data['data']);
+                    cache[id] = data['data'];
+                }
+            },
+            'complete': function(){}
+        })
+
+        $('.protab').on('click', function () {
+            var id = $(this).attr('data-pid');
+            var element = '#p'+id;
+            if (cache[id] == null) {
+                $.ajax({
+                    'type': 'post',
+                    'dataType': 'json',
+                    'data': {"id":id},
+                    'url': '{#$url#}',
+                    'beforeSend': function (){
+                    },
+                    'success': function(data) {
+                        $(element).empty();
+                        if (data.code != 0) {
+                            $(element).append('<p class="text-center">暂无数据</p>');
+                        }
+                        if (data.code == 0) {
+                            $(element).append(data['data']);
+                            cache[id] = data['data'];
+                        }
+                    },
+                    'complete': function(){}
+                })
+            }
+        })
+    });
+
+</script>
 {#/block#}

@@ -45,12 +45,13 @@ class AnnouncementForm extends FormModel
     public function modify($params)
     {
         $response = ['code' => -1, 'message' => ''];
-        list($name, $content, $batch, $id, $md) = array($params['name'], $params['content'], $params['batch'], $params['id'], $params['md']);
+        list($name, $content, $batch, $id, $md, $userID) = array($params['name'], $params['content'], $params['batch'], $params['id'], $params['md'], $params['userID']);
         $result = Yii::app()->db->createCommand()->update("{$this->im}.tbAnnouncement",[
             'fdName' => $name,
             'fdDesc' => $content,
             'fdBatch' => $batch,
             'fdMarkdown' => $md,
+            'fdOperatorID' => $userID
         ],'id = :id', [':id' => $id]);
         if (!empty($result)) {
             $response['code'] = 0;
@@ -96,6 +97,22 @@ class AnnouncementForm extends FormModel
         } else {
             $result = Yii::app()->db->createCommand()->delete("{$this->im}.tbAnnouncement",'id =:id',[':id' => $id]);
         }
+        if (!empty($result)) {
+            $response['code'] = 0;
+        } else {
+            $response['message'] = '数据删除失败';
+        }
+        return $response;
+    }
+
+    public function send($params)
+    {
+        $response = ['code' => -1, 'message' => ''];
+        list($id, $userID) = array($params['id'], $params['userID']);
+        $result = Yii::app()->db->createCommand()->update("{$this->im}.tbAnnouncement",[
+            'fdSent' => 1,
+            'fdOperatorID' => $userID
+        ],'id = :id', [':id' => $id]);
         if (!empty($result)) {
             $response['code'] = 0;
         } else {

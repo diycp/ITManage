@@ -1,9 +1,7 @@
 <?php
-class HomeForm extends FormModel
+class BoardForm extends FormModel
 {
-    public $userID;
-    public $status;
-    public $career;
+    public $id;
 
     public function search()
     {
@@ -13,8 +11,7 @@ class HomeForm extends FormModel
         $tablename = "{$this->im}.tbDuty";
         $criteria->join = "INNER JOIN {$this->im}.tbDutyStatus ON tbDutyStatus.id = tbDuty.fdStatusID
         INNER JOIN {$this->im}.tbDutyPrority ON tbDutyPrority.id = tbDuty.fdPrority";
-        $criteria->addCondition("tbDuty.{$this->career} = {$this->userID}");
-        $criteria->compare('tbDuty.fdStatusID', $this->status);
+        $criteria->addCondition("tbDuty.fdProjectID = {$this->id}");
         // $criteria->params = [':userID' => $this->userID];
         $criteria->order = 'tbDuty.fdPrority DESC';
         $table = Yii::app()->db->commandBuilder->createFindCommand($tablename, $criteria, 'tbDuty')->queryAll();
@@ -32,5 +29,4 @@ class HomeForm extends FormModel
         $response['data']['list'] = $result;
         return $response;
     }
-
 }

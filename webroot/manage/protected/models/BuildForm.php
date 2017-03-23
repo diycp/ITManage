@@ -46,7 +46,7 @@ class BuildForm extends FormModel
             $response['code'] = 0;
             $dutyID = Yii::app()->db->getLastInsertID();
             $dutyForm = new DutyForm();
-            $dutyForm->record($dutyID, 'create');
+            $dutyForm->record($dutyID, -1);
         } else {
             $response['message'] = '数据插入失败';
         }

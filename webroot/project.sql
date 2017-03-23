@@ -17,7 +17,7 @@ CREATE TABLE wsqITManage.`tbUserType` (
     `fdAuthority` tinyint(4) NOT NULL DEFAULT 0 COMMENT'用户权限表 0-无权限 1-管理员',
     PRIMARY KEY (`id`)
 ) ENGINE INNODB DEFAULT CHARSET=utf8 COMMENT='工作类型表';
-INSERT INTO wsqITManage.tbUserType (fdName) VALUES ('管理员'),('产品经理'),('开发人员'),('测试员');
+INSERT INTO wsqITManage.tbUserType (fdName, fdAuthority) VALUES ('管理员', 1),('产品经理', 0),('开发人员', 0),('测试员', 0);
 
 CREATE TABLE wsqITManage.`tbProject` (
     `id` int(11) NOT NULL AUTO_INCREMENT,

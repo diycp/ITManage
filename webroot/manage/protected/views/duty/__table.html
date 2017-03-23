@@ -5,15 +5,22 @@
                 <div class="btn-group-sm" style="float:right">
                     {#if $authority#}
                         {#if ($statusID==1 || $statusID==2)#}
-                        <button class="btn btn-success">提交开发</button>
-                        {#elseif ($statusID==3 || $statusID==5 || $statusID==4)#}
-                        <button class="btn btn-success">提交测试</button>
-                        <button class="btn btn-danger">打回需求</button>
-                        {#elseif ($statusID==7 || $statusID==6)#}
-                        <button class="btn btn-success">开发通过</button>
-                        <button class="btn btn-danger">打回开发</button>
+                        <button class="btn btn-success" onclick="updateStatus(3)">提交开发</button>
+                        {#elseif ($statusID==3 || $statusID==5)#}
+                        <button class="btn btn-primary" onclick="updateStatus(4)">开始开发</button>
+                        <button class="btn btn-danger" onclick="updateStatus(1)">打回需求</button>
+                        {#elseif ($statusID==5 || $statusID==4)#}
+                        <button class="btn btn-success" onclick="updateStatus(6)">提交测试</button>
+                        <button class="btn btn-danger" onclick="updateStatus(1)">打回需求</button>
+                        {#elseif ($statusID==6)#}
+                        <button class="btn btn-primary" onclick="updateStatus(7)">开始测试</button>
+                        <button class="btn btn-danger" onclick="updateStatus(5)">打回开发</button>
+                        {#elseif ($statusID==7)#}
+                        <button class="btn btn-success" onclick="updateStatus(8)">开发通过</button>
+                        <button class="btn btn-danger" onclick="updateStatus(5)">打回开发</button>
                         {#elseif ($statusID==9 || $statusID==8)#}
                         {#/if#}
+                        <button class="btn btn-warning" onclick="updateStatus(9)">取消</button>
                     {#/if#}
                 </div>
                 <h6>项目：{#$project#}</h6>
@@ -46,7 +53,7 @@
             <div class="panel panel-default" style="margin-left:0%">
                 <div class="panel-heading">
                     问题
-                    {#if $authority#}
+                    {#if ($authority && $status ==7 )#}
                     <button class="btn btn-success btn-xs" style="margin-right: 2%; float: right">添加</button>
                     {#/if#}
                 </div>
@@ -59,15 +66,10 @@
                             <input type="radio" name="remind" value="0" id="" checked>否
                         </td>
                         <td>
-                            {#if $authority#}
+                            {#if ($authority && $status ==7 )#}
                             <button class="btn btn-danger btn-xs">删除</button>
                             {#/if#}
                         </td>
-                    </tr>
-                    <tr>
-                        <td>td-1</td>
-                        <td>td-2</td>
-                        <td>-</td>
                     </tr>
                 </tbody>
                 </table>

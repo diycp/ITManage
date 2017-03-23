@@ -20,7 +20,7 @@ class OperateAction extends Action
             $result = $this->homeForm->search();
             $this->code = $result['code'];
             $this->message = $result['message'];
-            $this->data = $this->controller->smartyRender('__table', $result['data'], '', '', '', true);
+            $this->data = $this->code? '' : $this->controller->smartyRender('__table', $result['data'], '', '', '', true);
         } catch (Exception $e) {
             WapLogger::getLogger('itmanage')->info('[访问主页报错]：'. $e->__toString());
         }

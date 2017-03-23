@@ -2,6 +2,7 @@
 class DutyForm extends FormModel
 {
     public $dutyID;
+    public $status;
 
     public function search()
     {
@@ -43,41 +44,69 @@ class DutyForm extends FormModel
         return $response;
     }
 
+    public function updateStatus()
+    {
+        $response = ['code' => -1, 'message' => '', 'data' => []];
+        $params = ['fdStatusID' => $this->status];
+        if ($this->status == 8) {
+            $params['fdCompleteTime'] = date('Y-m-d');
+        }
+        $result = Yii::app()->db->createCommand()->update("{$this->im}.tbDuty", $params, 'id = :id', [':id' => $this->dutyID]);
+        if (!$result) {
+            $response['message'] = '更新失败';
+            return $response;
+        }
+        $this->record($this->dutyID, $this->status);
+        $response['code'] = 0;
+        $response['message'] = 'ok';
+        return $response;
+    }
+
     public function record($dutyID, $action)
     {
         if (empty($action) || empty($dutyID)) return false;
         $career = Yii::app()->user->career;
         $user = Yii::app()->user->nickname;
+        $time = date('Y-m-d H:i:s');
         switch ($action) {
-            case 'create':
+            // case 'create':
+            case -1:
                 $str = '创建任务</br>';
                 break;
-            case 'commitDevelop':
+            // case 'commitDevelop':
+            case 3:
                 $str = '提交开发</br>';
                 break;
-            case 'rollbackRequirement':
+            // case 'rollbackRequirement':
+            case 1:
                 $str = '打回需求</br>';
                 break;
-            case 'develop':
+            // case 'develop':
+            case 4:
                 $str = '开始开发</br>';
                 break;
-            case 'commitTest':
+            // case 'commitTest':
+            case 6:
                 $str = '提交测试</br>';
                 break;
-            case 'rollbackDevelop':
+            // case 'rollbackDevelop':
+            case 5:
                 $str = '打回开发</br>';
                 break;
-            case 'test':
+            // case 'test':
+            case 7:
                 $str = '开始测试</br>';
                 break;
-            case 'complete':
+            // case 'complete':
+            case 8:
                 $str = '确认开发完成</br>';
                 break;
-            case 'cancel':
+            // case 'cancel':
+            case 9:
                 $str = '取消任务</br>';
                 break;
         }
-        $log = $career. ' : '. $user. $str;
+        $log = $time.'   '.$career. ' : '. $user. $str;
         try {
             if (strcmp($action, 'create')) {
                 $sql = "UPDATE {$this->im}.tbDutyLog SET fdLog = CONCAT(fdLog, :log) WHERE fdDutyID = :id";
@@ -97,6 +126,7 @@ class DutyForm extends FormModel
     {
         $sql = "SELECT fdLog FROM {$this->im}.tbDutyLog WHERE fdDutyID = :dutyID";
         $log = Yii::app()->db->createCommand($sql)->queryScalar([':dutyID' => $this->dutyID]);
+        if(empty($log)) return '无操作日志';
         return $log;
     }
 

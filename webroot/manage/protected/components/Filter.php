@@ -3,7 +3,7 @@ class Filter extends CFilter {
 
 	protected function preFilter ($filterChain) {
 		if (Yii::app()->getController()->id != 'login' && Yii::app()->user->isGuest) {
-			// Yii::app()->user->loginRequired();
+			Yii::app()->user->loginRequired();
 		}
 		/*$action = $filterChain->controller->module->id . '/' . $filterChain->controller->id . '/' . $filterChain->action->id;
 		if (in_array($action, $this->_actions)) {

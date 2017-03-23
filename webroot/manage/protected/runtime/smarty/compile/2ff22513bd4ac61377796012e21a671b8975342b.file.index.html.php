@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-21 17:01:30
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:37:10
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/project/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:132121597658d15c6a3dda28-73377444%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:29561247158d3cf8681c8f8-61530860%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '2ff22513bd4ac61377796012e21a671b8975342b' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/project/index.html',
-      1 => 1490102569,
+      1 => 1490261913,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '132121597658d15c6a3dda28-73377444',
+  'nocache_hash' => '29561247158d3cf8681c8f8-61530860',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d15c6a4127c5_08759865',
+  'unifunc' => 'content_58d3cf8685cd93_12169726',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d15c6a4127c5_08759865')) {function content_58d15c6a4127c5_08759865($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d3cf8685cd93_12169726')) {function content_58d3cf8685cd93_12169726($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -53,21 +53,94 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#p1" data-toggle="tab">tab-1</a></li>
-                <li><a href="#p2" data-toggle="tab">tabs-2</a></li>
-                <li><a href="#p3" data-toggle="tab">tabs-3</a></li>
-                <li><a href="#p4" data-toggle="tab">tabs-4</a></li>
+                <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['project']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_smarty_tpl->tpl_vars['row']->index=-1;
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+ $_smarty_tpl->tpl_vars['row']->index++;
+ $_smarty_tpl->tpl_vars['row']->first = $_smarty_tpl->tpl_vars['row']->index === 0;
+?>
+                    <li <?php if ($_smarty_tpl->tpl_vars['row']->first){?>class="active"<?php }?>><a href="#p<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" class=" protab" data-pid="<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" data-toggle="tab"><?php echo $_smarty_tpl->tpl_vars['row']->value['fdName'];?>
+</a></li>
+                <?php } ?>
             </ul>
             
             <div class="tab-content">
-                <div class="tab-pane active" id="p1">tab-pane-1</div>
-                <div class="tab-pane" id="p2">tab-pane-2</div>
-                <div class="tab-pane" id="p3">tab-pane-3</div>
-                <div class="tab-pane" id="p4">tab-pane-4</div>
+                <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['project']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_smarty_tpl->tpl_vars['row']->index=-1;
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+ $_smarty_tpl->tpl_vars['row']->index++;
+ $_smarty_tpl->tpl_vars['row']->first = $_smarty_tpl->tpl_vars['row']->index === 0;
+?>
+                    <div class="tab-pane <?php if ($_smarty_tpl->tpl_vars['row']->first){?>active<?php }?>" id="p<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+"></div>
+                <?php } ?>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(function(){
+        var cache = [];
+
+        $.ajax({
+            'type': 'post',
+            'dataType': 'json',
+            'data': {"id":'<?php echo $_smarty_tpl->tpl_vars['project']->value[0]["id"];?>
+'},
+            'url': '<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+',
+            'beforeSend': function (){
+            },
+            'success': function(data) {
+                var element = '#p'+'<?php echo $_smarty_tpl->tpl_vars['project']->value[0]["id"];?>
+';
+                $(element).empty();
+                if (data.code != 0) {
+                    $(element).append('<p class="text-center">暂无数据</p>');
+                }
+                if (data.code == 0) {
+                    $(element).append(data['data']);
+                    cache[id] = data['data'];
+                }
+            },
+            'complete': function(){}
+        })
+
+        $('.protab').on('click', function () {
+            var id = $(this).attr('data-pid');
+            var element = '#p'+id;
+            if (cache[id] == null) {
+                $.ajax({
+                    'type': 'post',
+                    'dataType': 'json',
+                    'data': {"id":id},
+                    'url': '<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+',
+                    'beforeSend': function (){
+                    },
+                    'success': function(data) {
+                        $(element).empty();
+                        if (data.code != 0) {
+                            $(element).append('<p class="text-center">暂无数据</p>');
+                        }
+                        if (data.code == 0) {
+                            $(element).append(data['data']);
+                            cache[id] = data['data'];
+                        }
+                    },
+                    'complete': function(){}
+                })
+            }
+        })
+    });
+
+</script>
 
     
 </body>

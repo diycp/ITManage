@@ -16,7 +16,7 @@
             "success": function(data)
             {
                 if (data.code != 0) {
-                    console.log('暂无数据');
+                    $('#dutyContainer').append('<p class="text-center">暂无数据</p>');
                 }
                 if (data.code == 0) {
                     $('#dutyContainer').append(data['data']);
@@ -27,5 +27,33 @@
             }
         });
     })
+    function updateStatus(status)
+    {
+        var id = '{#$id#}';
+        var status = status;
+        $.ajax({
+                "dataType": "json",
+                "type": "post",
+                "data": {"operate": "updateStatus","id":"{#$id#}", "status":status},
+                "url": "{#$url#}",
+                "beforeSend": function()
+                {
+                    console.log('call');
+                },
+                "success": function(data)
+                {
+                    if (data.code != 0) {
+                        alert('操作失败');
+                    }
+                    if (data.code == 0) {
+                        alert('操作成功');
+                        location.reload(true);
+                    }
+                },
+                "complete": function()
+                {
+                }
+            }); 
+    }
 </script>
 {#/block#}

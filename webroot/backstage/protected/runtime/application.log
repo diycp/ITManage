@@ -11382,3 +11382,1550 @@ hg
 in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (62)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 03:31:09 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (62)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 09:50:51 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (62)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 11:28:44 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (62)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 11:33:27 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (62)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 12:17:12 [error] [exception.CException] CException: HomeController cannot find the requested view "index". in /home/itmanage/ITManage/webroot/framework/web/CController.php:878
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/IndexAction.php(12): CController->render('index', Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(IndexAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/assets/css/bootstrap.min.css.map
+---
+2017/03/23 12:17:15 [error] [exception.CException] CException: HomeController cannot find the requested view "index". in /home/itmanage/ITManage/webroot/framework/web/CController.php:878
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/IndexAction.php(12): CController->render('index', Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(IndexAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php
+HTTP_REFERER=http://backstage.com:8000/index.php
+---
+2017/03/23 12:17:16 [error] [exception.CException] CException: HomeController cannot find the requested view "index". in /home/itmanage/ITManage/webroot/framework/web/CController.php:878
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/IndexAction.php(12): CController->render('index', Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): IndexAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(IndexAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://backstage.com:8000/index.php
+---
+2017/03/23 12:18:07 [error] [php] include(WapLogger.php): failed to open stream: No such file or directory (/home/itmanage/ITManage/webroot/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(13): spl_autoload_call()
+#1 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#2 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#3 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): HomeController->runAction()
+#4 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): HomeController->runActionWithFilters()
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): HomeController->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#12 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=home/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:18:55 [info] [system.home] [访问home报错]:CException: Property "CDbCriteria.addCondition" is not defined. in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(11): CComponent->__set('addCondition', 'tbAnnouncement....')
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(8): HomeForm->search()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:19:53 [info] [system.home] [访问home报错]:CException: Property "CDbCriteria.addCondition" is not defined. in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(11): CComponent->__set('addCondition', 'tbAnnouncement....')
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(8): HomeForm->search()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:21:50 [info] [system.home] [访问home报错]:CException: Property "CDbCriteria.addCondition" is not defined. in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(12): CComponent->__set('addCondition', 'tbAnnouncement....')
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(8): HomeForm->search()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:23:04 [info] [system.home] [访问home报错]:CException: Property "CDbCriteria.addCondition" is not defined. in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(12): CComponent->__set('addCondition', 'tbAnnouncement....')
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(9): HomeForm->search()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (14)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:23:32 [info] [system.home] [访问home报错]:CException: Property "CDbCriteria.addCondition" is not defined. in /home/itmanage/ITManage/webroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(12): CComponent->__set('addCondition', 'tbAnnouncement....')
+#1 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(8): HomeForm->search()
+#2 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#3 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#5 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#6 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#10 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#12 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#14 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:24:11 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUs' at line 1. The SQL statement executed was: SELECT  FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUser ON tbUser.id = tbAnnouncement.fdOperatorID WHERE (tbAnnouncement.fdSent = 1) AND (tbAnnouncement.fdDeleted = 0) ORDER BY tbAnnouncement.fdUpdate DESC LIMIT 1.
+in /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php (16)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (8)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/23 12:24:11 [info] [system.home] [访问home报错]:CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUs' at line 1. The SQL statement executed was: SELECT  FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUser ON tbUser.id = tbAnnouncement.fdOperatorID WHERE (tbAnnouncement.fdSent = 1) AND (tbAnnouncement.fdDeleted = 0) ORDER BY tbAnnouncement.fdUpdate DESC LIMIT 1 in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(16): CDbCommand->queryRow()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(8): HomeForm->search()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:24:27 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUs' at line 1. The SQL statement executed was: SELECT  FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUser ON tbUser.id = tbAnnouncement.fdOperatorID WHERE (tbAnnouncement.fdSent = 1) AND (tbAnnouncement.fdDeleted = 0) ORDER BY tbAnnouncement.fdUpdate DESC LIMIT 1.
+in /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php (16)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (8)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+2017/03/23 12:24:27 [info] [system.home] [访问home报错]:CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUs' at line 1. The SQL statement executed was: SELECT  FROM `wsqITManage`.`tbAnnouncement` `tbAnnouncement` INNER JOIN wsqITManage.tbUser ON tbUser.id = tbAnnouncement.fdOperatorID WHERE (tbAnnouncement.fdSent = 1) AND (tbAnnouncement.fdDeleted = 0) ORDER BY tbAnnouncement.fdUpdate DESC LIMIT 1 in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/itmanage/ITManage/webroot/backstage/protected/models/HomeForm.php(16): CDbCommand->queryRow()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(8): HomeForm->search()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#15 {main}
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (13)
+in /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php (9)
+in /home/itmanage/ITManage/webroot/backstage/index.php (13)
+2017/03/23 12:27:20 [error] [exception.Error] Error: Call to a member function renderPartial() on null in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php:11
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=home/operate
+HTTP_REFERER=http://backstage.com:8000/index.php
+---
+2017/03/23 12:32:58 [error] [exception.Error] Error: Call to a member function renderPartial() on null in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php:11
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=home/operate
+HTTP_REFERER=http://backstage.com:8000/index.php
+---
+2017/03/23 12:33:11 [error] [exception.Error] Error: Call to a member function renderPartial() on null in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php:11
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=home/operate
+HTTP_REFERER=http://backstage.com:8000/index.php
+---
+2017/03/23 12:33:41 [error] [exception.Error] Error: Call to a member function renderPartial() on null in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php:11
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(OperateAction))
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter(Object(CFilterChain))
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(OperateAction), Array)
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): CController->run('operate')
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/operate')
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=home/operate
+HTTP_REFERER=http://backstage.com:8000/index.php
+---
+2017/03/23 12:34:07 [error] [php] Undefined variable: data (/home/itmanage/ITManage/webroot/backstage/protected/views/menu.php:7)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/CBaseController.php(95): HomeController->renderInternal()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(869): HomeController->renderFile()
+#2 /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php(12): HomeController->renderPartial()
+#3 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): HomeController->runAction()
+#6 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#8 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#9 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): HomeController->runActionWithFilters()
+#11 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): HomeController->run()
+#12 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=home/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/views/menu.php (7)
+in /home/itmanage/ITManage/webroot/backstage/protected/views/home/index.php (1)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Home/OperateAction.php (12)
+2017/03/23 12:40:57 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (62)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 12:48:40 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 12:48:56 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'test-md'
+                'update' => '2017-03-20 16:40:56'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 12:49:13 [error] [php] Undefined variable: userID (/home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php:114)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): AnnouncementController->runAction()
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): AnnouncementController->runActionWithFilters()
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): AnnouncementController->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=announcement/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (114)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (124)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (31)
+2017/03/23 12:49:24 [error] [php] Undefined variable: userID (/home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php:114)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/web/actions/CAction.php(76): OperateAction->run()
+#1 /home/itmanage/ITManage/webroot/framework/web/CController.php(308): OperateAction->runWithParams()
+#2 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(133): AnnouncementController->runAction()
+#3 /home/itmanage/ITManage/webroot/backstage/protected/components/Filter.php(9): CFilterChain->run()
+#4 /home/itmanage/ITManage/webroot/framework/web/filters/CFilter.php(38): Filter->preFilter()
+#5 /home/itmanage/ITManage/webroot/framework/web/filters/CFilterChain.php(130): Filter->filter()
+#6 /home/itmanage/ITManage/webroot/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/itmanage/ITManage/webroot/framework/web/CController.php(265): AnnouncementController->runActionWithFilters()
+#8 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(282): AnnouncementController->run()
+#9 /home/itmanage/ITManage/webroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/itmanage/ITManage/webroot/backstage/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=announcement/operate
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (114)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (124)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (31)
+2017/03/23 13:11:07 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 13:12:31 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 13:13:25 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 13:15:13 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 13:16:45 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 13:18:23 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/23 13:25:55 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)

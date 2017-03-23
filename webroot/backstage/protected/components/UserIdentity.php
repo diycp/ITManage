@@ -70,7 +70,7 @@ class UserIdentity extends CUserIdentity
         $sql = "SELECT tbUser.id, tbUser.fdNickname, tbUser.fdPassword, tbUserType.fdName, tbUserType.fdAuthority 
         FROM {$im}.tbUser 
         INNER JOIN {$im}.tbUserType ON tbUserType.id = tbUser.fdUserTypeID
-        WHERE tbUser.fdAccount = :account";
+        WHERE tbUser.fdAccount = :account AND tbUserType.fdAuthority = 1";
         $this->userInfo = Yii::app()->db->createCommand($sql)->queryRow(true, [':account' => $this->account]);
         if (empty($this->userInfo)) {
             $this->errorCode = self::ERROR_ACCOUNT_INVALID;

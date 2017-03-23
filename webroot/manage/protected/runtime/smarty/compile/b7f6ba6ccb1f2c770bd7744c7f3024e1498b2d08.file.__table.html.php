@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-22 13:42:18
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:52:02
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html" */ ?>
-<?php /*%%SmartyHeaderCode:115209596158d27f3a06f268-68845483%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:208360544658d3d30227f1b1-23809063%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b7f6ba6ccb1f2c770bd7744c7f3024e1498b2d08' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html',
-      1 => 1490190103,
+      1 => 1490238491,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '115209596158d27f3a06f268-68845483',
+  'nocache_hash' => '208360544658d3d30227f1b1-23809063',
   'function' => 
   array (
   ),
@@ -34,24 +34,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d27f3a0bbeb5_67780549',
+  'unifunc' => 'content_58d3d3022e4842_01862800',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d27f3a0bbeb5_67780549')) {function content_58d27f3a0bbeb5_67780549($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58d3d3022e4842_01862800')) {function content_58d3d3022e4842_01862800($_smarty_tpl) {?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <blockquote>
                 <div class="btn-group-sm" style="float:right">
                     <?php if ($_smarty_tpl->tpl_vars['authority']->value){?>
                         <?php if (($_smarty_tpl->tpl_vars['statusID']->value==1||$_smarty_tpl->tpl_vars['statusID']->value==2)){?>
-                        <button class="btn btn-success">提交开发</button>
-                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==3||$_smarty_tpl->tpl_vars['statusID']->value==5||$_smarty_tpl->tpl_vars['statusID']->value==4)){?>
-                        <button class="btn btn-success">提交测试</button>
-                        <button class="btn btn-danger">打回需求</button>
-                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==7||$_smarty_tpl->tpl_vars['statusID']->value==6)){?>
-                        <button class="btn btn-success">开发通过</button>
-                        <button class="btn btn-danger">打回开发</button>
+                        <button class="btn btn-success" onclick="updateStatus(3)">提交开发</button>
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==3||$_smarty_tpl->tpl_vars['statusID']->value==5)){?>
+                        <button class="btn btn-primary" onclick="updateStatus(4)">开始开发</button>
+                        <button class="btn btn-danger" onclick="updateStatus(1)">打回需求</button>
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==5||$_smarty_tpl->tpl_vars['statusID']->value==4)){?>
+                        <button class="btn btn-success" onclick="updateStatus(6)">提交测试</button>
+                        <button class="btn btn-danger" onclick="updateStatus(1)">打回需求</button>
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==6)){?>
+                        <button class="btn btn-primary" onclick="updateStatus(7)">开始测试</button>
+                        <button class="btn btn-danger" onclick="updateStatus(5)">打回开发</button>
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==7)){?>
+                        <button class="btn btn-success" onclick="updateStatus(8)">开发通过</button>
+                        <button class="btn btn-danger" onclick="updateStatus(5)">打回开发</button>
                         <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==9||$_smarty_tpl->tpl_vars['statusID']->value==8)){?>
                         <?php }?>
+                        <button class="btn btn-warning" onclick="updateStatus(9)">取消</button>
                     <?php }?>
                 </div>
                 <h6>项目：<?php echo $_smarty_tpl->tpl_vars['project']->value;?>
@@ -95,7 +102,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="panel panel-default" style="margin-left:0%">
                 <div class="panel-heading">
                     问题
-                    <?php if ($_smarty_tpl->tpl_vars['authority']->value){?>
+                    <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['status']->value==7)){?>
                     <button class="btn btn-success btn-xs" style="margin-right: 2%; float: right">添加</button>
                     <?php }?>
                 </div>
@@ -108,15 +115,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             <input type="radio" name="remind" value="0" id="" checked>否
                         </td>
                         <td>
-                            <?php if ($_smarty_tpl->tpl_vars['authority']->value){?>
+                            <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['status']->value==7)){?>
                             <button class="btn btn-danger btn-xs">删除</button>
                             <?php }?>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>td-1</td>
-                        <td>td-2</td>
-                        <td>-</td>
                     </tr>
                 </tbody>
                 </table>

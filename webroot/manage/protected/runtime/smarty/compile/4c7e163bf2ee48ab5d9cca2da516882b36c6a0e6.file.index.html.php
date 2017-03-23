@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-22 13:42:21
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-23 13:52:02
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/home/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:80136410958d27f3dc2e709-65709998%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:36627086058d3d3025713e0-44487361%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4c7e163bf2ee48ab5d9cca2da516882b36c6a0e6' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/home/index.html',
-      1 => 1490170342,
+      1 => 1490239707,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '80136410958d27f3dc2e709-65709998',
+  'nocache_hash' => '36627086058d3d3025713e0-44487361',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d27f3dc61af3_14907934',
+  'unifunc' => 'content_58d3d3025b96e1_24379750',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d27f3dc61af3_14907934')) {function content_58d27f3dc61af3_14907934($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d3d3025b96e1_24379750')) {function content_58d3d3025b96e1_24379750($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +65,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             "success": function(data)
             {
                 if (data.code != 0) {
-                    console.log('暂无数据');
+                    $('#p1').append('<p class="text-center">暂无数据</p>');
                 }
                 if (data.code == 0) {
                     $('#p1').append(data['data']);

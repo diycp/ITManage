@@ -35,7 +35,7 @@
                 'success': function(data) {
                     $('#duty').empty();
                     if (data.code != 0) {
-                        alert('没有相关任务');
+                        $('#duty').append('<p class="text-center">暂无数据</p>');
                     }
                     if (data.code == 0) {
                         $('#duty').append(data['data']);
