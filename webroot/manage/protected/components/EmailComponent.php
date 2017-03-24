@@ -1,11 +1,11 @@
 <?php
 class EmailComponent
 {
-    const EMAIL_HOST = "smtp.sina.com";
+    const EMAIL_HOST = "smtp.163.com";
     const EMAIL_PORT = 25;
-    const EMAIL_USERNAME = "itcommunication@sina.com";
-    const EMAIL_ID = "itcommunication";
-    const EMAIL_PASSWORD = "wsqit9425";
+    const EMAIL_USERNAME = "#####@163.com";
+    const EMAIL_ID = "#####";
+    const EMAIL_PASSWORD = "****";
 
     public $email;
 

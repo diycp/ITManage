@@ -351,3 +351,350 @@ Stack trace:
 #8 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
 #9 {main}
 ---
+2017/03/24 08:27:11 [error] [php] Array to string conversion (/home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:510)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll()
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(62): SendEmailCommand->actionDutyBatch()
+#2 unknown(0): SendEmailCommand->actionCheckDuty()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#6 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#7 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#8 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once()
+
+2017/03/24 08:28:16 [error] [php] Array to string conversion (/home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:510)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll()
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(62): SendEmailCommand->dutyBatch()
+#2 unknown(0): SendEmailCommand->actionCheckDuty()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#6 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#7 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#8 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once()
+
+2017/03/24 08:29:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:29:34 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(62): SendEmailCommand->dutyBatch('1')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:29:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:29:34 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(62): SendEmailCommand->dutyBatch('3')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:30:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:30:27 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(63): SendEmailCommand->dutyBatch('1')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:30:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:30:27 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(63): SendEmailCommand->dutyBatch('3')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:30:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:30:47 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(63): SendEmailCommand->dutyBatch('1')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:30:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:30:47 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(63): SendEmailCommand->dutyBatch('3')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:31:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:31:38 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(63): SendEmailCommand->dutyBatch('1')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:31:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:31:38 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(38): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(63): SendEmailCommand->dutyBatch('3')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:31:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:31:51 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(39): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(64): SendEmailCommand->dutyBatch('1')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:31:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id).
+2017/03/24 08:31:51 [error] [system.console] [群发任务邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s). The SQL statement executed was: SELECT tbUser.fdAccount  FROM wsqITManage.tbUser 
+            WHERE tbUser.id in (SELECT fdManager,fdTester,fdDeveloper FROM wsqITManage.tbDuty WHERE tbDuty.id = :id) in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(39): CDbCommand->queryAll(true, Array)
+#2 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(64): SendEmailCommand->dutyBatch('3')
+#3 [internal function]: SendEmailCommand->actionCheckDuty()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#8 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#9 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#10 {main}
+2017/03/24 08:36:34 [error] [php] Array to string conversion (/home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php:38)
+Stack trace:
+#0 unknown(0): SendEmailCommand->actionCheckDuty()
+#1 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#4 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#5 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#6 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once()
+
+2017/03/24 08:37:44 [error] [php] Array to string conversion (/home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php:38)
+Stack trace:
+#0 unknown(0): SendEmailCommand->actionCheckDuty()
+#1 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#4 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#5 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#6 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once()
+
+2017/03/24 08:45:22 [error] [php] Undefined index: fdName (/home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php:49)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#1 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#3 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#4 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#5 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once()
+
+2017/03/24 08:48:05 [error] [php] Undefined index: HTTP_HOST (/home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php:2)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#2 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#3 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once()
+
+2017/03/24 09:16:12 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 09:16:12 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 09:16:12 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 09:16:12 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 09:16:12 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 09:27:16 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 09:27:16 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 09:27:16 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 09:27:16 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 09:27:16 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 09:42:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT id, fdName, fdDesc, fdMarkdown FROM wsqITManage.tbAnnouncement WHERE id = :id AND fdBatch = 1 AND fdSent = 0.
+2017/03/24 09:42:56 [error] [system.console] [群发公告邮件报错]：CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT id, fdName, fdDesc, fdMarkdown FROM wsqITManage.tbAnnouncement WHERE id = :id AND fdBatch = 1 AND fdSent = 0 in /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php(9): CDbCommand->queryAll()
+#2 [internal function]: SendEmailCommand->actionAnnouncementBatch()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#5 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#7 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#8 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#9 {main}
+2017/03/24 09:43:58 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 09:43:58 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 09:43:58 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 09:43:58 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 09:43:58 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 11:56:23 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 11:56:23 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 11:56:23 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 11:56:23 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 11:56:23 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 11:58:08 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 11:58:08 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 11:58:08 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 11:58:08 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 11:58:08 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:03:01 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:03:01 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:03:01 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:03:01 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:03:01 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:04:01 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:04:01 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:04:01 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:04:01 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:04:01 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:05:01 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:05:01 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:05:01 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:05:01 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:05:01 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:06:01 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:06:01 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:06:01 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:06:01 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:06:01 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:09:56 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:09:56 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:09:56 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:09:56 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:09:56 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:10:06 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:10:06 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:10:06 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:10:06 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:10:06 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:14:03 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:14:03 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:14:03 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:14:03 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:14:03 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:17:04 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:17:04 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:17:04 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:17:04 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:17:04 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:17:04 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:17:42 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:17:42 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:17:42 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:17:42 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:17:42 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:17:42 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:23:05 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:23:05 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:23:05 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:23:05 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:23:05 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:23:05 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:23:21 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:23:21 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:23:21 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:23:21 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:23:21 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:23:21 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:24:28 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:24:28 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:24:28 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:24:28 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:24:28 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:24:28 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:25:02 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:25:02 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:25:02 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:25:02 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:25:02 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:25:02 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:28:50 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:28:50 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:28:50 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:28:50 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:28:50 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:28:50 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:29:08 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:29:08 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:29:08 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:29:08 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:29:08 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:29:08 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：
+2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com

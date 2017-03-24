@@ -8,7 +8,12 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
-
+	'import'=>array(
+		'application.models.*',
+		'application.components.*',
+		'application.extensions.*',
+		'application.extensions.log4php.*'
+	),
 	// application components
 	'components'=>array(
 

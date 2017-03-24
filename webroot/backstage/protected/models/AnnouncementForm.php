@@ -110,14 +110,18 @@ class AnnouncementForm extends FormModel
         $response = ['code' => -1, 'message' => ''];
         list($id, $userID) = array($params['id'], $params['userID']);
         $result = Yii::app()->db->createCommand()->update("{$this->im}.tbAnnouncement",[
-            'fdSent' => 1,
-            'fdOperatorID' => $userID
+            'fdOperatorID' => $userID,
+            'fdBatch' => 1
         ],'id = :id', [':id' => $id]);
+        $mount = Yii::getPathOfAlias('application.models'). '/mount.php';
         if (!empty($result)) {
-            $response['code'] = 0;
+            // $response['code'] = 0;
+            exec("/usr/local/php7/bin/php /home/itmanage/ITManage/webroot/manage/protected/yiic.php sendemail announcementbatch --id=$id>$mount &");
+            $response['message'] = '等待执行';
         } else {
-            $response['message'] = '数据删除失败';
+            $response['message'] = '操作有误';
         }
+        
         return $response;
     }
 }

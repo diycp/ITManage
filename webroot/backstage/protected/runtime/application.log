@@ -12929,3 +12929,428 @@ hg
 in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/24 07:14:22 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-23 20:50:24'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-2'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-4'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/24 09:03:06 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/24 09:06:14 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            1 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/24 09:09:54 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:09:50'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            1 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            2 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/24 09:15:51 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:15:42'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            1 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            2 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
