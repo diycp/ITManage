@@ -3,9 +3,9 @@ class EmailComponent
 {
     const EMAIL_HOST = "smtp.163.com";
     const EMAIL_PORT = 25;
-    const EMAIL_USERNAME = "#####@163.com";
-    const EMAIL_ID = "#####";
-    const EMAIL_PASSWORD = "****";
+    const EMAIL_USERNAME = " @163.com";
+    const EMAIL_ID = " ";
+    const EMAIL_PASSWORD = " ";
 
     public $email;
 
@@ -26,6 +26,6 @@ class EmailComponent
         $this->email->subject = $title;
         $this->email->body = $email_comtent;
         $result = $this->email->send();
-        echo $result? 'success':'failed';
+        return $result? 'success':'failed';
     }
 }

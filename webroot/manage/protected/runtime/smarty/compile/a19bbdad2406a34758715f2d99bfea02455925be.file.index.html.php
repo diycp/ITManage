@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-24 08:43:31
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-25 17:18:22
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/duty/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:54381783058d4dc33e92613-83085455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:214530888858d6a65e095b56-93021857%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'a19bbdad2406a34758715f2d99bfea02455925be' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/duty/index.html',
-      1 => 1490271374,
+      1 => 1490462280,
       2 => 'file',
     ),
     '6c32ba4a2db5d15490b6567a5f8791b3490c9b4c' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '54381783058d4dc33e92613-83085455',
+  'nocache_hash' => '214530888858d6a65e095b56-93021857',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d4dc33f27db2_63012205',
+  'unifunc' => 'content_58d6a65e0c78e8_20367029',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d4dc33f27db2_63012205')) {function content_58d4dc33f27db2_63012205($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_58d6a65e0c78e8_20367029')) {function content_58d6a65e0c78e8_20367029($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,6 +50,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     
 <div class="container" id="dutyContainer">
+</div>
+<div class="modal fade">
+    <div class="modal-dialog">
+       <div class="modal-content">
+           
+        <div class="modal-header">添加BUG</div>
+        <div class="modal-body">
+            <form action="" class="form-horizontal" id="modal-form">
+                <div class="form-group">
+                    <label for="modal-ho-name" class="col-md-2 control-label">问题</label>
+                    <div class="col-md-10">
+                        <input type="text" name="name" id="modal-ho-name" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" id="modalclose">
+                close
+            </button>
+            <button class="btn btn-primary" id="modaladdbug">
+                submit
+            </button>
+        </div>
+       </div>
+    </div>
 </div>
 <script>
     $(function() {
@@ -109,6 +135,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 }
             }); 
     }
+
+
 </script>
 
     

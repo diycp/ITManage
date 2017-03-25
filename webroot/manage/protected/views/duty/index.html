@@ -2,6 +2,32 @@
 {#block name='demo'#}
 <div class="container" id="dutyContainer">
 </div>
+<div class="modal fade">
+    <div class="modal-dialog">
+       <div class="modal-content">
+           
+        <div class="modal-header">添加BUG</div>
+        <div class="modal-body">
+            <form action="" class="form-horizontal" id="modal-form">
+                <div class="form-group">
+                    <label for="modal-ho-name" class="col-md-2 control-label">问题</label>
+                    <div class="col-md-10">
+                        <input type="text" name="name" id="modal-ho-name" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" id="modalclose">
+                close
+            </button>
+            <button class="btn btn-primary" id="modaladdbug">
+                submit
+            </button>
+        </div>
+       </div>
+    </div>
+</div>
 <script>
     $(function() {
         $.ajax({
@@ -55,5 +81,7 @@
                 }
             }); 
     }
+
+
 </script>
 {#/block#}

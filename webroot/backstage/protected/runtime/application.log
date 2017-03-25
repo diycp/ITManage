@@ -13354,3 +13354,155 @@ hg
 in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/25 14:11:57 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            1 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            2 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/03/25 14:27:38 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:27:38 [error] [php] include(EmailComponent.php): failed to open stream: No such file or directory (/home/itmanage/ITManage/webroot/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/commands/SendEmailCommand.php(8): spl_autoload_call()
+#1 unknown(0): SendEmailCommand->actionAnnouncementBatch()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/itmanage/ITManage/webroot/backstage/protected/yiic.php(7): require_once()
+
+2017/03/25 14:28:42 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:28:42 [error] [php] include(EmailComponent.php): failed to open stream: No such file or directory (/home/itmanage/ITManage/webroot/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/commands/SendEmailCommand.php(8): spl_autoload_call()
+#1 unknown(0): SendEmailCommand->actionAnnouncementBatch()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/itmanage/ITManage/webroot/backstage/protected/yiic.php(7): require_once()
+
+2017/03/25 14:34:16 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:34:16 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:34:16 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:34:16 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:34:16 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:34:16 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:34:47 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:34:47 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:34:47 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:34:47 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:34:47 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:34:47 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:35:43 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:35:43 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:35:43 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:35:43 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:35:43 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:35:43 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:36:43 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:36:43 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:36:43 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:36:43 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:36:43 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:36:43 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:43:16 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:43:16 [info] [system.console] [ 2017-03-25 14:43:16 ][群发公告邮件]：6
+demo-5
+
+2017/03/25 14:43:16 [info] [system.console] [ 2017-03-25 14:43:16 ][群发公告邮件]：6
+demo-5
+
+2017/03/25 14:43:16 [info] [system.console] [ 2017-03-25 14:43:16 ][群发公告邮件]：6
+demo-5
+
+2017/03/25 14:43:16 [info] [system.console] [ 2017-03-25 14:43:16 ][群发公告邮件]：6
+demo-5
+
+2017/03/25 14:43:16 [info] [system.console] [ 2017-03-25 14:43:16 ][群发公告邮件]：6
+demo-5
+
+2017/03/25 14:44:47 [info] [system.console] [ 2017-03-25 14:44:47 ][群发公告邮件]：6
+demo-5
+<h2>use &nbsp; markdown</h2>

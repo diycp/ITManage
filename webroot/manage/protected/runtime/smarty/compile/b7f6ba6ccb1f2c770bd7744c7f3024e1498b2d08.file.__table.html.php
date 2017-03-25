@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-24 08:43:32
+<?php /* Smarty version Smarty-3.1.12, created on 2017-03-25 17:18:22
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html" */ ?>
-<?php /*%%SmartyHeaderCode:6561338658d4dc3475c5c6-71021336%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:157452172858d6a65e6291c7-87964346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b7f6ba6ccb1f2c770bd7744c7f3024e1498b2d08' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html',
-      1 => 1490238491,
+      1 => 1490462297,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '6561338658d4dc3475c5c6-71021336',
+  'nocache_hash' => '157452172858d6a65e6291c7-87964346',
   'function' => 
   array (
   ),
@@ -34,9 +34,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d4dc347a7271_90583095',
+  'unifunc' => 'content_58d6a65e689a27_97421200',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d4dc347a7271_90583095')) {function content_58d4dc347a7271_90583095($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58d6a65e689a27_97421200')) {function content_58d6a65e689a27_97421200($_smarty_tpl) {?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <blockquote>
@@ -102,20 +102,21 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="panel panel-default" style="margin-left:0%">
                 <div class="panel-heading">
                     问题
-                    <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['status']->value==7)){?>
-                    <button class="btn btn-success btn-xs" style="margin-right: 2%; float: right">添加</button>
+                    <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
+                    <button class="btn btn-success btn-xs addbug" style="margin-right: 2%; float: right">添加</button>
                     <?php }?>
                 </div>
                 <table class="table default">
-                    <tbody>
+                    <tbody id="bodybug">
                     <tr>
                         <td>没有跳转没有跳转 转</td>
                         <td>修复：
-                            <input type="radio" name="remind" value="1" id="">是
-                            <input type="radio" name="remind" value="0" id="" checked>否
+                            <input type="radio" name="remind-1" value="1" id="">是
+                            <input type="radio" name="remind-1" value="0" id="" checked>否
                         </td>
                         <td>
-                            <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['status']->value==7)){?>
+                            <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
+                            <button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button>
                             <button class="btn btn-danger btn-xs">删除</button>
                             <?php }?>
                         </td>
@@ -133,4 +134,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </h5>
             </blockquote>
         </div>
-    </div><?php }} ?>
+    </div>
+
+<?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
+<script>
+    $(function(){
+        $('.addbug').on('click', function(){
+            $('.modal').modal();
+        });
+        $('#modaladdbug').on('click', function(){
+            var tr = 
+            '<tr><td>没有跳转没有跳转 转</td><td>修复：<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
+            $('#bodybug').append(tr);
+            $('#modalclose').click();
+        })
+
+    });
+    function confirm(id)
+    {
+        var radio = 'remind-'+id;
+        var slector = 'input[name='+radio+']:checked';
+        var val = $(slector).val()
+        console.log(val);
+    }
+</script>
+<?php }?><?php }} ?>

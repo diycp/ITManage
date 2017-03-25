@@ -113,10 +113,14 @@ class AnnouncementForm extends FormModel
             'fdOperatorID' => $userID,
             'fdBatch' => 1
         ],'id = :id', [':id' => $id]);
-        $mount = Yii::getPathOfAlias('application.models'). '/mount.php';
-        if (!empty($result)) {
+        // $mount = Yii::getPathOfAlias('application.models'). '/mount.php';
+        $dir = Yii::getPathOfAlias('application');
+        $mount = $dir . '/models/mount.php';
+        $yiic = $dir . '/yiic.php';
+        if (empty($result)) {
             // $response['code'] = 0;
-            exec("/usr/local/php7/bin/php /home/itmanage/ITManage/webroot/manage/protected/yiic.php sendemail announcementbatch --id=$id>$mount &");
+            // exec("/usr/local/php7/bin/php /home/itmanage/ITManage/webroot/backstage/protected/yiic.php sendemail announcementbatch --id=$id>$mount &");
+            exec(PHP_BIN.' ' . $yiic . "  sendemail announcementbatch --id=$id>$mount &");
             $response['message'] = '等待执行';
         } else {
             $response['message'] = '操作有误';

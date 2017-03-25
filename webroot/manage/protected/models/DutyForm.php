@@ -108,9 +108,12 @@ class DutyForm extends FormModel
         }
         $log = $time.'   '.$career. ' : '. $user. $str;
         try {
-            if (strcmp($action, 'create')) {
+            if ($action != -1) {
                 $sql = "UPDATE {$this->im}.tbDutyLog SET fdLog = CONCAT(fdLog, :log) WHERE fdDutyID = :id";
                 Yii::app()->db->createCommand($sql)->execute([':log' => $log, ':id' =>$dutyID ]);
+                if(!in_array($action, [4,7,8,9])) {
+                    $this->execEmail($dutyID, $action);
+                }
             } else {
                 Yii::app()->db->createCommand()->insert("{$this->im}.tbDutyLog",[
                     'fdDutyID' => $dutyID,
@@ -120,6 +123,19 @@ class DutyForm extends FormModel
         } catch (Exception $e) {
             WapLogger::getLogger('itmanage')->info('更新任务日志报错：'. $e->__toString());
         }
+    }
+
+    public function execEmail($dutyID, $action)
+    {
+        $sql = "SELECT fdManager AS manager, fdDeveloper AS developer, fdTester AS tester FROM {$this->im}.tbDuty WHERE id = :id";
+        $row = Yii::app()->db->createCommand($sql)->queryRow(true, [':id' => $dutyID]);
+        $role = $this->typeStatusMap($action);
+        $userID = $row[$role];
+        $ids = $dutyID.'-'.$userID;
+        $dir = Yii::getPathOfAlias('application');
+        $mount = $dir . '/models/mount.php';
+        $yiic = $dir . '/yiic.php';
+        exec(PHP_BIN.' ' . $yiic . "  sendemail dutynew --ids=$ids>$mount &");
     }
 
     public function getLog()
@@ -138,6 +154,7 @@ class DutyForm extends FormModel
         return $table;
     }
 
+    //判断登陆用户是否有任务操作权限
     public function getAuthority($developer, $tester, $manager, $status)
     {
         $userID = Yii::app()->user->id;
@@ -158,5 +175,19 @@ class DutyForm extends FormModel
             '4' => [6,7]
         ];
         return isset($map[$type]) ? $map[$type] : '';
+    }
+
+    public function typeStatusMap ($status)
+    {
+        $map = [
+            '1' => 'manager',
+            '2' => 'manager',
+            '3' => 'developer',
+            '4' => 'developer',
+            '5' => 'developer',
+            '6' => 'tester',
+            '7' => 'tester',            
+        ];
+        return isset($map[$status]) ? $map[$status] : '';
     }
 }

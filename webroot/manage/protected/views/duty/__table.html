@@ -53,20 +53,21 @@
             <div class="panel panel-default" style="margin-left:0%">
                 <div class="panel-heading">
                     问题
-                    {#if ($authority && $status ==7 )#}
-                    <button class="btn btn-success btn-xs" style="margin-right: 2%; float: right">添加</button>
+                    {#if ($authority && $statusID ==7 )#}
+                    <button class="btn btn-success btn-xs addbug" style="margin-right: 2%; float: right">添加</button>
                     {#/if#}
                 </div>
                 <table class="table default">
-                    <tbody>
+                    <tbody id="bodybug">
                     <tr>
                         <td>没有跳转没有跳转 转</td>
                         <td>修复：
-                            <input type="radio" name="remind" value="1" id="">是
-                            <input type="radio" name="remind" value="0" id="" checked>否
+                            <input type="radio" name="remind-1" value="1" id="">是
+                            <input type="radio" name="remind-1" value="0" id="" checked>否
                         </td>
                         <td>
-                            {#if ($authority && $status ==7 )#}
+                            {#if ($authority && $statusID ==7 )#}
+                            <button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button>
                             <button class="btn btn-danger btn-xs">删除</button>
                             {#/if#}
                         </td>
@@ -84,3 +85,27 @@
             </blockquote>
         </div>
     </div>
+
+{#if ($authority && $statusID ==7 )#}
+<script>
+    $(function(){
+        $('.addbug').on('click', function(){
+            $('.modal').modal();
+        });
+        $('#modaladdbug').on('click', function(){
+            var tr = 
+            '<tr><td>没有跳转没有跳转 转</td><td>修复：<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
+            $('#bodybug').append(tr);
+            $('#modalclose').click();
+        })
+
+    });
+    function confirm(id)
+    {
+        var radio = 'remind-'+id;
+        var slector = 'input[name='+radio+']:checked';
+        var val = $(slector).val()
+        console.log(val);
+    }
+</script>
+{#/if#}

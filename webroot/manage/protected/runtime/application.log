@@ -698,3 +698,56 @@ Stack trace:
 2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
 2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
 2017/03/24 12:30:21 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:15:45 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:15:45 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:15:45 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:15:45 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:15:45 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:15:45 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:17:54 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:17:54 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:17:54 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:17:54 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:17:54 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:17:54 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:19:22 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:19:22 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:19:22 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:19:22 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:19:22 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:19:22 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:22:00 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:22:00 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:22:00 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:22:00 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:22:00 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:22:00 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 14:33:19 [error] [system.console] [群发公告邮件测试]：
+2017/03/25 14:33:19 [error] [system.console] [群发公告邮件测试]：2075001987@qq.com
+2017/03/25 14:33:19 [error] [system.console] [群发公告邮件测试]：969610165@qq.com
+2017/03/25 14:33:19 [error] [system.console] [群发公告邮件测试]：demo-1@qq.com
+2017/03/25 14:33:19 [error] [system.console] [群发公告邮件测试]：guangcaida1302@163.com
+2017/03/25 14:33:19 [error] [system.console] [群发公告邮件测试]：guangcaida13@163.com
+2017/03/25 16:11:18 [error] [system.console] [发送任务邮件报错]：Exception: 参数不是数组类型 in /home/itmanage/ITManage/webroot/manage/protected/commands/SendEmailCommand.php:38
+Stack trace:
+#0 [internal function]: SendEmailCommand->actionDutyNew('5-3')
+#1 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(SendEmailCommand), Array)
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#5 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CApplication->run()
+#6 /home/itmanage/ITManage/webroot/manage/protected/yiic.php(7): require_once('/home/itmanage/...')
+#7 {main}
+2017/03/25 16:13:25 [info] [system.console] [发送任务邮件]：5-3
+2017/03/25 16:14:24 [info] [system.console] [发送任务邮件]：5-3
+2017/03/25 16:14:24 [info] [system.console] [发送任务邮件]：新任务提醒-ceshi 2
+2017/03/25 16:23:58 [info] [system.console] [发送任务邮件]：5-2
+2017/03/25 16:30:08 [info] [system.console] [发送任务邮件]：5-2
+2017/03/25 16:30:42 [info] [system.console] [发送任务邮件]：5-2
+2017/03/25 16:35:07 [info] [system.console] [发送任务邮件]：5-3
+2017/03/25 16:35:09 [info] [system.console] [发送任务邮件结果]：success
+2017/03/25 16:35:21 [info] [system.console] [发送任务邮件]：5-2
+2017/03/25 16:35:21 [info] [system.console] [发送任务邮件结果]：success
+2017/03/25 16:49:06 [info] [system.console] [发送任务邮件]：5-3
+2017/03/25 16:49:36 [info] [system.console] [发送任务邮件]：5-3
+2017/03/25 16:51:02 [info] [system.console] [发送任务邮件]：5-4
