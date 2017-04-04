@@ -59,19 +59,23 @@
                 </div>
                 <table class="table default">
                     <tbody id="bodybug">
-                    <tr>
-                        <td>没有跳转没有跳转 转</td>
-                        <td>修复：
-                            <input type="radio" name="remind-1" value="1" id="">是
-                            <input type="radio" name="remind-1" value="0" id="" checked>否
-                        </td>
-                        <td>
-                            {#if ($authority && $statusID ==7 )#}
-                            <button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button>
-                            <button class="btn btn-danger btn-xs">删除</button>
-                            {#/if#}
-                        </td>
-                    </tr>
+                        {#foreach $bug as $row#}
+                        <tr>
+                            <tr>
+                                <td>{#$row['fdDesc']#}</td>
+                                <td>修复：
+                                    <input type="radio" name="remind-{#$row['id']#}" value="1" {#if ($row['fdStatus']==1) #}checked{#/if#}>是
+                                    <input type="radio" name="remind-{#$row['id']#}" value="0" {#if ($row['fdStatus']==0) #}checked{#/if#}>否
+                                </td>
+                                <td>
+                                {#if ($authority && $statusID ==7 )#}
+                                    <button class="btn btn-success btn-xs" onclick="confirm({#$row['id']#})">确定</button>
+                                    <button class="btn btn-danger btn-xs"  onclick="delBug({#$row['id']#})">删除</button>
+                                    {#/if#}
+                                </td>
+                            </td>
+                        </tr>
+                        {#/foreach#}
                 </tbody>
                 </table>
             </div>
@@ -93,10 +97,36 @@
             $('.modal').modal();
         });
         $('#modaladdbug').on('click', function(){
-            var tr = 
-            '<tr><td>没有跳转没有跳转 转</td><td>修复：<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
-            $('#bodybug').append(tr);
-            $('#modalclose').click();
+            var bug = $('#modal-ho-name').val();
+            var id = '{#$id#}';
+            $('#modal-ho-name').val('');
+            $.ajax({
+                'dataType' : 'json',
+                "type": "post",
+                "data": {"operate": "addBug","value":bug, "id": id},
+                "url": "{#$url#}",
+                "beforeSend": function()
+                {
+                    console.log('call');
+                },
+                "success": function(data)
+                {
+                    if (data.code != 0) {
+                        alert('操作失败');
+                    }
+                    if (data.code == 0) {
+                        var id = data['data'].id;
+                        var tr = 
+                        '<tr><td>'+bug+'</td><td>修复：&nbsp;<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-success btn-xs" onclick="confirm('+id+')">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
+                        $('#bodybug').append(tr);
+                        $('#modalclose').click();
+                    }
+                },
+                "complete": function()
+                {
+                }
+            })
+            
         })
 
     });
@@ -105,7 +135,38 @@
         var radio = 'remind-'+id;
         var slector = 'input[name='+radio+']:checked';
         var val = $(slector).val()
+        $.ajax({
+            'dataType': 'json',
+            'type': 'post',
+            'data': {"operate": "updateBug", "bugID": id, "bugStatus": val},
+            "url": "{#$url#}",
+            'success': function(data) {
+                if (data.code != 0) {
+                    alert('操作失败');
+                }
+                if (data.code == 0) {
+                    alert('操作成功');
+                }
+            }
+        })
         console.log(val);
+    }
+    function delBug(id)
+    {
+        $.ajax({
+            'dataType': 'json',
+            'type': 'post',
+            'data': {"operate": "delBug", "bugID": id},
+            "url": "{#$url#}",
+            'success': function(data) {
+                if (data.code != 0) {
+                    alert('操作失败');
+                }
+                if (data.code == 0) {
+                    alert('操作成功');
+                }
+            }
+        })
     }
 </script>
 {#/if#}

@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-03-25 17:18:22
+<?php /* Smarty version Smarty-3.1.12, created on 2017-04-04 16:23:54
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html" */ ?>
-<?php /*%%SmartyHeaderCode:157452172858d6a65e6291c7-87964346%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2815764258e3c89aa9e853-56558123%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b7f6ba6ccb1f2c770bd7744c7f3024e1498b2d08' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html',
-      1 => 1490462297,
+      1 => 1491322298,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '157452172858d6a65e6291c7-87964346',
+  'nocache_hash' => '2815764258e3c89aa9e853-56558123',
   'function' => 
   array (
   ),
@@ -30,13 +30,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'type' => 0,
     'completetime' => 0,
     'content' => 0,
+    'bug' => 0,
+    'row' => 0,
     'log' => 0,
+    'id' => 0,
+    'url' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58d6a65e689a27_97421200',
+  'unifunc' => 'content_58e3c89aaec4c0_02566507',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58d6a65e689a27_97421200')) {function content_58d6a65e689a27_97421200($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58e3c89aaec4c0_02566507')) {function content_58e3c89aaec4c0_02566507($_smarty_tpl) {?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <blockquote>
@@ -108,19 +112,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </div>
                 <table class="table default">
                     <tbody id="bodybug">
-                    <tr>
-                        <td>没有跳转没有跳转 转</td>
-                        <td>修复：
-                            <input type="radio" name="remind-1" value="1" id="">是
-                            <input type="radio" name="remind-1" value="0" id="" checked>否
-                        </td>
-                        <td>
-                            <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
-                            <button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button>
-                            <button class="btn btn-danger btn-xs">删除</button>
-                            <?php }?>
-                        </td>
-                    </tr>
+                        <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['bug']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+?>
+                        <tr>
+                            <tr>
+                                <td><?php echo $_smarty_tpl->tpl_vars['row']->value['fdDesc'];?>
+</td>
+                                <td>修复：
+                                    <input type="radio" name="remind-<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" value="1" <?php if (($_smarty_tpl->tpl_vars['row']->value['fdStatus']==1)){?>checked<?php }?>>是
+                                    <input type="radio" name="remind-<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" value="0" <?php if (($_smarty_tpl->tpl_vars['row']->value['fdStatus']==0)){?>checked<?php }?>>否
+                                </td>
+                                <td>
+                                <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
+                                    <button class="btn btn-success btn-xs" onclick="confirm(<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+)">确定</button>
+                                    <button class="btn btn-danger btn-xs"  onclick="delBug(<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+)">删除</button>
+                                    <?php }?>
+                                </td>
+                            </td>
+                        </tr>
+                        <?php } ?>
                 </tbody>
                 </table>
             </div>
@@ -143,10 +160,38 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             $('.modal').modal();
         });
         $('#modaladdbug').on('click', function(){
-            var tr = 
-            '<tr><td>没有跳转没有跳转 转</td><td>修复：<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-danger btn-xs" onclick="confirm(1)">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
-            $('#bodybug').append(tr);
-            $('#modalclose').click();
+            var bug = $('#modal-ho-name').val();
+            var id = '<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+';
+            $('#modal-ho-name').val('');
+            $.ajax({
+                'dataType' : 'json',
+                "type": "post",
+                "data": {"operate": "addBug","value":bug, "id": id},
+                "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+                "beforeSend": function()
+                {
+                    console.log('call');
+                },
+                "success": function(data)
+                {
+                    if (data.code != 0) {
+                        alert('操作失败');
+                    }
+                    if (data.code == 0) {
+                        var id = data['data'].id;
+                        var tr = 
+                        '<tr><td>'+bug+'</td><td>修复：&nbsp;<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-success btn-xs" onclick="confirm('+id+')">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
+                        $('#bodybug').append(tr);
+                        $('#modalclose').click();
+                    }
+                },
+                "complete": function()
+                {
+                }
+            })
+            
         })
 
     });
@@ -155,7 +200,40 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         var radio = 'remind-'+id;
         var slector = 'input[name='+radio+']:checked';
         var val = $(slector).val()
+        $.ajax({
+            'dataType': 'json',
+            'type': 'post',
+            'data': {"operate": "updateBug", "bugID": id, "bugStatus": val},
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+            'success': function(data) {
+                if (data.code != 0) {
+                    alert('操作失败');
+                }
+                if (data.code == 0) {
+                    alert('操作成功');
+                }
+            }
+        })
         console.log(val);
+    }
+    function delBug(id)
+    {
+        $.ajax({
+            'dataType': 'json',
+            'type': 'post',
+            'data': {"operate": "delBug", "bugID": id},
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
+            'success': function(data) {
+                if (data.code != 0) {
+                    alert('操作失败');
+                }
+                if (data.code == 0) {
+                    alert('操作成功');
+                }
+            }
+        })
     }
 </script>
 <?php }?><?php }} ?>

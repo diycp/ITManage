@@ -2,7 +2,7 @@
 class OperateAction extends Action
 {
     public $dutyForm;
-    public $operate = ['list', 'updateStatus'];
+    public $operate = ['list', 'updateStatus', 'addBug', 'updateBug', 'delBug'];
 
     public function run()
     {
@@ -20,6 +20,15 @@ class OperateAction extends Action
                     break;
                 case 'updateStatus':
                     $this->updateStatus();
+                    break;
+                case 'addBug':
+                    $this->addBug();
+                    break;
+                case 'updateBug':
+                    $this->updateBug();
+                    break;
+                case 'delBug':
+                    $this->delBug();
                     break;
             }
         } catch (Exception $e) {
@@ -50,5 +59,42 @@ class OperateAction extends Action
         $result = $this->dutyForm->updateStatus();
         $this->code = $result['code'];
         $this->message = $result['message'];
+    }
+
+    public function addBug()
+    {
+        $val = $this->_POST['value'];
+        $id = $this->_POST['id'];
+        if(empty($val)) return false;
+        $this->dutyForm->bugDesc = $val;
+        $this->dutyForm->dutyID = $id;
+        $result = $this->dutyForm->addBug();
+        $this->code = $result['code'];
+        $this->message = $result['message'];
+        $this->data = $result['data'];
+    }
+
+    public function updateBug()
+    {
+        $bugID = $this->_POST['bugID'];
+        $bugStatus = $this->_POST['bugStatus'];
+        if(empty($bugID)) return false;
+        $this->dutyForm->bugID = $bugID;
+        $this->dutyForm->bugStatus = $bugStatus;
+        $result = $this->dutyForm->updateBug();
+        $this->code = $result['code'];
+        $this->message = $result['message'];
+        $this->data = $result['data'];
+    }
+
+    public function delBug()
+    {
+        $bugID = $this->_POST['bugID'];
+        if(empty($bugID)) return false;
+        $this->dutyForm->bugID = $bugID;
+        $result = $this->dutyForm->delBug();
+        $this->code = $result['code'];
+        $this->message = $result['message'];
+        $this->data = $result['data'];
     }
 }

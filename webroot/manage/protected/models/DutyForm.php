@@ -3,6 +3,9 @@ class DutyForm extends FormModel
 {
     public $dutyID;
     public $status;
+    public $bugDesc;
+    public $bugStatus;
+    public $bugID;
 
     public function search()
     {
@@ -23,6 +26,7 @@ class DutyForm extends FormModel
             return $response;
         }
         $duty['id'] = $row['id'];
+        $duty['url'] = Yii::app()->getController()->createUrl('operate');
         $duty['name'] = $row['fdName'];
         $duty['plantime'] = $row['fdPlanTime'];
         $duty['completetime'] = $row['fdCompleteTime'];
@@ -138,6 +142,52 @@ class DutyForm extends FormModel
         exec(PHP_BIN.' ' . $yiic . "  sendemail dutynew --ids=$ids>$mount &");
     }
 
+    public function addBug()
+    {
+        $response = ['code' => -1, 'message' => '', 'data' => []];
+        $result = Yii::app()->db->createCommand()->insert("{$this->im}.tbBugFix", [
+            'fdDutyID' => $this->dutyID,
+            'fdDesc' => $this->bugDesc
+        ]);
+        if(empty($result)) return $response;
+        $id = Yii::app()->db->getLastInsertID();
+        $response['code'] = 0;
+        $response['message'] = 'ok';
+        $response['data']['id'] = $id;
+        return $response;
+    }
+
+    public function delBug()
+    {
+        $response = ['code' => -1, 'message' => '', 'data' => []];
+        $sql = "SELECT COUNT(*) FROM {$this->im}.tbBugFix WHERE id = :id";
+        $exist = Yii::app()->db->createCommand($sql)->queryScalar([':id' => $this->bugID]);
+        if(empty($exist)) return $response;
+        $result = Yii::app()->db->createCommand()->delete("{$this->im}.tbBugFix",
+        'id = :id',[
+            ':id' => $this->bugID
+        ]);
+        if(empty($result)) return $response;
+        $response['code'] = 0;
+        $response['message'] = 'ok';
+        return $response;
+    }
+
+    public function updateBug()
+    {
+        $response = ['code' => -1, 'message' => '', 'data' => []];
+        $sql = "SELECT COUNT(*) FROM {$this->im}.tbBugFix WHERE id = :id";
+        $exist = Yii::app()->db->createCommand($sql)->queryScalar([':id' => $this->bugID]);
+        if(empty($exist)) return $response;
+        $result = Yii::app()->db->createCommand()->update("{$this->im}.tbBugFix",[
+            'fdStatus' => $this->bugStatus
+        ], 'id = :id', [':id' => $this->bugID]);
+        if(empty($result)) return $response;
+        $response['code'] = 0;
+        $response['message'] = 'ok';
+        return $response;
+    }
+
     public function getLog()
     {
         $sql = "SELECT fdLog FROM {$this->im}.tbDutyLog WHERE fdDutyID = :dutyID";
@@ -148,7 +198,7 @@ class DutyForm extends FormModel
 
     public function getBug()
     {
-        $sql = "SELECT fdStatus, fdDesc FROM {$this->im}.tbBugFix WHERE fdDutyID = :dutyID";
+        $sql = "SELECT id,fdStatus, fdDesc FROM {$this->im}.tbBugFix WHERE fdDutyID = :dutyID";
         $table = Yii::app()->db->createCommand($sql)->queryAll(true, [':dutyID' => $this->dutyID]);
         if(empty($table)) return [];
         return $table;
