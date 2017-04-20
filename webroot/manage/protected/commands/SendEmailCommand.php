@@ -21,10 +21,10 @@ class SendEmailCommand extends CConsoleCommand
             $content = $announcement['fdMarkdown'];
             foreach ($emails as $row) {
                 $receiver = $row['fdAccount'];
-                // $email->sendEmail($receiver, $title, $content);
+                $email->sendEmail($receiver, $title, $content);
             }
             Yii::log('[ '.date('Y-m-d H:i:s'). ' ]'.'[群发公告邮件]：'. $id .PHP_EOL. $title.PHP_EOL.$content, 'info', 'system.console');
-            // Yii::app()->db->createCommand()->update('wsqITManage.tbAnnouncement', ['fdSent'=>1], 'id = :id', [':id' => $id]);
+            Yii::app()->db->createCommand()->update('wsqITManage.tbAnnouncement', ['fdSent'=>1], 'id = :id', [':id' => $id]);
         } catch (Exception $e) {
             Yii::log('[群发公告邮件报错]：'. $e->__toString(), 'error', 'system.console');
         }
@@ -51,8 +51,8 @@ class SendEmailCommand extends CConsoleCommand
             $title = '新任务提醒-'. $duty['fdName'];
             $content = $duty['fdDesc'];
             $receiver = $account;
-            // $result = $email->sendEmail($receiver, $title, $content);
-            // Yii::log('[发送任务邮件结果]：'. $result, 'info', 'system.console');
+            $result = $email->sendEmail($receiver, $title, $content);
+            Yii::log('[发送任务邮件结果]：'. $result, 'info', 'system.console');
         } catch (Exception $e) {
             Yii::log('[发送任务邮件报错]：'. $e->__toString(), 'error', 'system.console');
         }

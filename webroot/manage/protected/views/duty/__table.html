@@ -61,7 +61,7 @@
                     <tbody id="bodybug">
                         {#foreach $bug as $row#}
                         <tr>
-                            <tr>
+                            <tr id="tr-{#$row['id']#}">
                                 <td>{#$row['fdDesc']#}</td>
                                 <td>修复：
                                     <input type="radio" name="remind-{#$row['id']#}" value="1" {#if ($row['fdStatus']==1) #}checked{#/if#}>是
@@ -117,7 +117,7 @@
                     if (data.code == 0) {
                         var id = data['data'].id;
                         var tr = 
-                        '<tr><td>'+bug+'</td><td>修复：&nbsp;<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-success btn-xs" onclick="confirm('+id+')">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
+                        '<tr id="tr-'+id+'"><td>'+bug+'</td><td>修复：&nbsp;<input type="radio" name="remind-'+id+'" value="1" id="">是<input type="radio" name="remind-'+id+'" value="0" id="" checked>否</td><td><button class="btn btn-success btn-xs" onclick="confirm('+id+')">确定</button> <button class="btn btn-danger btn-xs" onclick="delBug('+id+')">删除</button></td></tr>';
                         $('#bodybug').append(tr);
                         $('#modalclose').click();
                     }
@@ -153,6 +153,8 @@
     }
     function delBug(id)
     {
+        var tr = '#tr-'+id;
+        var selector = $(tr);
         $.ajax({
             'dataType': 'json',
             'type': 'post',
@@ -164,6 +166,7 @@
                 }
                 if (data.code == 0) {
                     alert('操作成功');
+                    selector.detach();
                 }
             }
         })

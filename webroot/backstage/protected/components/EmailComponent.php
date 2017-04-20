@@ -3,9 +3,9 @@ class EmailComponent
 {
     const EMAIL_HOST = "smtp.163.com";
     const EMAIL_PORT = 25;
-    const EMAIL_USERNAME = " ";
-    const EMAIL_ID = " ";
-    const EMAIL_PASSWORD = " ";
+    const EMAIL_USERNAME = "account@163.com";
+    const EMAIL_ID = "account";
+    const EMAIL_PASSWORD = "pass";
 
     public $email;
 

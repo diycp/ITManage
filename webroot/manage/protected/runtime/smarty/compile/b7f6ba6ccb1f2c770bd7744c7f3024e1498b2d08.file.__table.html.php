@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2017-04-04 16:23:54
+<?php /* Smarty version Smarty-3.1.12, created on 2017-04-20 06:09:43
          compiled from "/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html" */ ?>
-<?php /*%%SmartyHeaderCode:2815764258e3c89aa9e853-56558123%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:89263368358f850a7623160-46244723%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'b7f6ba6ccb1f2c770bd7744c7f3024e1498b2d08' => 
     array (
       0 => '/home/itmanage/ITManage/webroot/manage/protected/views/duty/__table.html',
-      1 => 1491322298,
+      1 => 1492668559,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2815764258e3c89aa9e853-56558123',
+  'nocache_hash' => '89263368358f850a7623160-46244723',
   'function' => 
   array (
   ),
@@ -38,9 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_58e3c89aaec4c0_02566507',
+  'unifunc' => 'content_58f850a768cee1_34273366',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_58e3c89aaec4c0_02566507')) {function content_58e3c89aaec4c0_02566507($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_58f850a768cee1_34273366')) {function content_58f850a768cee1_34273366($_smarty_tpl) {?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <blockquote>
@@ -118,7 +118,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars[
 $_smarty_tpl->tpl_vars['row']->_loop = true;
 ?>
                         <tr>
-                            <tr>
+                            <tr id="tr-<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+">
                                 <td><?php echo $_smarty_tpl->tpl_vars['row']->value['fdDesc'];?>
 </td>
                                 <td>修复：
@@ -182,7 +183,7 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
                     if (data.code == 0) {
                         var id = data['data'].id;
                         var tr = 
-                        '<tr><td>'+bug+'</td><td>修复：&nbsp;<input type="radio" name="remind-1" value="1" id="">是<input type="radio" name="remind-1" value="0" id="" checked>否</td><td><button class="btn btn-success btn-xs" onclick="confirm('+id+')">确定</button> <button class="btn btn-danger btn-xs">删除</button></td></tr>';
+                        '<tr id="tr-'+id+'"><td>'+bug+'</td><td>修复：&nbsp;<input type="radio" name="remind-'+id+'" value="1" id="">是<input type="radio" name="remind-'+id+'" value="0" id="" checked>否</td><td><button class="btn btn-success btn-xs" onclick="confirm('+id+')">确定</button> <button class="btn btn-danger btn-xs" onclick="delBug('+id+')">删除</button></td></tr>';
                         $('#bodybug').append(tr);
                         $('#modalclose').click();
                     }
@@ -219,6 +220,8 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
     }
     function delBug(id)
     {
+        var tr = '#tr-'+id;
+        var selector = $(tr);
         $.ajax({
             'dataType': 'json',
             'type': 'post',
@@ -231,6 +234,7 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
                 }
                 if (data.code == 0) {
                     alert('操作成功');
+                    selector.detach();
                 }
             }
         })
