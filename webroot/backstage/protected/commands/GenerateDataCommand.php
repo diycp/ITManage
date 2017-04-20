@@ -28,9 +28,14 @@ class GenerateDataCommand extends CConsoleCommand
     public function actionGenerateMenu()
     {
         $menus = [
-            ['用户','user','index',1],
-            ['菜单','menu','index',1],
-            ['公告','announcement','index',1]
+            ['用户','user','index',1,0],
+            ['菜单','menu','index',1,0],
+            ['公告','announcement','index',1,0],
+            ['搜索','search','index',1,1],
+            ['公告','announcement','index',1,1],
+            ['创建','build','index',1,1],
+            ['项目','project','index',1,1],
+            ['看板','board','index',1,1]
         ];
         $exMenu = array_map(function($arr) {return implode("','", $arr);}, $menus);
         $pattern = "('%s'),";
@@ -39,7 +44,7 @@ class GenerateDataCommand extends CConsoleCommand
             $values.= sprintf($pattern, $val);
         }
         $values = rtrim($values, ',');
-        $sql = "INSERT INTO wsqITManage.tbMenu (fdName,fdController,fdAction,fdStatus) VALUES".$values;
+        $sql = "INSERT INTO wsqITManage.tbMenu (fdName,fdController,fdAction,fdStatus,fdPlatform) VALUES".$values;
         $result = Yii::app()->db->createCommand($sql)->execute();
         echo $result ? 'success'.PHP_EOL : 'failes'.PHP_EOL;
     }
