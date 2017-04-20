@@ -10,10 +10,10 @@
 </head>
 <body>
     <?php echo $content;?>
-    <nav class="navbar navbar-fixed-bottom">
+    <!--<nav class="navbar navbar-fixed-bottom">
         <div class="container">
                 <p class="text-center">Copyright © 2017 by wangsq </p>
         </div>
-    </nav>
+    </nav>-->
 </body>
 </html>

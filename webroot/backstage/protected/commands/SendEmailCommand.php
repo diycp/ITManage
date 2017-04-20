@@ -6,7 +6,7 @@ class SendEmailCommand extends CConsoleCommand
         try {
             Yii::log('[群发公告邮件]：'. $id, 'info', 'system.console');
             $email = new EmailComponent();
-            $sql = "SELECT fdName, fdDesc, fdMarkdown FROM wsqITManage.tbAnnouncement WHERE id = :id AND fdBatch = 1 AND fdSent = 0";
+            $sql = "SELECT fdName, fdDesc, fdMarkdown FROM wsqITManage.tbAnnouncement WHERE id = :id AND fdBatch = 1 AND fdSent = 1";
             $announcement = Yii::app()->db->createCommand($sql)->queryRow(true, [':id' => $id]);
             if(empty($announcement)) {
                 $str = 'no exist announcement';
@@ -26,7 +26,7 @@ class SendEmailCommand extends CConsoleCommand
                 Yii::log('[群发公告邮件]：'. $result, 'info', 'system.console');
             }
             Yii::log('[ '.date('Y-m-d H:i:s'). ' ]'.'[群发公告邮件]：'. $id .PHP_EOL. $title.PHP_EOL.$content, 'info', 'system.console');
-            Yii::app()->db->createCommand()->update('wsqITManage.tbAnnouncement', ['fdSent'=>1], 'id = :id', [':id' => $id]);
+            // Yii::app()->db->createCommand()->update('wsqITManage.tbAnnouncement', ['fdSent'=>1], 'id = :id', [':id' => $id]);
         } catch (Exception $e) {
             Yii::log('[群发公告邮件报错]：'. $e->__toString(), 'error', 'system.console');
         }

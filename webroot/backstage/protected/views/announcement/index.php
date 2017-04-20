@@ -216,7 +216,7 @@
 
     function send(id) {
         var sign = id;
-        if (confirm("该操作无法撤销，是否确认删除？")) {
+        if (confirm("该操作无法撤销，是否确认推送？")) {
             $.ajax({
                 "type": "post",
                 "dataType": 'json',

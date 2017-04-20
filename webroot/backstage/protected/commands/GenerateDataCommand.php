@@ -10,7 +10,7 @@ class GenerateDataCommand extends CConsoleCommand
     {
         $users = [
             ['产品经理','guangcaida13@163.com', password_hash('chanpin',PASSWORD_DEFAULT),2],
-            ['开发','guangcaida1302@163.com', password_hash('kaifa',PASSWORD_DEFAULT),3],
+            ['开发','minedesigndream@163.com', password_hash('kaifa',PASSWORD_DEFAULT),3],
             ['测试','2075001987@qq.com', password_hash('ceshi',PASSWORD_DEFAULT),4],
         ];
         $exUser = array_map(function($arr) {return implode("','", $arr);}, $users);

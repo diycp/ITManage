@@ -111,21 +111,23 @@ class AnnouncementForm extends FormModel
         list($id, $userID) = array($params['id'], $params['userID']);
         $result = Yii::app()->db->createCommand()->update("{$this->im}.tbAnnouncement",[
             'fdOperatorID' => $userID,
-            'fdBatch' => 1
+            'fdSent' => 1
         ],'id = :id', [':id' => $id]);
-        // $mount = Yii::getPathOfAlias('application.models'). '/mount.php';
-        $dir = Yii::getPathOfAlias('application');
-        $mount = $dir . '/models/mount.php';
-        $yiic = $dir . '/yiic.php';
-        if (empty($result)) {
-            // $response['code'] = 0;
+        if($result) {
+            $response['code'] = 0;
+            $response['message'] = '操作成功';
+        }
+        $sql = "SELECT fdBatch FROM {$this->im}.tbAnnouncement WHERE id = :id";
+        $batchStatus = Yii::app()->db->createCommand($sql)->queryScalar([':id' => $id]);
+        if($batchStatus) {
+            // $mount = Yii::getPathOfAlias('application.models'). '/mount.php';
+            $dir = Yii::getPathOfAlias('application');
+            $mount = $dir . '/models/mount.php';
+            $yiic = $dir . '/yiic.php';
             // exec("/usr/local/php7/bin/php /home/itmanage/ITManage/webroot/backstage/protected/yiic.php sendemail announcementbatch --id=$id>$mount &");
             exec(PHP_BIN.' ' . $yiic . "  sendemail announcementbatch --id=$id>$mount &");
             $response['message'] = '等待执行';
-        } else {
-            $response['message'] = '操作有误';
-        }
-        
+        }        
         return $response;
     }
 }

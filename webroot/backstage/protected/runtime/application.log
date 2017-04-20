@@ -13868,3 +13868,1776 @@ hg
 in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:45:09 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            1 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:51:18 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            1 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:53:22 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            1 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:55:06 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            1 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            2 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            3 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:56:38 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 20:56:36'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:56:47 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 20:56:36'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:59:17 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+
+- 论文
+- PPT
+- 系统'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 20:56:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 12:59:28 [info] [system.console] [群发公告邮件]：12
+2017/04/20 12:59:28 [error] [php] include(EmailComponent.php): failed to open stream: No such file or directory (/home/itmanage/ITManage/webroot/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/commands/SendEmailCommand.php(8): spl_autoload_call()
+#1 unknown(0): SendEmailCommand->actionAnnouncementBatch()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/itmanage/ITManage/webroot/backstage/protected/yiic.php(7): require_once()
+
+2017/04/20 12:59:42 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+
+- 论文
+- PPT
+- 系统'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 20:56:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:23:34 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '0'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:32'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:23:45 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:43'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:36:17 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:43'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            1 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            2 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            3 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            4 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:36:29 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '13'
+                'content' => 'demo'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'ceshi'
+                'update' => '2017-04-20 21:36:27'
+                'operator' => 'admin'
+                'md' => '<p>demo</p>'
+            )
+            1 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:43'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            2 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            3 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            5 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            7 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:36:35 [info] [system.console] [群发公告邮件]：13
+2017/04/20 13:36:35 [error] [php] include(EmailComponent.php): failed to open stream: No such file or directory (/home/itmanage/ITManage/webroot/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/commands/SendEmailCommand.php(8): spl_autoload_call()
+#1 unknown(0): SendEmailCommand->actionAnnouncementBatch()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/itmanage/ITManage/webroot/backstage/protected/yiic.php(7): require_once()
+
+2017/04/20 13:36:37 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '13'
+                'content' => 'demo'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'ceshi'
+                'update' => '2017-04-20 21:36:35'
+                'operator' => 'admin'
+                'md' => '<p>demo</p>'
+            )
+            1 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:43'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            2 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            3 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            4 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            5 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            6 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            7 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:38:14 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '14'
+                'content' => 'demo1               '
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'ceshi '
+                'update' => '2017-04-20 21:38:13'
+                'operator' => 'admin'
+                'md' => '<p>demo1               </p>'
+            )
+            1 => array
+            (
+                'id' => '13'
+                'content' => 'demo'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'ceshi'
+                'update' => '2017-04-20 21:36:35'
+                'operator' => 'admin'
+                'md' => '<p>demo</p>'
+            )
+            2 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:43'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            3 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            6 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            7 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            8 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/20 13:38:27 [info] [system.console] [群发公告邮件]：14
+2017/04/20 13:38:27 [error] [php] include(EmailComponent.php): failed to open stream: No such file or directory (/home/itmanage/ITManage/webroot/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/itmanage/ITManage/webroot/backstage/protected/commands/SendEmailCommand.php(8): spl_autoload_call()
+#1 unknown(0): SendEmailCommand->actionAnnouncementBatch()
+#2 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/itmanage/ITManage/webroot/framework/console/CConsoleCommandRunner.php(71): SendEmailCommand->run()
+#4 /home/itmanage/ITManage/webroot/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/itmanage/ITManage/webroot/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/itmanage/ITManage/webroot/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/itmanage/ITManage/webroot/backstage/protected/yiic.php(7): require_once()
+
+2017/04/20 13:38:28 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '14'
+                'content' => 'demo1               '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'ceshi '
+                'update' => '2017-04-20 21:38:27'
+                'operator' => 'admin'
+                'md' => '<p>demo1               </p>'
+            )
+            1 => array
+            (
+                'id' => '13'
+                'content' => 'demo'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'ceshi'
+                'update' => '2017-04-20 21:36:35'
+                'operator' => 'admin'
+                'md' => '<p>demo</p>'
+            )
+            2 => array
+            (
+                'id' => '12'
+                'content' => '>毕业答辩
+
+需要准备以下资料
+ 
+- 论文
+- PPT
+- 系统'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业答辩'
+                'update' => '2017-04-20 21:23:43'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>毕业答辩</p></blockquote>
+
+<p>需要准备以下资料</p>
+
+<ul><li>论文</li><li>PPT</li><li>系统</li></ul>'
+            )
+            3 => array
+            (
+                'id' => '11'
+                'content' => '今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。'
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-09 15:16:58'
+                'operator' => 'admin'
+                'md' => '<p>今天需要把软件系统的图片重新截图一次，因为之前的图片很不清晰，重点截关键的图片。</p>'
+            )
+            4 => array
+            (
+                'id' => '6'
+                'content' => 'adfddddddddddddddddddddddddddddddddddddddddddddddddddddd                    
+                                        adfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfddddddddddddddddddddddddddddddddddddddddddddddddadfdddddddddddddddddddddddddddddddddddddddddddddddd'
+                'batch' => '1'
+                'sent' => '0'
+                'name' => 'demo-5'
+                'update' => '2017-03-24 17:35:51'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            5 => array
+            (
+                'id' => '9'
+                'content' => '>md
+
+我哦喔赛，今天举办比赛。
+大家记得来参加。
+
+记得哦
+'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'test-md'
+                'update' => '2017-03-24 16:09:53'
+                'operator' => 'admin'
+                'md' => '<blockquote><p>md</p></blockquote>
+
+<p>我哦喔赛，今天举办比赛。
+大家记得来参加。</p>
+
+<p>记得哦</p>'
+            )
+            6 => array
+            (
+                'id' => '5'
+                'content' => '++++++++++++++++++++%0D%0A++++++++++++++++++++++++++++++++++++++++fhxg%0D%0Ahh'
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-4'
+                'update' => '2017-03-24 15:47:09'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            7 => array
+            (
+                'id' => '3'
+                'content' => '                    
+              wo我和斯蒂芬第三                          '
+                'batch' => '1'
+                'sent' => '1'
+                'name' => 'demo-2'
+                'update' => '2017-03-24 15:45:34'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+            8 => array
+            (
+                'id' => '4'
+                'content' => '    afdsfsdds
+gsf
+hg               
+                                        '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => 'demo-3'
+                'update' => '2017-03-20 12:17:23'
+                'operator' => 'admin'
+                'md' => '<h2>use &nbsp; markdown</h2>'
+            )
+        )
+    )
+)
+in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
+in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
