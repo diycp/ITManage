@@ -18,17 +18,17 @@ class SelectorForm extends FormModel
     public function getCache($id)
     {
         // Yii::app()->cacheDb->flush();
-        $cache = Yii::app()->cacheDb->get($id);
-        if($cache === false) {
+        // $cache = Yii::app()->cacheDb->get($id);
+        // if($cache === false) {
             $data = $this->$id();
             if (empty($data)) {
                 $cache = [];
             } else {
                 $cache = $data['cache'];
-                $sql = $data['sql'];
-                Yii::app()->cacheDb->set($id, $cache, 24*60*60, new CDbCacheDependency($sql));
+                // $sql = $data['sql'];
+                // Yii::app()->cacheDb->set($id, $cache, 24*60*60, new CDbCacheDependency($sql));
             }
-        }
+        // }
         return $cache;
     }
 

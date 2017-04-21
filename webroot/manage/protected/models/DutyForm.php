@@ -3,6 +3,7 @@ class DutyForm extends FormModel
 {
     public $dutyID;
     public $status;
+    public $dutyDesc;
     public $bugDesc;
     public $bugStatus;
     public $bugID;
@@ -42,6 +43,7 @@ class DutyForm extends FormModel
         $duty['log'] = $this->getLog();
         $duty['bug'] = $this->getBug();
         $duty['authority'] = $this->getAuthority($row['developerID'],$row['testerID'],$row['managerID'], $row['fdStatusID']);
+        $duty['career'] = Yii::app()->user->type;
         $response['code'] = 0;
         $response['message'] = 'ok';
         $response['data']['list'] = $duty;
@@ -54,6 +56,14 @@ class DutyForm extends FormModel
         $params = ['fdStatusID' => $this->status];
         if ($this->status == 8) {
             $params['fdCompleteTime'] = date('Y-m-d');
+            $sql = "SELECT COUNT(*) bugcount, SUM(fdStatus) bugsum FROM {$this->im}.tbBugFix WHERE fdDutyID = :id";
+            $row = Yii::app()->db->createCommand($sql)->queryRow(true, [':id' => $this->dutyID]);
+            if(!empty($row)) {
+                if ($row['bugcount'] > $row['bugsum']) {
+                    $response['message'] = '尚有bug未处理，请检测';
+                    return $response;
+                }
+            }
         }
         $result = Yii::app()->db->createCommand()->update("{$this->im}.tbDuty", $params, 'id = :id', [':id' => $this->dutyID]);
         if (!$result) {
@@ -140,6 +150,18 @@ class DutyForm extends FormModel
         $mount = $dir . '/models/mount.php';
         $yiic = $dir . '/yiic.php';
         exec(PHP_BIN.' ' . $yiic . "  sendemail dutynew --ids=$ids>$mount &");
+    }
+
+    public function editDuty()
+    {
+        $response = ['code' => -1, 'message' => '', 'data' => []];
+        $result = Yii::app()->db->createCommand()->update("{$this->im}.tbDuty", [
+            'fdDesc' => $this->dutyDesc
+        ], 'id = :id', [':id' => $this->dutyID]);
+        if(empty($result)) return $response;
+        $response['code'] = 0;
+        $response['message'] = 'ok';
+        return $response;
     }
 
     public function addBug()

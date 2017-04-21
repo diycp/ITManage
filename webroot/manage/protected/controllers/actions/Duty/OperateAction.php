@@ -2,7 +2,7 @@
 class OperateAction extends Action
 {
     public $dutyForm;
-    public $operate = ['list', 'updateStatus', 'addBug', 'updateBug', 'delBug'];
+    public $operate = ['list', 'updateStatus', 'addBug', 'updateBug', 'delBug', 'editDuty'];
 
     public function run()
     {
@@ -29,6 +29,9 @@ class OperateAction extends Action
                     break;
                 case 'delBug':
                     $this->delBug();
+                    break;
+                case 'editDuty':
+                    $this->editDuty();
                     break;
             }
         } catch (Exception $e) {
@@ -93,6 +96,19 @@ class OperateAction extends Action
         if(empty($bugID)) return false;
         $this->dutyForm->bugID = $bugID;
         $result = $this->dutyForm->delBug();
+        $this->code = $result['code'];
+        $this->message = $result['message'];
+        $this->data = $result['data'];
+    }
+
+    public function editDuty()
+    {
+        $val = $this->_POST['value'];
+        $id = $this->_POST['id'];
+        if(empty($val)) return false;
+        $this->dutyForm->dutyDesc = $val;
+        $this->dutyForm->dutyID = $id;
+        $result = $this->dutyForm->editDuty();
         $this->code = $result['code'];
         $this->message = $result['message'];
         $this->data = $result['data'];

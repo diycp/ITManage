@@ -1,56 +1,110 @@
-
+<?php /* Smarty version Smarty-3.1.12, created on 2017-04-21 18:57:54
+         compiled from "D:\php\project\itmanage\webroot\manage\protected\views\duty\__table.html" */ ?>
+<?php /*%%SmartyHeaderCode:2738958f9e5b210eaf6-42260938%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '90cf754e69c1e205a561eeca4631a9c39ec883af' => 
+    array (
+      0 => 'D:\\php\\project\\itmanage\\webroot\\manage\\protected\\views\\duty\\__table.html',
+      1 => 1492771849,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2738958f9e5b210eaf6-42260938',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'authority' => 0,
+    'statusID' => 0,
+    'project' => 0,
+    'name' => 0,
+    'manager' => 0,
+    'developer' => 0,
+    'tester' => 0,
+    'plantime' => 0,
+    'prority' => 0,
+    'status' => 0,
+    'type' => 0,
+    'completetime' => 0,
+    'content' => 0,
+    'career' => 0,
+    'bug' => 0,
+    'row' => 0,
+    'log' => 0,
+    'id' => 0,
+    'url' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_58f9e5b2201e04_40529165',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_58f9e5b2201e04_40529165')) {function content_58f9e5b2201e04_40529165($_smarty_tpl) {?>
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <blockquote>
                 <div class="btn-group-sm" style="float:right">
-                    {#if $authority#}
-                        {#if ($statusID==1 || $statusID==2)#}
+                    <?php if ($_smarty_tpl->tpl_vars['authority']->value){?>
+                        <?php if (($_smarty_tpl->tpl_vars['statusID']->value==1||$_smarty_tpl->tpl_vars['statusID']->value==2)){?>
                         <button class="btn btn-success" onclick="updateStatus(3)">提交开发</button>
-                        {#elseif ($statusID==3 || $statusID==5)#}
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==3||$_smarty_tpl->tpl_vars['statusID']->value==5)){?>
                         <button class="btn btn-primary" onclick="updateStatus(4)">开始开发</button>
                         <button class="btn btn-danger" onclick="updateStatus(1)">打回需求</button>
-                        {#elseif ($statusID==5 || $statusID==4)#}
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==5||$_smarty_tpl->tpl_vars['statusID']->value==4)){?>
                         <button class="btn btn-success" onclick="updateStatus(6)">提交测试</button>
                         <button class="btn btn-danger" onclick="updateStatus(1)">打回需求</button>
-                        {#elseif ($statusID==6)#}
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==6)){?>
                         <button class="btn btn-primary" onclick="updateStatus(7)">开始测试</button>
                         <button class="btn btn-danger" onclick="updateStatus(5)">打回开发</button>
-                        {#elseif ($statusID==7)#}
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==7)){?>
                         <button class="btn btn-success" onclick="updateStatus(8)">开发通过</button>
                         <button class="btn btn-danger" onclick="updateStatus(5)">打回开发</button>
-                        {#elseif ($statusID==9 || $statusID==8)#}
-                        {#/if#}
+                        <?php }elseif(($_smarty_tpl->tpl_vars['statusID']->value==9||$_smarty_tpl->tpl_vars['statusID']->value==8)){?>
+                        <?php }?>
                         <button class="btn btn-warning" onclick="updateStatus(9)">取消</button>
-                    {#/if#}
+                    <?php }?>
                 </div>
-                <h6>项目：{#$project#}</h6>
-                <h3>{#$name#}</h3>
+                <h6>项目：<?php echo $_smarty_tpl->tpl_vars['project']->value;?>
+</h6>
+                <h3><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+</h3>
             </blockquote>
         </div>
     </div>
     <div class="row">
-        <dvi class="col-md-2 col-md-offset-1">产品经理：{#$manager#}</dvi>
-        <div class="col-md-2">开发者：{#$developer#}</div>
-        <div class="col-md-2">测试者：{#$tester#}</div>
-        <div class="col-md-2">预上线：{#$plantime#}</div>
+        <dvi class="col-md-2 col-md-offset-1">产品经理：<?php echo $_smarty_tpl->tpl_vars['manager']->value;?>
+</dvi>
+        <div class="col-md-2">开发者：<?php echo $_smarty_tpl->tpl_vars['developer']->value;?>
+</div>
+        <div class="col-md-2">测试者：<?php echo $_smarty_tpl->tpl_vars['tester']->value;?>
+</div>
+        <div class="col-md-2">预上线：<?php echo $_smarty_tpl->tpl_vars['plantime']->value;?>
+</div>
     </div>
     <div class="row">
-        <dvi class="col-md-2 col-md-offset-1">优先级：{#$prority#}</dvi>
-        <div class="col-md-2">状态：{#$status#}</div>
-        <div class="col-md-2">类型：{#$type#}</div>
-        <div class="col-md-2">完成：{#$completetime#}</div>
+        <dvi class="col-md-2 col-md-offset-1">优先级：<?php echo $_smarty_tpl->tpl_vars['prority']->value;?>
+</dvi>
+        <div class="col-md-2">状态：<?php echo $_smarty_tpl->tpl_vars['status']->value;?>
+</div>
+        <div class="col-md-2">类型：<?php echo $_smarty_tpl->tpl_vars['type']->value;?>
+</div>
+        <div class="col-md-2">完成：<?php echo $_smarty_tpl->tpl_vars['completetime']->value;?>
+</div>
     </div>
     <hr class="col-md-10 col-md-offset-1">
     <div class="row">
         <div class="col-md-9 col-md-offset-1">
             <blockquote>
-                <h5><div id="dutyContent">{#$content#}</div></h5>
+                <h5><div id="dutyContent"><?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+</div></h5>
             </blockquote>
         </div>
         <div class="col-md-1">
-            {#if ($career==2 && $authority) #}
+            <?php if (($_smarty_tpl->tpl_vars['career']->value==2&&$_smarty_tpl->tpl_vars['authority']->value)){?>
             <button class="btn btn-primary editDuty">编辑</button>
-            {#/if#}
+            <?php }?>
         </div>
     </div>
     <div class="row">
@@ -58,29 +112,39 @@
             <div class="panel panel-default" style="margin-left:0%">
                 <div class="panel-heading">
                     问题
-                    {#if ($authority && $statusID ==7 )#}
+                    <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
                     <button class="btn btn-success btn-xs addbug" style="margin-right: 2%; float: right">添加</button>
-                    {#/if#}
+                    <?php }?>
                 </div>
                 <table class="table default">
                     <tbody id="bodybug">
-                        {#foreach $bug as $row#}
+                        <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['bug']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
+$_smarty_tpl->tpl_vars['row']->_loop = true;
+?>
                         <tr>
-                            <tr id="tr-{#$row['id']#}">
-                                <td>{#$row['fdDesc']#}</td>
+                            <tr id="tr-<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+">
+                                <td><?php echo $_smarty_tpl->tpl_vars['row']->value['fdDesc'];?>
+</td>
                                 <td>修复：
-                                    <input type="radio" name="remind-{#$row['id']#}" value="1" {#if ($row['fdStatus']==1) #}checked{#/if#}>是
-                                    <input type="radio" name="remind-{#$row['id']#}" value="0" {#if ($row['fdStatus']==0) #}checked{#/if#}>否
+                                    <input type="radio" name="remind-<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" value="1" <?php if (($_smarty_tpl->tpl_vars['row']->value['fdStatus']==1)){?>checked<?php }?>>是
+                                    <input type="radio" name="remind-<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+" value="0" <?php if (($_smarty_tpl->tpl_vars['row']->value['fdStatus']==0)){?>checked<?php }?>>否
                                 </td>
                                 <td>
-                                {#if ($authority && $statusID ==7 )#}
-                                    <button class="btn btn-success btn-xs" onclick="confirm({#$row['id']#})">确定</button>
-                                    <button class="btn btn-danger btn-xs"  onclick="delBug({#$row['id']#})">删除</button>
-                                    {#/if#}
+                                <?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
+                                    <button class="btn btn-success btn-xs" onclick="confirm(<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+)">确定</button>
+                                    <button class="btn btn-danger btn-xs"  onclick="delBug(<?php echo $_smarty_tpl->tpl_vars['row']->value['id'];?>
+)">删除</button>
+                                    <?php }?>
                                 </td>
                             </td>
                         </tr>
-                        {#/foreach#}
+                        <?php } ?>
                 </tbody>
                 </table>
             </div>
@@ -90,11 +154,12 @@
         <div class="col-md-10 col-md-offset-1">
             <blockquote>
                 <h5>操作日志</h5>
-                <h5>{#$log#}</h5>
+                <h5><?php echo $_smarty_tpl->tpl_vars['log']->value;?>
+</h5>
             </blockquote>
         </div>
     </div>
-{#if ($career==2 && $authority) #}
+<?php if (($_smarty_tpl->tpl_vars['career']->value==2&&$_smarty_tpl->tpl_vars['authority']->value)){?>
 <div class="modal fade modal-editduty">
     <div class="modal-dialog">
        <div class="modal-content">
@@ -121,8 +186,8 @@
        </div>
     </div>
 </div>
-{#/if#}
-{#if ($authority && $statusID ==7 )#}
+<?php }?>
+<?php if (($_smarty_tpl->tpl_vars['authority']->value&&$_smarty_tpl->tpl_vars['statusID']->value==7)){?>
 <script>
     $(function(){
         $('.addbug').on('click', function(){
@@ -130,13 +195,15 @@
         });
         $('#modaladdbug').on('click', function(){
             var bug = $('#modal-ho-name').val();
-            var id = '{#$id#}';
+            var id = '<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+';
             $('#modal-ho-name').val('');
             $.ajax({
                 'dataType' : 'json',
                 "type": "post",
                 "data": {"operate": "addBug","value":bug, "id": id},
-                "url": "{#$url#}",
+                "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
                 "beforeSend": function()
                 {
                     console.log('call');
@@ -170,7 +237,8 @@
             'dataType': 'json',
             'type': 'post',
             'data': {"operate": "updateBug", "bugID": id, "bugStatus": val},
-            "url": "{#$url#}",
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
             'success': function(data) {
                 if (data.code != 0) {
                     alert('操作失败');
@@ -190,7 +258,8 @@
             'dataType': 'json',
             'type': 'post',
             'data': {"operate": "delBug", "bugID": id},
-            "url": "{#$url#}",
+            "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
             'success': function(data) {
                 if (data.code != 0) {
                     alert('操作失败');
@@ -203,8 +272,8 @@
         })
     }
 </script>
-{#/if#}
-{#if ($career==2 && $authority) #}
+<?php }?>
+<?php if (($_smarty_tpl->tpl_vars['career']->value==2&&$_smarty_tpl->tpl_vars['authority']->value)){?>
 <script>
     $(function(){
         $('.editDuty').on('click', function(){
@@ -212,13 +281,15 @@
         });
         $('#modaleditduty').on('click', function(){
             var content = $('#modal-ho-editduty').val();
-            var id = '{#$id#}';
+            var id = '<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+';
             $('#modal-ho-editduty').val('');
             $.ajax({
                 'dataType' : 'json',
                 "type": "post",
                 "data": {"operate": "editDuty","value":content, "id": id},
-                "url": "{#$url#}",
+                "url": "<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+",
                 "beforeSend": function()
                 {
                     console.log('call');
@@ -240,4 +311,4 @@
         })
     })
 </script>
-{#/if#}
+<?php }?><?php }} ?>

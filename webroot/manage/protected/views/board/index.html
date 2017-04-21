@@ -20,7 +20,7 @@
 <script>
     $(function(){
         var cache = [];
-
+        {#if !empty($project[0]["id"])#}
         $.ajax({
             'type': 'post',
             'dataType': 'json',
@@ -41,7 +41,11 @@
             },
             'complete': function(){}
         })
-
+        {#else#}
+        var element = '.tab-content';
+        $(element).empty();
+        $(element).append('<p class="text-center">暂无数据</p>');
+        {#/if#}
         $('.protab').on('click', function () {
             var id = $(this).attr('data-pid');
             var element = '#p'+id;

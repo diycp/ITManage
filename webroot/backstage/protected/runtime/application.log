@@ -15641,3 +15641,28 @@ hg
 in /home/itmanage/ITManage/webroot/backstage/protected/models/AnnouncementForm.php (41)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (65)
 in /home/itmanage/ITManage/webroot/backstage/protected/controllers/Announcement/OperateAction.php (19)
+2017/04/21 09:00:53 [info] [system.log] array
+(
+    'code' => 0
+    'message' => 'ok'
+    'data' => array
+    (
+        'list' => array
+        (
+            0 => array
+            (
+                'id' => '1'
+                'content' => '这一天总是来得那么突然             '
+                'batch' => '0'
+                'sent' => '1'
+                'name' => '毕业设计'
+                'update' => '2017-04-21 17:00:51'
+                'operator' => 'admin'
+                'md' => '<p>这一天总是来得那么突然             </p>'
+            )
+        )
+    )
+)
+in D:\php\project\itmanage\webroot\backstage\protected\models\AnnouncementForm.php (41)
+in D:\php\project\itmanage\webroot\backstage\protected\controllers\Announcement\OperateAction.php (65)
+in D:\php\project\itmanage\webroot\backstage\protected\controllers\Announcement\OperateAction.php (19)
